@@ -7,12 +7,11 @@ const Planos = () => {
     return (
         <section>
             <div className="container">
-                <Title label="Conheça nosssos planos" />
+                <Title label="Conheça nossos planos" />
                 <Subhead label="Em casa ou na academia agora é a hora de construir a sua melhor versão!" />
                 <div className="my-4">
                     <div className="row row-cols-1 row-cols-md-3 g-4">
                         <CardPlanos
-                            accentColor="#FD3282"
                             title="Treino feminino"
                             price={40}
                             image="/assets/img/training-woman.png"
@@ -30,7 +29,6 @@ const Planos = () => {
                             </ul>
                         </CardPlanos>
                         <CardPlanos
-                            accentColor="#FFC401"
                             recommended={true}
                             title="Consultoria personalizada"
                             image="/assets/img/training-custom.png"
@@ -48,7 +46,6 @@ const Planos = () => {
                             </ul>
                         </CardPlanos>
                         <CardPlanos
-                            accentColor="#5429DA"
                             title="Treino masculino"
                             price={40}
                             image="/assets/img/training-man.png"

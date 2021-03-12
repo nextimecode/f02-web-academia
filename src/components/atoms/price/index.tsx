@@ -10,7 +10,9 @@ const Price = ({ price }: Props) => {
             </div>
 
             <div className="align-items-baseline">
-                <span className="display-2">{price}</span>
+                <span className="display-5 lh-1">
+                    <strong>{price}</strong>
+                </span>
                 <span className="fs-6 fw-lighter"> /mês</span>
             </div>
         </div>
