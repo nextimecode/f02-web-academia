@@ -1,4 +1,4 @@
-import { Card, Button } from 'react-bootstrap'
+import React from 'react'
 import Price from '../../atoms/price'
 
 type Props = {
@@ -21,9 +21,8 @@ const CardPlanos = ({ children, price, title, recommended, image }: Props) => {
                 <img src={image} className="card-img-top"></img>
                 <div className="card-body">
                     <div className="fs-3 fw-normal card-title">{title}</div>
-                    {price ? (
-                        <Price price={price} />
-                    ) : (
+                    {price && <Price price={price} />}
+                    {!price && (
                         <div className="lh-lg my-4">
                             <span className="text-warning display-6">
                                 <strong>Venha ser vip</strong>
