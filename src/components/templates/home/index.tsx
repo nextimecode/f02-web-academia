@@ -18,13 +18,14 @@ const Home = ({ urlWallpaper = '' }: Props) => {
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'length'
             }}
+            className="w-100"
         >
             <Container>
-                <Row className="justify-content-center">
+                <Row>
                     <div
-                        className="w-50"
+                        className=""
                         style={{
-                            margin: '200px 0',
+                            margin: '200px auto',
                             paddingTop: '100px'
                         }}    
                     >

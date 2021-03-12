@@ -4,8 +4,8 @@
     box-sizing: border-box;
   }
   body {
-    // background: ${props => props.theme.colors.background};
-    // color: ${props => props.theme.colors.text};
+    background-color: #131313;
+    color: '#FFFFFF';
     font: 400 16px Helvetica, sans-serif;
   }
   h1, h2, h3 {
@@ -13,15 +13,16 @@
     text-align: center;
   }
   h1 {
-    color: '#FFFFFF';
+    color: #FFF;
+    font-size: 3em;
     font-family: 'Racing Sans One', cursive;
     font-weight: 400;
     font-style: normal;
-    line-height: 0.8em;
     text-shadow: 0px 0px 20px rgb(0 0 0 / 70%);
-    text-transform: uppercase;
     line-break: strict;
-    margin: 1em 0 !important;
+  }
+  h3 {
+    font-size: 1em;
   }
   h2, h3 {
     color: #FFC401;
@@ -31,8 +32,10 @@
     letter-spacing: 0.3px;
     line-break: strict;
   }
-  hr {
+  .hr {
     opacity: 1 !important;
+    color: #FFC401;
+    height: 30px !important;
   }
   .btn-buy {
     font-family: "Racing Sans One", Sans-serif;
@@ -54,13 +57,23 @@
     background-color: #FFC401;
   }
   p {
-    margin-top: 0;
+    text-align: justify;
     margin-bottom: .9rem;
     color: #D3D3D3;
-    font-size: 17px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 1.8em;
+    letter-spacing: 0.02rem;
   }
+
+  .react-multiple-carousel__arrow--left::before{
+    content: "<" !important;
+    font-weight: 900;
+  }
+  .react-multiple-carousel__arrow--right::before{
+    content:">" !important;
+    font-weight: 900;
+  }
+
   @keyframes pulse {
     0% {
       transform: scale(0.95);
