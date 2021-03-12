@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Separator = () => 
+const Separator = () => (
     <hr
         className="p-0 m-0 hr"
         style={{
@@ -8,5 +8,6 @@ const Separator = () =>
             height: '30px'
         }}
     />
+)
 
 export default Separator

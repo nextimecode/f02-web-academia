@@ -1,5 +1,5 @@
 import React from 'react'
-import { Nav, Navbar, Row } from 'react-bootstrap'
+import { Nav, Navbar } from 'react-bootstrap'
 
 type Props = {
     listNavLinks: Record<string, any>
@@ -12,7 +12,6 @@ const Menu = ({ listNavLinks }: Props) => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
                         {listNavLinks.map((navLinkItem, index) => (
-                            // eslint-disable-next-line prettier/prettier
                             <Nav.Link
                                 key={index}
                                 href={navLinkItem.navLink.href}
