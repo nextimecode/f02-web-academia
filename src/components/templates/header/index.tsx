@@ -10,9 +10,18 @@ type Props = {
     listNavLinks: Record<string, any>
 }
 
-const Header = ({ urlLogo, width = '60px', height = '60px', listNavLinks}: Props) => {
+const Header = ({
+    urlLogo,
+    width = '60px',
+    height = '60px',
+    listNavLinks
+}: Props) => {
     return (
-        <Container className="fixed-top opacity-3" style={{backgroundColor: '#000000'}} fluid={true}>
+        <Container
+            className="fixed-top opacity-3"
+            style={{ backgroundColor: '#000000' }}
+            fluid={true}
+        >
             <Row className="d-flex justify-content-center">
                 <div className="col-3 m-auto text-center">
                     <Image

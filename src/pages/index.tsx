@@ -12,9 +12,7 @@ import RedesSociais from '../components/templates/redesSociais'
 import DepoimentosTexto from '../components/templates/depoimentosTexto'
 import Footer from '../components/templates/footer'
 
-
 const Index: React.FC = () => {
-    
     const listNavLinks = [
         {
             navLink: {
@@ -44,7 +42,7 @@ const Index: React.FC = () => {
 
     const wallpaper = 'assets/img/personal.jpg'
     const urlLogo = 'assets/img/logos/logo.png'
-    
+
     return (
         <React.Fragment>
             <Head>
@@ -53,42 +51,38 @@ const Index: React.FC = () => {
                     rel="stylesheet"
                     href="https://cdnjs.cloudflare.com/ajax/libs/reactstrap/4.8.0/reactstrap.min.js"
                 ></link>
-                <link
-                    rel="preconnect"
-                    href="https://fonts.gstatic.com"></link>
+                <link rel="preconnect" href="https://fonts.gstatic.com"></link>
                 <link
                     href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap"
-                    rel="stylesheet"></link>
+                    rel="stylesheet"
+                ></link>
             </Head>
 
             <Header
                 urlLogo={urlLogo}
-                width='60px'
-                height='60px'
+                width="60px"
+                height="60px"
                 listNavLinks={listNavLinks}
             />
 
-            <Home urlWallpaper={wallpaper}/>
-            <Separator/>
+            <Home urlWallpaper={wallpaper} />
+            <Separator />
 
-            <BemVindo/>
-            <Separator/>
+            <BemVindo />
+            <Separator />
 
-            <Planos/>
-            <Separator/>
+            <Planos />
+            <Separator />
 
-            <Resultados/>
-            <DepoimentosVideo/>
-            <Separator/>
+            <Resultados />
+            <DepoimentosVideo />
+            <Separator />
 
-            <RedesSociais/>
-            <Separator/>
+            <RedesSociais />
+            <Separator />
 
-            <DepoimentosTexto/>
-            <Footer/>
-
-
-
+            <DepoimentosTexto />
+            <Footer />
         </React.Fragment>
     )
 }
