@@ -7,14 +7,11 @@ const DepoimentosTexto = () => {
     return (
         <section>
             <Container className="px-2 my-2">
-                <Title label='Resultados reais'/>
-                <Subhead label='#TeamSaoMiguelito'/>
-                <div className="row px-2 " style={{backgroundColor: 'red'}}>
-                    
-                AQUI ESTÃO OS DEPOIMENTOS EM TEXTO
-
+                <Title label="Resultados reais" />
+                <Subhead label="#TeamSaoMiguelito" />
+                <div className="row px-2 " style={{ backgroundColor: 'red' }}>
+                    AQUI ESTÃO OS DEPOIMENTOS EM TEXTO
                 </div>
-
             </Container>
         </section>
     )
