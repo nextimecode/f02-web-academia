@@ -27,26 +27,27 @@ const Home = ({ urlWallpaper = '' }: Props) => {
                         style={{
                             margin: '200px auto',
                             paddingTop: '100px'
-                        }}    
+                        }}
                     >
-                        <Subtitle label='Não deixe para depois'/>
-                        <Title label='Alcance a sua melhor forma...'/>
+                        <Subtitle label="Não deixe para depois" />
+                        <Title label="Alcance a sua melhor forma..." />
 
                         <div className="d-flex justify-content-center">
                             <Link href="#">
-                                <Button className="btn-buy" variant="primary" size="lg">
-                                    {`Comece agora >>`}
+                                <Button
+                                    className="btn-buy"
+                                    variant="primary"
+                                    size="lg"
+                                >
+                                    {'Comece agora >>'}
                                 </Button>
                             </Link>
-                            
                         </div>
-                        
                     </div>
                 </Row>
             </Container>
         </section>
     )
-    
 }
 
 export default Home
