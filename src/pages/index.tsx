@@ -42,7 +42,6 @@ const Index: React.FC = () => {
     const wallpaper = 'assets/img/personal.jpg'
     const urlLogo = 'assets/img/logos/logo.png'
 
-<<<<<<< HEAD
     const carouselPhotos = [
         {
             photo: {
@@ -64,8 +63,6 @@ const Index: React.FC = () => {
         }
     ]
     
-=======
->>>>>>> 64bf866ecd225ece81d4943e9e1c58794f7c3383
     return (
         <React.Fragment>
             <Head>
@@ -88,7 +85,6 @@ const Index: React.FC = () => {
                 listNavLinks={listNavLinks}
             />
 
-<<<<<<< HEAD
             <Home urlWallpaper={wallpaper}/>
             <Separator/>
 
@@ -101,20 +97,6 @@ const Index: React.FC = () => {
             <Resultados carouselPhotos={carouselPhotos}/>
             <DepoimentosVideo/>
             <Separator/>
-=======
-            <Home urlWallpaper={wallpaper} />
-            <Separator />
->>>>>>> 64bf866ecd225ece81d4943e9e1c58794f7c3383
-
-            <BemVindo />
-            <Separator />
-
-            <Planos />
-            <Separator />
-
-            <Resultados />
-            <DepoimentosVideo />
-            <Separator />
 
             <RedesSociais />
             <Separator />
