@@ -1,6 +1,5 @@
 import React from 'react'
 import Head from 'next/head'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import Header from '../components/templates/header'
 import Separator from '../components/atoms/separator'
 import BemVindo from '../components/templates/bemVindo'
@@ -43,6 +42,27 @@ const Index: React.FC = () => {
     const wallpaper = 'assets/img/personal.jpg'
     const urlLogo = 'assets/img/logos/logo.png'
 
+    const carouselPhotos = [
+        {
+            photo: {
+                src: 'assets/img/carouselPhotos/img01.jpg',
+                alt: 'description'
+            }
+        },
+        {
+            photo: {
+                src: 'assets/img/carouselPhotos/img02.jpg',
+                alt: 'description'
+            }
+        },
+        {
+            photo: {
+                src: 'assets/img/carouselPhotos/img03.jpg',
+                alt: 'description'
+            }
+        }
+    ]
+    
     return (
         <React.Fragment>
             <Head>
@@ -65,18 +85,18 @@ const Index: React.FC = () => {
                 listNavLinks={listNavLinks}
             />
 
-            <Home urlWallpaper={wallpaper} />
-            <Separator />
+            <Home urlWallpaper={wallpaper}/>
+            <Separator/>
 
-            <BemVindo />
-            <Separator />
+            <BemVindo/>
+            <Separator/>
 
-            <Planos />
-            <Separator />
+            <Planos/>
+            <Separator/>
 
-            <Resultados />
-            <DepoimentosVideo />
-            <Separator />
+            <Resultados carouselPhotos={carouselPhotos}/>
+            <DepoimentosVideo/>
+            <Separator/>
 
             <RedesSociais />
             <Separator />

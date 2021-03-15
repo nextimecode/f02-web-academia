@@ -4,42 +4,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+  }
 body {
-    background-color: $black !important;
-    color: $white !important;
-    font: 400 16px Helvetica, sans-serif;
+    background-color: #131313;
+    color: #D3D3D3;
 }
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     text-transform: uppercase;
     text-align: center;
 }
 h1 {
-    color: #ffffff;
+    color: #FFF;
+    font-size: 3em;
     font-family: 'Racing Sans One', cursive;
     font-weight: 400;
     font-style: normal;
-    line-height: 0.8em;
-    text-transform: uppercase;
+    text-shadow: 0px 0px 20px rgb(0 0 0 / 70%);
     line-break: strict;
-    margin: 1em 0 !important;
 }
-h2,
 h3 {
-    color: #ffc401;
-    font-family: 'Helvetica', Sans-serif;
+    font-size: 1em;
+}
+h2, h3 {
+    color: #FFC401;
+    font-family: "Helvetica", Sans-serif;
     font-weight: 500;
     font-style: oblique;
     letter-spacing: 0.3px;
     line-break: strict;
 }
-hr {
+.hr {
     opacity: 1 !important;
+    color: #FFC401;
+    height: 30px !important;
 }
 .btn-buy {
-    font-family: 'Racing Sans One', Sans-serif;
+    font-family: "Racing Sans One", Sans-serif;
     font-size: 18px;
     font-weight: 400;
     text-transform: capitalize;
@@ -53,18 +53,28 @@ hr {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
     transform: scale(1);
     animation: pulse 1s infinite;
-    fill: #0f0f0f;
-    color: #0f0f0f;
-    background-color: #ffc401;
+    fill: #0F0F0F;
+    color: #0F0F0F;
+    background-color: #FFC401;
 }
 p {
-    margin-top: 0;
-    margin-bottom: 0.9rem;
-    color: #d3d3d3;
-    font-size: 17px;
+    text-align: justify;
+    margin-bottom: .9rem;
+    color: #D3D3D3;
     font-weight: 300;
     line-height: 1.8em;
+    letter-spacing: 0.02rem;
 }
+
+.react-multiple-carousel__arrow--left::before{
+content: "<" !important;
+    font-weight: 900;
+}
+.react-multiple-carousel__arrow--right::before{
+content:">" !important;
+    font-weight: 900;
+}
+
 @keyframes pulse {
     0% {
         transform: scale(0.95);
