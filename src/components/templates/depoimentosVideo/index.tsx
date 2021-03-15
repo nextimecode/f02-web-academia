@@ -1,18 +1,34 @@
-import { Container } from 'next/app'
 import React from 'react'
-import Subhead from '../../atoms/subhead'
+import Film from '../../atoms/film'
 import Title from '../../atoms/title'
 
-const DepoimentosVideo = () => {
+type Props = {
+    videos: Record<string, any>
+}
+
+const DepoimentosVideo = ({ videos }: Props) => {
+
     return (
         <section>
-            <Container className="px-2 my-2">
-                <Title label="Resultados reais" />
-                <Subhead label="#TeamSaoMiguelito" />
-                <div className="row px-2 " style={{ backgroundColor: 'red' }}>
-                    AQUI ESTÃO OS DEPOIMENTOS EM VIDEO
+            <div className="container mb-5">
+                <Title label='Depoimentos'/>
+
+                <div className="row">
+                    
+                    {videos.map((v, index) =>
+                        <div className="col-sm-12 col-md-6 col-lg-3 p-1">
+                            <div className="ratio ratio-9x16">
+                                <Film
+                                    key={index}
+                                    src={v.video.src}
+                                />
+                            </div>
+                        </div>
+                    )}
+
                 </div>
-            </Container>
+                
+            </div>
         </section>
     )
 }

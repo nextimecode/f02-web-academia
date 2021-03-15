@@ -3,7 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 type Props = {
-    photos
+    photos: Record<string, any>
 }
 
 const Slider = ({ photos }: Props) => {
