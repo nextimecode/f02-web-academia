@@ -1,5 +1,4 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import Separator from '../components/atoms/separator'
 import BemVindo from '../components/templates/bemVindo'
 import Home from '../components/templates/home'
@@ -13,6 +12,27 @@ import PageTemplate from '../components/templates/pageTemplate'
 const Index: React.FC = () => {
     const wallpaper = 'assets/img/personal.jpg'
 
+    const carouselPhotos = [
+        {
+            photo: {
+                src: 'assets/img/carouselPhotos/img01.jpg',
+                alt: 'description'
+            }
+        },
+        {
+            photo: {
+                src: 'assets/img/carouselPhotos/img02.jpg',
+                alt: 'description'
+            }
+        },
+        {
+            photo: {
+                src: 'assets/img/carouselPhotos/img03.jpg',
+                alt: 'description'
+            }
+        }
+    ]
+
     return (
         <PageTemplate>
             <Home urlWallpaper={wallpaper} />
@@ -24,7 +44,7 @@ const Index: React.FC = () => {
             <Planos />
             <Separator />
 
-            <Resultados />
+            <Resultados carouselPhotos={carouselPhotos} />
             <DepoimentosVideo />
             <Separator />
 
