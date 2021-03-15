@@ -11,7 +11,7 @@ const PlanoTreino = () => {
                     necessidades individuais, de acordo com suas condições
                     físicas e sua rotina.
                 </h3>
-                <div className="row row-cols-1 row-cols-md-3 g-4">
+                <div className="row row-cols-1 row-cols-md-3 g-4 my-5">
                     <CardTreino
                         title="Objetivos"
                         image="assets/img/training-custom.png"

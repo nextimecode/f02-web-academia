@@ -2,7 +2,7 @@ import React from 'react'
 
 const EntendaConsultoria = () => {
     return (
-        <section>
+        <section className="my-5 py-5">
             <div className="container">
                 <h1>Entenda como a consultoria funciona</h1>
                 <ul>
