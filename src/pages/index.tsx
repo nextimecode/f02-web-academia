@@ -101,7 +101,7 @@ const Index: React.FC = () => {
             }
         }
     ]
-    
+
     return (
         <React.Fragment>
             <Head>
@@ -124,18 +124,18 @@ const Index: React.FC = () => {
                 listNavLinks={listNavLinks}
             />
 
-            <Home urlWallpaper={wallpaper}/>
-            <Separator/>
+            <Home urlWallpaper={wallpaper} />
+            <Separator />
 
-            <BemVindo/>
-            <Separator/>
+            <BemVindo />
+            <Separator />
 
-            <Planos/>
-            <Separator/>
+            <Planos />
+            <Separator />
 
-            <Resultados carouselPhotos={carouselPhotos}/>
-            <DepoimentosVideo videos={videos}/>
-            <Separator/>
+            <Resultados carouselPhotos={carouselPhotos} />
+            <DepoimentosVideo videos={videos} />
+            <Separator />
 
             <RedesSociais />
             <Separator />

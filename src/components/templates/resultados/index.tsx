@@ -5,18 +5,17 @@ import Title from '../../atoms/title'
 import Slider from '../../organisms/slider'
 
 type Props = {
-    carouselPhotos: Record<string, any>
+    carouselPhotos
 }
 
-const Resultados = ({carouselPhotos}: Props) => {
-
+const Resultados = ({ carouselPhotos }: Props) => {
     return (
         <section>
             <Container>
-                <Title label='Resultados reais'/>
-                <Subhead label='#HASHTAGPERSONAL'/>
-                    
-                <Slider photos={carouselPhotos}/>
+                <Title label="Resultados reais" />
+                <Subhead label="#HASHTAGPERSONAL" />
+
+                <Slider photos={carouselPhotos} />
             </Container>
         </section>
     )
