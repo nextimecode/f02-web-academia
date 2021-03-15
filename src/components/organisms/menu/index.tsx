@@ -2,7 +2,7 @@ import React from 'react'
 import { Nav, Navbar } from 'react-bootstrap'
 
 type Props = {
-    listNavLinks
+    listNavLinks: Record<string, any>
 }
 
 const Menu = ({ listNavLinks }: Props) => {
