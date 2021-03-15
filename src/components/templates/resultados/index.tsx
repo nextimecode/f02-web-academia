@@ -8,15 +8,14 @@ type Props = {
     carouselPhotos: Record<string, any>
 }
 
-const Resultados = ({carouselPhotos}: Props) => {
-
+const Resultados = ({ carouselPhotos }: Props) => {
     return (
         <section>
             <Container>
-                <Title label='Resultados reais'/>
-                <Subhead label='#HASHTAGPERSONAL'/>
-                    
-                <Slider photos={carouselPhotos}/>
+                <Title label="Resultados reais" />
+                <Subhead label="#HASHTAGPERSONAL" />
+
+                <Slider photos={carouselPhotos} />
             </Container>
         </section>
     )

@@ -13,20 +13,10 @@ const ConsultoriaPersonalizada = () => {
         >
             <div className="position-absolute top-50 start-50 translate-middle text-center">
                 <div>
-                    <span
-                        className="display-3"
-                        style={{ fontFamily: "'Racing Sans One', cursive;" }}
-                    >
-                        Consultoria
-                    </span>
+                    <h1>Consultoria</h1>
                 </div>
                 <div>
-                    <span
-                        className="display-1 text-warning"
-                        style={{ fontFamily: "'Racing Sans One', cursive;" }}
-                    >
-                        Personalizada
-                    </span>
+                    <h1 className="text-warning">Personalizada</h1>
                 </div>
             </div>
         </section>
