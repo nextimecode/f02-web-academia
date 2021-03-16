@@ -73,7 +73,7 @@ const Index: React.FC = () => {
     ]
 
     return (
-        <PageTemplate>
+        <PageTemplate title="Home">
             <Home urlWallpaper={wallpaper} />
             <Separator />
 

@@ -12,7 +12,7 @@ import RelacaoConsultoria from '../components/templates/relacaoConsultoria'
 
 const Consultoria: React.FC = () => {
     return (
-        <PageTemplate>
+        <PageTemplate title="Consultoria">
             <ConsultoriaPersonalizada />
             <BeneficiosConsultoria />
             <RelacaoConsultoria />
