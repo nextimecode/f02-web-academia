@@ -9,7 +9,7 @@ type Props = {
 const DepoimentosTexto = ({ depoimentos }: Props) => {
     return (
         <section>
-            <Container className="px-2 my-2">
+            <Container className="my-2">
                 <div className="row">
                     <div className="row col-md-6 col-sm-12 px-5 m-auto">
                         <img
@@ -25,7 +25,7 @@ const DepoimentosTexto = ({ depoimentos }: Props) => {
                             alcançar sua melhor forma em qualquer lugar mundo.
                         </p>
                     </div>
-                    <div className="col-md-6 col-sm-12">
+                    <div className="col-md-6 col-sm-12 m-auto">
                         <DepoimentoSlider depoimentos={depoimentos} />
                     </div>
                 </div>

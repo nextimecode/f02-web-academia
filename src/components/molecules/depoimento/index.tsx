@@ -8,7 +8,7 @@ type Props = {
 
 const Depoimento = ({ depoimento }: Props) => {
     return (
-        <div className="container-fluid">
+        <div className="container-fluid mb-5">
             <div className="row justify-content-center">
                 <TextoDepoimento textoDepoimento={depoimento.texto} />
                 <Avatar

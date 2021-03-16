@@ -9,13 +9,11 @@ type Props = {
 }
 
 const Avatar = ({ foto, nome, profissao = '' }: Props) => (
-    <div>
-        <div className="row">
+    <div className="d-flex justify-content-center">
+        <div className="m-auto">
             <img className="profile-pic fit-image" src={foto} />
-        </div>
-        <div className="row">
-            <p className="profile profile-name">{nome}</p>
-            <p className="profile profile-profession">{profissao}</p>
+            <p className="profile profile-name text-center">{nome}</p>
+            <p className="profile profile-profession text-center">{profissao}</p>
         </div>
     </div>
 )

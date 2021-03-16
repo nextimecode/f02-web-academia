@@ -32,9 +32,8 @@ const DepoimentoSlider = ({ depoimentos }: Props) => {
             ssr={true}
             infinite={true}
             keyBoardControl={true}
-            containerClass="carousel-container m-4"
+            containerClass="carousel-container m-1"
             dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px"
             transitionDuration={300}
             arrows={true}
             slidesToSlide={1}
