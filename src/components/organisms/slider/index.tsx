@@ -3,7 +3,7 @@ import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 
 type Props = {
-    photos
+    photos: Record<string, any>
 }
 
 const Slider = ({ photos }: Props) => {
@@ -39,9 +39,6 @@ const Slider = ({ photos }: Props) => {
             itemClass="carousel-item-padding-40-px"
             transitionDuration={300}
             arrows={true}
-            // slidesToSlide={1}
-            // autoPlaySpeed={500}
-            // autoPlay={true}
         >
             {photos.map((p, index) => (
                 <div key={index}>

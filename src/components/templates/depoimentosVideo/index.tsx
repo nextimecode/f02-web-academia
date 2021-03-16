@@ -3,7 +3,7 @@ import Film from '../../atoms/film'
 import Title from '../../atoms/title'
 
 type Props = {
-    videos
+    videos: Record<string, any>
 }
 
 const DepoimentosVideo = ({ videos }: Props) => {
