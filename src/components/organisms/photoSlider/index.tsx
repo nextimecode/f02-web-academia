@@ -36,7 +36,7 @@ const PhotoSlider = ({ photos }: Props) => {
             itemClass="carousel-item-padding-40-px"
             transitionDuration={300}
             arrows={true}
-            slidesToSlide= {1}
+            slidesToSlide={1}
         >
             {photos.map((p, index) => (
                 <div key={index}>

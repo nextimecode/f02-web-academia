@@ -117,7 +117,7 @@ const Index: React.FC = () => {
             <RedesSociais />
             <Separator />
 
-            <DepoimentosTexto depoimentos={depoimentos}/>
+            <DepoimentosTexto depoimentos={depoimentos} />
         </PageTemplate>
     )
 }
