@@ -6,7 +6,7 @@ type Props = {
     photos: Record<string, any>
 }
 
-const Slider = ({ photos }: Props) => {
+const PhotoSlider = ({ photos }: Props) => {
     const responsive = {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
@@ -53,4 +53,4 @@ const Slider = ({ photos }: Props) => {
     )
 }
 
-export default Slider
+export default PhotoSlider

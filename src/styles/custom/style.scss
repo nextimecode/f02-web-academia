@@ -9,6 +9,16 @@ body {
     background-color: #131313;
     color: #D3D3D3;
 }
+.footer {
+    background-color: #000;
+}
+a.link {
+    text-decoration: none;
+    color: inherit;
+}
+a.link:hover {
+    color: #FFC401;
+}
 h1, h2, h3 {
     text-transform: uppercase;
     text-align: center;
@@ -64,6 +74,13 @@ p {
     font-weight: 300;
     line-height: 1.8em;
     letter-spacing: 0.02rem;
+}
+p.apresentacao {
+    margin-top: 1em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #FFF;
+    font-style: italic;
 }
 
 .react-multiple-carousel__arrow--left::before{

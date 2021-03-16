@@ -1,0 +1,21 @@
+.fit-image {
+    object-fit: cover
+}
+
+.profile-pic {
+    width: 120px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.profile {
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.15;
+}
+.profile-name {
+    margin-top: 0.8em;
+}
+.profile-profession {
+    color: #616161;
+}

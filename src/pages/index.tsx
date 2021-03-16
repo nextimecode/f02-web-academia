@@ -102,6 +102,33 @@ const Index: React.FC = () => {
         }
     ]
 
+    const depoimentos = [
+        {
+            depoimento: {
+                foto: 'assets/img/avatars/user.png',
+                nome: 'Ana da Silva',
+                profissao: 'Advogada',
+                texto: 'Eu contratei o serviço e estou muito satisfeito.'
+            }
+        },
+        {
+            depoimento: {
+                foto: 'assets/img/avatars/user.png',
+                nome: 'Joana Felisbina',
+                profissao: 'Engenheira',
+                texto: 'Muito bom.'
+            }
+        },
+        {
+            depoimento: {
+                foto: 'assets/img/avatars/user.png',
+                nome: 'Maria Ferreira',
+                profissao: 'Professora',
+                texto: 'Gostei demais.'
+            }
+        }
+    ]
+
     return (
         <React.Fragment>
             <Head>
@@ -140,7 +167,7 @@ const Index: React.FC = () => {
             <RedesSociais />
             <Separator />
 
-            <DepoimentosTexto />
+            <DepoimentosTexto depoimentos={depoimentos} />
             <Footer />
         </React.Fragment>
     )
