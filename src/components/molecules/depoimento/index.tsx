@@ -7,12 +7,10 @@ type Props = {
 }
 
 const Depoimento = ({ depoimento }: Props) => {
-    return (     
+    return (
         <div className="container-fluid">
             <div className="row justify-content-center">
-                <TextoDepoimento
-                    textoDepoimento={depoimento.texto}
-                />
+                <TextoDepoimento textoDepoimento={depoimento.texto} />
                 <Avatar
                     foto={depoimento.foto}
                     nome={depoimento.nome}

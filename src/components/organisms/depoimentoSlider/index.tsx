@@ -42,9 +42,8 @@ const DepoimentoSlider = ({ depoimentos }: Props) => {
             arrows={true}
         >
             {depoimentos.map((d, index) => (
-                <Depoimento key={index} depoimento={d.depoimento}/>
+                <Depoimento key={index} depoimento={d.depoimento} />
             ))}
-            
         </Carousel>
     )
 }
