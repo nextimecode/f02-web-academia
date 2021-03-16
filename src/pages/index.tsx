@@ -48,7 +48,7 @@ const Index: React.FC = () => {
     const videos = [
         {
             video: {
-                src: 'assets/video/video_test.mp4',
+                src: 'assets/video/teste2.mp4',
                 alt: 'description'
             }
         },
@@ -60,7 +60,7 @@ const Index: React.FC = () => {
         },
         {
             video: {
-                src: 'assets/video/video_test.mp4',
+                src: 'assets/video/teste2.mp4',
                 alt: 'description'
             }
         },

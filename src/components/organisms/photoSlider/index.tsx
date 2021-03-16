@@ -10,18 +10,15 @@ const PhotoSlider = ({ photos }: Props) => {
     const responsive = {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 3,
-            slidesToSlide: 3 // optional, default to 1.
+            items: 3
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
-            items: 2,
-            slidesToSlide: 2 // optional, default to 1.
+            items: 2
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
-            items: 1,
-            slidesToSlide: 1 // optional, default to 1.
+            items: 1
         }
     }
 
@@ -39,6 +36,7 @@ const PhotoSlider = ({ photos }: Props) => {
             itemClass="carousel-item-padding-40-px"
             transitionDuration={300}
             arrows={true}
+            slidesToSlide= {1}
         >
             {photos.map((p, index) => (
                 <div key={index}>
