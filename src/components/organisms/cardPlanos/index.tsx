@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import Price from '../../atoms/price'
 
@@ -7,9 +8,17 @@ type Props = {
     recommended?: boolean
     title: string
     image: string
+    linkPage: string
 }
 
-const CardPlanos = ({ children, price, title, recommended, image }: Props) => {
+const CardPlanos = ({
+    children,
+    price,
+    title,
+    recommended,
+    image,
+    linkPage
+}: Props) => {
     return (
         <div className="col">
             <div
@@ -37,15 +46,17 @@ const CardPlanos = ({ children, price, title, recommended, image }: Props) => {
                         'card-footer d-flex align-items-center justify-content-center'
                     }
                 >
-                    <button
-                        className={`btn rounded-pill px-3 my-2 ${
-                            recommended
-                                ? 'btn-warning'
-                                : 'border-1 border-warning text-warning'
-                        }`}
-                    >
-                        Saiba mais
-                    </button>
+                    <Link href={linkPage}>
+                        <a
+                            className={`btn rounded-pill px-3 my-2 ${
+                                recommended
+                                    ? 'btn-warning'
+                                    : 'border-1 border-warning text-warning'
+                            }`}
+                        >
+                            Saiba mais
+                        </a>
+                    </Link>
                 </div>
             </div>
         </div>
