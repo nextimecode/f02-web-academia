@@ -7,7 +7,7 @@ type Props = {
     urlLogo: string
     width?: string
     height?: string
-    listNavLinks
+    listNavLinks: Record<string, any>
 }
 
 const Header = ({
