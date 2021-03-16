@@ -75,6 +75,10 @@ content:">" !important;
     font-weight: 900;
 }
 
+.ratio-9x16 {
+    --bs-aspect-ratio: calc(16 / 9 * 100%);
+}
+
 @keyframes pulse {
     0% {
         transform: scale(0.95);

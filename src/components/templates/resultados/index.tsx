@@ -5,7 +5,7 @@ import Title from '../../atoms/title'
 import Slider from '../../organisms/slider'
 
 type Props = {
-    carouselPhotos: Record<string, any>
+    carouselPhotos
 }
 
 const Resultados = ({ carouselPhotos }: Props) => {
