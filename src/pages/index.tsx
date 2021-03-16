@@ -60,9 +60,48 @@ const Index: React.FC = () => {
                 src: 'assets/img/carouselPhotos/img03.jpg',
                 alt: 'description'
             }
+        },
+        {
+            photo: {
+                src: 'assets/img/carouselPhotos/img02.jpg',
+                alt: 'description'
+            }
+        },
+        {
+            photo: {
+                src: 'assets/img/carouselPhotos/img03.jpg',
+                alt: 'description'
+            }
         }
     ]
-    
+
+    const videos = [
+        {
+            video: {
+                src: 'assets/video/video_test.mp4',
+                alt: 'description'
+            }
+        },
+        {
+            video: {
+                src: 'assets/video/video_test.mp4',
+                alt: 'description'
+            }
+        },
+        {
+            video: {
+                src: 'assets/video/video_test.mp4',
+                alt: 'description'
+            }
+        },
+        {
+            video: {
+                src: 'assets/video/video_test.mp4',
+                alt: 'description'
+            }
+        }
+    ]
+
     return (
         <React.Fragment>
             <Head>
@@ -85,18 +124,18 @@ const Index: React.FC = () => {
                 listNavLinks={listNavLinks}
             />
 
-            <Home urlWallpaper={wallpaper}/>
-            <Separator/>
+            <Home urlWallpaper={wallpaper} />
+            <Separator />
 
-            <BemVindo/>
-            <Separator/>
+            <BemVindo />
+            <Separator />
 
-            <Planos/>
-            <Separator/>
+            <Planos />
+            <Separator />
 
-            <Resultados carouselPhotos={carouselPhotos}/>
-            <DepoimentosVideo/>
-            <Separator/>
+            <Resultados carouselPhotos={carouselPhotos} />
+            <DepoimentosVideo videos={videos} />
+            <Separator />
 
             <RedesSociais />
             <Separator />
