@@ -7,11 +7,11 @@ const BemVindo = () => {
         <section>
             <Container className="px-2 my-2">
                 <Title label="Seja bem-vindo!" />
-                <div className="row px-2">
-                    <div className="col-sm-12 col-md-6">
+                <div className="row px-2 my-2">
+                    <div className="col-md-12 col-lg-5 m-auto">
                         <p>
-                            Para quem não me conhece, meu nome é Miguel
-                            Fernandes, mais conhecido como São Miguelito. Sou
+                            Para quem não me conhece, meu nome é João da Silva, 
+                            mais conhecido como São Miguelito. Sou
                             formado em Educação Fisica e pós-graduado em
                             Fisiologia do Exercício.
                         </p>
@@ -29,15 +29,17 @@ const BemVindo = () => {
                             online. Agora você não estará mais sozinha!
                         </p>
                     </div>
-                    <div className="col-sm-12 col-md-6 d-flex justify-content-center">
-                        <iframe
-                            loading="lazy"
-                            className="w-100 py-4"
-                            title="Player de Vídeo youtube"
-                            src="https://www.youtube-nocookie.com/embed/xcJtL7QggTI?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=1"
-                            data-rocket-lazyload="fitvidscompatible"
-                            data-ll-status="loaded"
-                        />
+                    <div className="col-md-12 col-lg-7 d-flex justify-content-center m-auto">
+                        <div className="ratio ratio-4x3">
+                            <iframe
+                                loading="lazy"
+                                className="w-100 py-4"
+                                title="Player de Vídeo youtube"
+                                src="https://www.youtube-nocookie.com/embed/xcJtL7QggTI?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=1"
+                                data-rocket-lazyload="fitvidscompatible"
+                                data-ll-status="loaded"
+                            />
+                        </div>
                     </div>
                 </div>
             </Container>

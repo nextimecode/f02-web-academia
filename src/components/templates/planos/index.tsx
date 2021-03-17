@@ -5,7 +5,7 @@ import CardPlanos from '../../organisms/cardPlanos'
 
 const Planos = () => {
     return (
-        <section>
+        <section id="planos" style={{paddingTop: '50px'}}>
             <div className="container">
                 <Title label="Conheça nossos planos" />
                 <Subhead label="Em casa ou na academia agora é a hora de construir a sua melhor versão!" />
