@@ -7,7 +7,7 @@ type Props = {
 }
 
 const TextoDepoimento = ({ textoDepoimento }: Props) => (
-    <div>
+    <div className="mb-2">
         <div className="card-depoimento p-4">
             <p className="post">
                 <span className="post-txt">{textoDepoimento}</span>

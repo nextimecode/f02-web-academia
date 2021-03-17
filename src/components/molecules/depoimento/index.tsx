@@ -15,6 +15,8 @@ const Depoimento = ({ depoimento }: Props) => {
                     foto={depoimento.foto}
                     nome={depoimento.nome}
                     profissao={depoimento.profissao}
+                    width="100px"
+                    height="100px"
                 />
             </div>
         </div>

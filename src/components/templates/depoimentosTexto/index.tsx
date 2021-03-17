@@ -1,5 +1,5 @@
-import { Container } from 'next/app'
 import React from 'react'
+import Avatar from '../../molecules/avatar'
 import DepoimentoSlider from '../../organisms/depoimentoSlider'
 
 type Props = {
@@ -9,13 +9,18 @@ type Props = {
 const DepoimentosTexto = ({ depoimentos }: Props) => {
     return (
         <section>
-            <div className="row mx-3 my-5">
-                <div className="row col-md-6 col-sm-12 px-2 m-auto">
-                    <img
-                        className="w-75 m-auto"
-                        src="assets/img/avatars/personal.jpg"
+            <div className="row">
+                <div className="col-sm-12 col-md-3 col-lg-2 m-auto">
+                    <Avatar
+                        foto="assets/img/avatars/personal.jpg"
+                        nome="João da Silva"
+                        profissao="Personal"
+                        width="160px"
+                        height="160px"
                     />
-                    <p className="apresentacao">
+                </div>
+                <div className="col-sm-12 col-md-4 col-lg-5 m-auto">
+                    <p className="apresentacao px-2">
                         Olá, Meu nome é João da Silva. Possuo 8 anos atuando
                         como Personal Trainer e há 5 anos com o atendimento
                         online. Preparei o melhor do meu método de treinamento
@@ -24,7 +29,7 @@ const DepoimentosTexto = ({ depoimentos }: Props) => {
                         forma em qualquer lugar mundo.
                     </p>
                 </div>
-                <div className="col-md-6 col-sm-12 m-auto">
+                <div className="col-sm-12 col-md-5 col-lg-5 m-auto">
                     <DepoimentoSlider depoimentos={depoimentos} />
                 </div>
             </div>

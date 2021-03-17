@@ -24,9 +24,7 @@ const PageTemplate = ({ children, title }: Props) => {
                 ></link>
             </Head>
             <div>
-                <header>
-                    <Header />
-                </header>
+                <Header />
 
                 <main>
                     <div>{children}</div>
