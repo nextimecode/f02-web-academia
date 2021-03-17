@@ -2,7 +2,7 @@ import { Container } from 'next/app'
 import React from 'react'
 import Subhead from '../../atoms/subhead'
 import Title from '../../atoms/title'
-import Slider from '../../organisms/slider'
+import PhotoSlider from '../../organisms/photoSlider'
 
 type Props = {
     carouselPhotos: Record<string, any>
@@ -15,7 +15,7 @@ const Resultados = ({ carouselPhotos }: Props) => {
                 <Title label="Resultados reais" />
                 <Subhead label="#HASHTAGPERSONAL" />
 
-                <Slider photos={carouselPhotos} />
+                <PhotoSlider photos={carouselPhotos} />
             </Container>
         </section>
     )

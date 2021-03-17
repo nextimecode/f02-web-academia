@@ -1,5 +1,5 @@
 import React from 'react'
-import Slider from '../../organisms/slider'
+import PhotoSlider from '../../organisms/photoSlider'
 
 const TransformacoesConsultoria = () => {
     const carouselPhotos = [
@@ -26,7 +26,7 @@ const TransformacoesConsultoria = () => {
     return (
         <section>
             <h1>Transformações em nossa consultoria personalizada</h1>
-            <Slider photos={carouselPhotos} />
+            <PhotoSlider photos={carouselPhotos} />
         </section>
     )
 }

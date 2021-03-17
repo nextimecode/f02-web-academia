@@ -9,35 +9,6 @@ type Props = {
 }
 
 const PageTemplate = ({ children, title }: Props) => {
-    const listNavLinks = [
-        {
-            navLink: {
-                href: '/',
-                label: 'Home'
-            }
-        },
-        {
-            navLink: {
-                href: '/comece',
-                label: 'Começa Agora'
-            }
-        },
-        {
-            navLink: {
-                href: '/planos',
-                label: 'Planos'
-            }
-        },
-        {
-            navLink: {
-                href: '/area-do-aluno',
-                label: 'Área de Alunos'
-            }
-        }
-    ]
-
-    const urlLogo = 'assets/img/logos/logo.png'
-
     return (
         <>
             <Head>
@@ -53,14 +24,7 @@ const PageTemplate = ({ children, title }: Props) => {
                 ></link>
             </Head>
             <div>
-                <header>
-                    <Header
-                        urlLogo={urlLogo}
-                        width="60px"
-                        height="60px"
-                        listNavLinks={listNavLinks}
-                    />
-                </header>
+                <Header />
 
                 <main>
                     <div>{children}</div>

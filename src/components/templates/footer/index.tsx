@@ -1,12 +1,20 @@
 import React from 'react'
-import { Container, Row } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 
 const Footer = () => {
     return (
-        <Container className="fixed-bottom" fluid={true}>
-            <Row className="d-flex justify-content-center">
-                AQUI ESTÁ O RODAPÉ
-            </Row>
+        <Container className="footer py-4" fluid={true}>
+            <div className="row d-flex">
+                <div className="col m-auto text-center">
+                    Copyright © {new Date().getFullYear()} | Site da Academia
+                </div>
+                <div className="col m-auto text-center">
+                    Developed by{' '}
+                    <a className="link" href="https://nextime.com.br">
+                        NeXTIME
+                    </a>
+                </div>
+            </div>
         </Container>
     )
 }
