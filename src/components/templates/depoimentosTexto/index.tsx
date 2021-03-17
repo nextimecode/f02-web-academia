@@ -18,10 +18,10 @@ const DepoimentosTexto = ({ depoimentos }: Props) => {
                     <p className="apresentacao">
                         Olá, Meu nome é João da Silva. Possuo 8 anos atuando
                         como Personal Trainer e há 5 anos com o atendimento
-                        online. Preparei o melhor do meu método de
-                        treinamento (o mesmo que utilizo diariamente com as
-                        minhas alunas presenciais) para ajudar você a
-                        alcançar sua melhor forma em qualquer lugar mundo.
+                        online. Preparei o melhor do meu método de treinamento
+                        (o mesmo que utilizo diariamente com as minhas alunas
+                        presenciais) para ajudar você a alcançar sua melhor
+                        forma em qualquer lugar mundo.
                     </p>
                 </div>
                 <div className="col-md-6 col-sm-12 m-auto">

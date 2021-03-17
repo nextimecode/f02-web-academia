@@ -10,10 +10,10 @@ const BemVindo = () => {
                 <div className="row px-2 my-2">
                     <div className="col-md-12 col-lg-5 m-auto">
                         <p>
-                            Para quem não me conhece, meu nome é João da Silva, 
-                            mais conhecido como São Miguelito. Sou
-                            formado em Educação Fisica e pós-graduado em
-                            Fisiologia do Exercício.
+                            Para quem não me conhece, meu nome é João da Silva,
+                            mais conhecido como São Miguelito. Sou formado em
+                            Educação Fisica e pós-graduado em Fisiologia do
+                            Exercício.
                         </p>
                         <p>
                             Possuo 8 anos atuando como Personal Trainer e há 5
