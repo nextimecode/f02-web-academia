@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../header'
 import Footer from '../footer'
 import Head from 'next/head'
+import WhatsApp from '../whatsapp'
 
 type Props = {
     children: unknown
@@ -32,6 +33,7 @@ const PageTemplate = ({ children, title }: Props) => {
                 <footer>
                     <Footer />
                 </footer>
+                <WhatsApp />
             </div>
         </>
     )
