@@ -1,4 +1,3 @@
-import { Container } from 'next/app'
 import React from 'react'
 import Avatar from '../../molecules/avatar'
 import DepoimentoSlider from '../../organisms/depoimentoSlider'
