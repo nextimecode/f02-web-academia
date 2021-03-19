@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../../molecules/button'
+import Button from '../../atoms/button'
 
 type Props = {
     telefone?: string

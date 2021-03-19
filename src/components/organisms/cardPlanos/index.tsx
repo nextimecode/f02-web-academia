@@ -1,6 +1,6 @@
 import React from 'react'
 import Price from '../../atoms/price'
-import Button from '../../molecules/button'
+import Button from '../../atoms/button'
 
 type Props = {
     children: React.ReactNode

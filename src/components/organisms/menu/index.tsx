@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
 import { Nav, Navbar } from 'react-bootstrap'
+import { NavLinkProps } from '../../../types/types'
 
 type Props = {
     urlLogo: string
-    listNavLinks: Record<string, any>
+    listNavLinks: Record<string, NavLinkProps>[]
 }
 
 const Menu = ({ urlLogo, listNavLinks }: Props) => {

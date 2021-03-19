@@ -14,3 +14,8 @@ export interface DepoimentoProps {
     profissao: string
     texto: string
 }
+
+export interface NavLinkProps {
+    href: string
+    label: string
+}
