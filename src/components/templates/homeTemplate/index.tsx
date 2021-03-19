@@ -1,4 +1,5 @@
 import React from 'react'
+import { DepoimentoProps, PhotoProps, VideoProps } from '../../../types/types'
 import Separator from '../../atoms/separator'
 import BemVindo from '../../organisms/bemVindo'
 import DepoimentosTexto from '../../organisms/depoimentosTexto'
@@ -10,9 +11,9 @@ import Resultados from '../../organisms/resultados'
 
 interface Props {
     wallpaper: string
-    carouselPhotos: Record<string, Record<string, string>>[]
-    videos: Record<string, Record<string, string>>[]
-    depoimentos: Record<string, Record<string, string>>[]
+    carouselPhotos: Record<string, PhotoProps>[]
+    videos: Record<string, VideoProps>[]
+    depoimentos: Record<string, DepoimentoProps>[]
 }
 
 const HomeTemplate = ({
