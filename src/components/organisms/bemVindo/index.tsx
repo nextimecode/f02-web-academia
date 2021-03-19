@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import Title from '../../atoms/title'
+import Video from '../../atoms/video'
 
 const BemVindo = () => {
     return (
@@ -30,14 +31,7 @@ const BemVindo = () => {
                         </p>
                     </div>
                     <div className="col-sm-12 col-md-6 d-flex justify-content-center">
-                        <iframe
-                            loading="lazy"
-                            className="w-100 py-4"
-                            title="Player de Vídeo youtube"
-                            src="https://www.youtube-nocookie.com/embed/xcJtL7QggTI?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=1"
-                            data-rocket-lazyload="fitvidscompatible"
-                            data-ll-status="loaded"
-                        />
+                        <Video src="https://www.youtube-nocookie.com/embed/xcJtL7QggTI?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=1" />
                     </div>
                 </div>
             </Container>
