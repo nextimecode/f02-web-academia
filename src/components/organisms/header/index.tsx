@@ -31,7 +31,11 @@ const Header = () => {
         }
     ]
 
-    return <header><Menu urlLogo={urlLogo} listNavLinks={listNavLinks} /></header>
+    return (
+        <header>
+            <Menu urlLogo={urlLogo} listNavLinks={listNavLinks} />
+        </header>
+    )
 }
 
 export default Header

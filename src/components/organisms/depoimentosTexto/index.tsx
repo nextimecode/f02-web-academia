@@ -1,9 +1,10 @@
 import React from 'react'
+import { DepoimentoProps } from '../../../types/types'
 import Avatar from '../../molecules/avatar'
-import DepoimentoSlider from '../../organisms/depoimentoSlider'
+import DepoimentoSlider from '../depoimentoSlider'
 
 type Props = {
-    depoimentos: Record<string, any>
+    depoimentos: Record<string, DepoimentoProps>[]
 }
 
 const DepoimentosTexto = ({ depoimentos }: Props) => {
