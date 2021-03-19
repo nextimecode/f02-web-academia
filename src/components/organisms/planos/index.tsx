@@ -1,7 +1,7 @@
 import React from 'react'
 import Subhead from '../../atoms/subhead'
 import Title from '../../atoms/title'
-import CardPlanos from '../cardPlanos'
+import CardPlanos from '../../molecules/cardPlanos'
 
 const Planos = () => {
     return (

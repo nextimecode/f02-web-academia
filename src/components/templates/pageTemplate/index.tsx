@@ -1,15 +1,22 @@
 import React from 'react'
 import Head from 'next/head'
-import WhatsApp from '../../organisms/whatsapp'
 import Header from '../../organisms/header'
 import Footer from '../../organisms/footer'
+import Button from '../../atoms/button'
 
 type Props = {
     children: unknown
     title: string
+    telefone?: string
+    mensagem?: string
 }
 
-const PageTemplate = ({ children, title }: Props) => {
+const PageTemplate = ({
+    children,
+    title,
+    telefone = '5531991464894',
+    mensagem = 'Olá, gostaria de saber mais sobre os treinamentos.'
+}: Props) => {
     return (
         <>
             <Head>
@@ -33,7 +40,15 @@ const PageTemplate = ({ children, title }: Props) => {
                 <footer>
                     <Footer />
                 </footer>
-                <WhatsApp />
+                <div className="fixed-bottom d-flex justify-content-end m-4">
+                    <Button
+                        label="Dúvidas?"
+                        prefixIcon="whatsapp"
+                        href={`https://api.whatsapp.com/send?phone=${telefone}&text=${mensagem}`}
+                        target="_blank"
+                        style={{ backgroundColor: '#25D366', color: '#fff' }}
+                    />
+                </div>
             </div>
         </>
     )
