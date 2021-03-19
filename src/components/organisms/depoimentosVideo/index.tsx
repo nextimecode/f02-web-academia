@@ -1,9 +1,10 @@
 import React from 'react'
+import { VideoProps } from '../../../types/types'
 import Film from '../../atoms/film'
 import Title from '../../atoms/title'
 
 type Props = {
-    videos: Record<string, any>
+    videos: Record<string, VideoProps>[]
 }
 
 const DepoimentosVideo = ({ videos }: Props) => {
