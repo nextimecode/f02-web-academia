@@ -1,6 +1,6 @@
 import React from 'react'
 import Avatar from '../../molecules/avatar'
-import DepoimentoSlider from '../../organisms/depoimentoSlider'
+import DepoimentoSlider from '../depoimentoSlider'
 
 type Props = {
     depoimentos: Record<string, any>

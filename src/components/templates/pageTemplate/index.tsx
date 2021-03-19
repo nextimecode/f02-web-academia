@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from '../header'
-import Footer from '../footer'
 import Head from 'next/head'
-import WhatsApp from '../whatsapp'
+import WhatsApp from '../../organisms/whatsapp'
+import Header from '../../organisms/header'
+import Footer from '../../organisms/footer'
 
 type Props = {
     children: unknown

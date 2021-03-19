@@ -1,16 +1,18 @@
 import React from 'react'
+import Subtitle from '../../atoms/subtitle'
+import Title from '../../atoms/title'
 import CardTreino from '../../organisms/cardTreino'
 
 const PlanoTreino = () => {
     return (
         <section>
             <div className="container">
-                <h1>Plano de treino criado somente para você</h1>
-                <h3>
-                    Receba um plano de treinamento elaborado dentro das suas
+                <Title label="Plano de treino criado somente para você" />
+                <Subtitle
+                    label="Receba um plano de treinamento elaborado dentro das suas
                     necessidades individuais, de acordo com suas condições
-                    físicas e sua rotina.
-                </h3>
+                    físicas e sua rotina."
+                />
                 <div className="row row-cols-1 row-cols-md-3 g-4 my-5">
                     <CardTreino
                         title="Objetivos"

@@ -1,6 +1,6 @@
-import Link from 'next/link'
 import React from 'react'
 import Price from '../../atoms/price'
+import Button from '../../molecules/button'
 
 type Props = {
     children: React.ReactNode
@@ -46,17 +46,7 @@ const CardPlanos = ({
                         'card-footer d-flex align-items-center justify-content-center'
                     }
                 >
-                    <Link href={linkPage}>
-                        <a
-                            className={`btn rounded-pill px-3 my-2 ${
-                                recommended
-                                    ? 'btn-warning'
-                                    : 'border-1 border-warning text-warning'
-                            }`}
-                        >
-                            Saiba mais
-                        </a>
-                    </Link>
+                    <Button label="Saiba mais" href={linkPage} />
                 </div>
             </div>
         </div>

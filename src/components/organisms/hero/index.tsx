@@ -1,11 +1,16 @@
 import React from 'react'
+import Title from '../../atoms/title'
 
-const ConsultoriaPersonalizada = () => {
+type Props = {
+    heroImage?: string
+}
+
+const Hero = ({ heroImage }: Props) => {
     return (
         <section
             className="vh-100"
             style={{
-                backgroundImage: 'url("assets/img/consultoria.jpg")',
+                backgroundImage: `url("${heroImage}")`,
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover'
@@ -13,14 +18,14 @@ const ConsultoriaPersonalizada = () => {
         >
             <div className="position-absolute top-50 start-50 translate-middle text-center">
                 <div>
-                    <h1>Consultoria</h1>
+                    <Title label="Consultoria" />
                 </div>
                 <div>
-                    <h1 className="text-warning">Personalizada</h1>
+                    <Title label="Personalizada" className="text-warning" />
                 </div>
             </div>
         </section>
     )
 }
 
-export default ConsultoriaPersonalizada
+export default Hero

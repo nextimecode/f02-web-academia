@@ -1,13 +1,6 @@
 import React from 'react'
-import Separator from '../components/atoms/separator'
-import BemVindo from '../components/templates/bemVindo'
-import Home from '../components/templates/home'
-import Planos from '../components/templates/planos'
-import Resultados from '../components/templates/resultados'
-import DepoimentosVideo from '../components/templates/depoimentosVideo'
-import RedesSociais from '../components/templates/redesSociais'
-import DepoimentosTexto from '../components/templates/depoimentosTexto'
 import PageTemplate from '../components/templates/pageTemplate'
+import HomeTemplate from '../components/templates/homeTemplate'
 
 const Index: React.FC = () => {
     const wallpaper = 'assets/img/personal.jpg'
@@ -101,23 +94,12 @@ const Index: React.FC = () => {
 
     return (
         <PageTemplate title="Home">
-            <Home urlWallpaper={wallpaper} />
-            <Separator />
-
-            <BemVindo />
-            <Separator />
-
-            <Planos />
-            <Separator />
-
-            <Resultados carouselPhotos={carouselPhotos} />
-            <DepoimentosVideo videos={videos} />
-            <Separator />
-
-            <RedesSociais />
-            <Separator />
-
-            <DepoimentosTexto depoimentos={depoimentos} />
+            <HomeTemplate
+                wallpaper={wallpaper}
+                carouselPhotos={carouselPhotos}
+                videos={videos}
+                depoimentos={depoimentos}
+            />
         </PageTemplate>
     )
 }

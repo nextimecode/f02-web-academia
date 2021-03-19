@@ -1,8 +1,8 @@
-import Link from 'next/link'
 import React from 'react'
-import { Button, Container, Row } from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
 import Subtitle from '../../atoms/subtitle'
 import Title from '../../atoms/title'
+import Button from '../../molecules/button'
 
 type Props = {
     urlWallpaper: string
@@ -13,7 +13,6 @@ const Home = ({ urlWallpaper = '' }: Props) => {
         <section
             style={{
                 backgroundImage: `url("${urlWallpaper}")`,
-                // backgroundAttachment: 'scroll',
                 backgroundPosition: 'top center',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'length'
@@ -33,15 +32,7 @@ const Home = ({ urlWallpaper = '' }: Props) => {
                         <Title label="Alcance a sua melhor forma..." />
 
                         <div className="d-flex justify-content-center">
-                            <Link href="#">
-                                <Button
-                                    className="btn-buy"
-                                    variant="primary"
-                                    size="lg"
-                                >
-                                    {'Comece agora >>'}
-                                </Button>
-                            </Link>
+                            <Button label="Comece agora >>" href="#" />
                         </div>
                     </div>
                 </Row>
