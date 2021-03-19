@@ -8,11 +8,11 @@ import Planos from '../../organisms/planos'
 import RedesSociais from '../../organisms/redesSociais'
 import Resultados from '../../organisms/resultados'
 
-type Props = {
+interface Props {
     wallpaper: string
-    carouselPhotos: Record<string, any>
-    videos: Record<string, any>
-    depoimentos: Record<string, any>
+    carouselPhotos: Record<string, Record<string, string>>[]
+    videos: Record<string, Record<string, string>>[]
+    depoimentos: Record<string, Record<string, string>>[]
 }
 
 const HomeTemplate = ({

@@ -4,7 +4,6 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { IconName } from '@fortawesome/fontawesome-common-types'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import './styles.scss'
-import { useRouter } from 'next/dist/client/router'
 import Link from 'next/link'
 
 library.add(fab)
@@ -19,7 +18,7 @@ type Props = {
     style?: React.CSSProperties
 }
 
-const Button = React.forwardRef(
+const Button = React.forwardRef<HTMLAnchorElement, Props>(
     (
         {
             label,
@@ -34,7 +33,12 @@ const Button = React.forwardRef(
     ) => {
         return (
             <Link href={href}>
-                <a className={className} style={style} target={target}>
+                <a
+                    className={className}
+                    style={style}
+                    target={target}
+                    ref={ref}
+                >
                     {prefixIcon && (
                         <FontAwesomeIcon
                             icon={['fab', prefixIcon]}
