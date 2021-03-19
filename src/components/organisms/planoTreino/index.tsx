@@ -1,7 +1,7 @@
 import React from 'react'
 import Subtitle from '../../atoms/subtitle'
 import Title from '../../atoms/title'
-import CardTreino from '../../organisms/cardTreino'
+import CardTreino from '../../molecules/cardTreino'
 
 const PlanoTreino = () => {
     return (
