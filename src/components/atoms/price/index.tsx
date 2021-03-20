@@ -6,7 +6,7 @@ type Props = {
 
 const Price = ({ price }: Props) => {
     return (
-        <div className="my-4 d-flex text-warning">
+        <div className="my-4 d-flex text-warning d-flex justify-content-center">
             <div className="align-items-top">
                 <span className="fs-6 lh-sm fw-lighter">R$</span>
             </div>

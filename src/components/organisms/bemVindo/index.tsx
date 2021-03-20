@@ -27,9 +27,9 @@ const BemVindo = () => {
                         </p>
                         <p style={{ fontStyle: 'italic' }}>
                             Já são mais de 4 mil atendimentos personalizados que
-                            transformarama vida dos alunos. São mais de 6 mil na
-                            plataforma de treinos online. Agora você não estará
-                            mais sozinha!
+                            transformaram a vida dos alunos. São mais de 6 mil
+                            na plataforma de treinos online. Agora você não
+                            estará mais sozinha!
                         </p>
                     </div>
                     <div className="col-md-12 col-lg-7 d-flex justify-content-center m-auto">

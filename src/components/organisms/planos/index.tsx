@@ -31,7 +31,6 @@ const Planos = () => {
             card: {
                 title: 'Consultoria personalizada',
                 recommended: true,
-                price: 40,
                 image: '/assets/img/training-custom.png',
                 linkPage: '/consultoria',
                 cardText: {

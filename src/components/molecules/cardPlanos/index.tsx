@@ -29,12 +29,12 @@ const CardPlanos = ({
             >
                 <img src={image} className="card-img-top"></img>
                 <div className="card-body">
-                    <div className="fs-3 fw-normal card-title">{title}</div>
+                    <div className="fs-3 fw-normal card-title text-center">{title}</div>
                     {price && <Price price={price} />}
                     {!price && (
-                        <div className="lh-lg my-4">
+                        <div className="lh-lg my-4 text-center">
                             <span className="text-warning display-6">
-                                <strong>Venha ser vip</strong>
+                                <strong>Venha ser VIP</strong>
                             </span>
                         </div>
                     )}
