@@ -22,7 +22,7 @@ const CardPlanos = ({
     return (
         <div className="col">
             <div
-                className={`card rounded bg-dark overflow-hidden h-100 ${
+                className={`card rounded bg-dark overflow-hidden h-100 pb-2 ${
                     recommended && 'border border-warning'
                 }
                 ' `}

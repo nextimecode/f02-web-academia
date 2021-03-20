@@ -9,24 +9,27 @@ const BemVindo = () => {
                 <Title label="Seja bem-vindo!" />
                 <div className="row px-2 my-2">
                     <div className="col-md-12 col-lg-5 m-auto">
+                        <p>Conheça Vinícius Dias...</p>
                         <p>
-                            Para quem não me conhece, meu nome é João da Silva,
-                            mais conhecido como São Miguelito. Sou formado em
-                            Educação Fisica e pós-graduado em Fisiologia do
-                            Exercício.
+                            Vinícius Dias é ex-atleta e ex-jogador de futebol.
+                            Conhecido nas suas redes sociais como
+                            @instrutordefitness, é formado em Educação Física há
+                            6 anos e atua como personal trainer. Tornou-se
+                            especialista em treinos para emagrecimento,
+                            hipertrofia e hoje atua como referência nessas
+                            áreas.
                         </p>
-                        <p>
-                            Possuo 8 anos atuando como Personal Trainer e há 5
-                            anos com o atendimento online. Preparei o melhor do
-                            meu método de treinamento (o mesmo que utilizo
-                            diariamente com as minhas alunas presenciais) para
-                            ajudar você a alcançar sua melhor forma em qualquer
-                            lugar mundo.
+                        <p style={{ fontStyle: 'italic' }}>
+                            Hoje, venho dividir meu método de treinamento para
+                            você destravar seus resultados, conseguir emagrecer,
+                            definir seu corpo e conquistar sua melhor versão em
+                            qualquer lugar que esteja.
                         </p>
-                        <p>
-                            Já são mais de 4 mil atendimentos personalizados e
-                            mais de 9 mil alunos na plataforma de treinos
-                            online. Agora você não estará mais sozinha!
+                        <p style={{ fontStyle: 'italic' }}>
+                            Já são mais de 4 mil atendimentos personalizados que
+                            transformarama vida dos alunos. São mais de 6 mil na
+                            plataforma de treinos online. Agora você não estará
+                            mais sozinha!
                         </p>
                     </div>
                     <div className="col-md-12 col-lg-7 d-flex justify-content-center m-auto">

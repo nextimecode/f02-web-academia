@@ -6,7 +6,7 @@ const Footer = () => {
         <Container className="footer py-4" fluid={true}>
             <div className="row d-flex">
                 <div className="col m-auto text-center">
-                    Copyright © {new Date().getFullYear()} | Site da Academia
+                    Copyright © {new Date().getFullYear()} | Vinícius Dias
                 </div>
                 <div className="col m-auto text-center">
                     Developed by{' '}
