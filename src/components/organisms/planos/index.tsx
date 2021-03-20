@@ -7,7 +7,7 @@ const Planos = () => {
     const cardPlanos = [
         {
             card: {
-                title: 'Treino feminino',
+                title: 'Treino Feminino',
                 recommended: false,
                 price: 40,
                 image: '/assets/img/training-woman.png',
@@ -29,7 +29,7 @@ const Planos = () => {
         },
         {
             card: {
-                title: 'Consultoria personalizada',
+                title: 'Consultoria Personalizada',
                 recommended: true,
                 image: '/assets/img/training-custom.png',
                 linkPage: '/consultoria',
@@ -46,7 +46,7 @@ const Planos = () => {
         },
         {
             card: {
-                title: 'Treino masculino',
+                title: 'Treino Masculino',
                 recommended: false,
                 price: 40,
                 image: '/assets/img/training-woman.png',
