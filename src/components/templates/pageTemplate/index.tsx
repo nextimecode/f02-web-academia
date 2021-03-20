@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Header from '../../organisms/header'
 import Footer from '../../organisms/footer'
 import Button from '../../atoms/button'
-import DepoimentosTexto from '../../organisms/depoimentosTexto'
 
 type Props = {
     children: unknown
