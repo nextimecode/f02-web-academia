@@ -9,6 +9,7 @@ type Props = {
     title: string
     image: string
     linkPage: string
+    buttonLabel: string
 }
 
 const CardPlanos = ({
@@ -17,7 +18,8 @@ const CardPlanos = ({
     title,
     recommended,
     image,
-    linkPage
+    linkPage,
+    buttonLabel
 }: Props) => {
     return (
         <div className="col">
@@ -46,7 +48,7 @@ const CardPlanos = ({
                         'card-footer d-flex align-items-center justify-content-center'
                     }
                 >
-                    <Button label="Saiba mais" href={linkPage} />
+                    <Button label={buttonLabel} href={linkPage} />
                 </div>
             </div>
         </div>

@@ -1,11 +1,7 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
 import Accordion from 'react-bootstrap/Accordion'
-
-type PerguntasRespostas = {
-    question: string
-    answer: string
-}
+import { PerguntasRespostas } from '../../../types/types'
 
 type Props = {
     perguntasRespostas: PerguntasRespostas[]

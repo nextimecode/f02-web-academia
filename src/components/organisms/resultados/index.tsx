@@ -11,7 +11,7 @@ type Props = {
 
 const Resultados = ({ carouselPhotos }: Props) => {
     return (
-        <section>
+        <section className="py-5">
             <Container>
                 <Title label="Resultados reais" />
                 <Subhead label="#HASHTAGPERSONAL" />

@@ -5,7 +5,7 @@ type Props = {
     className?: string
 }
 
-const Title = ({ label, className = 'text-light p-2' }: Props) => (
+const Title = ({ label, className = 'text-light p-2 fs-1' }: Props) => (
     <h1 className={className}>{label}</h1>
 )
 

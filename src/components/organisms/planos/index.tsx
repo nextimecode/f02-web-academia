@@ -15,7 +15,8 @@ const Planos = () => {
                             title="Treino feminino"
                             price={40}
                             image="/assets/img/training-woman.png"
-                            linkPage="/consultoria"
+                            linkPage="/treino-mulheres"
+                            buttonLabel="Saiba mais"
                         >
                             <ul className="fw-lighter card-text">
                                 <li className="p-2">
@@ -34,6 +35,7 @@ const Planos = () => {
                             title="Consultoria personalizada"
                             image="/assets/img/training-custom.png"
                             linkPage="/consultoria"
+                            buttonLabel="Saiba mais"
                         >
                             <ul className="fw-lighter">
                                 <li className="p-2">
@@ -51,7 +53,8 @@ const Planos = () => {
                             title="Treino masculino"
                             price={40}
                             image="/assets/img/training-man.png"
-                            linkPage="/consultoria"
+                            linkPage="/treino-homens"
+                            buttonLabel="Saiba mais"
                         >
                             <ul className="fw-lighter">
                                 <li className="p-2">

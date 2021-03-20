@@ -19,3 +19,14 @@ export interface NavLinkProps {
     href: string
     label: string
 }
+
+export interface CardAcessosProps {
+    image: string
+    label: string
+    text: string
+}
+
+export interface PerguntasRespostas {
+    question: string
+    answer: string
+}
