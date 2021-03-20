@@ -19,7 +19,10 @@ const Planos = () => {
                         { item: 'Assinatura mensal com renovação automática' },
                         { item: 'Cancele quando quiser' },
                         { item: 'Garantia de 7 Dias' },
-                        { item: 'Este plano não é individualizado como na Consultoria' }
+                        {
+                            item:
+                                'Este plano não é individualizado como na Consultoria'
+                        }
                     ]
                 }
             }
@@ -56,7 +59,10 @@ const Planos = () => {
                         { item: 'Assinatura mensal com renovação automática' },
                         { item: 'Cancele quando quiser' },
                         { item: 'Garantia de 7 Dias' },
-                        { item: 'Este plano não é individualizado como na Consultoria' }
+                        {
+                            item:
+                                'Este plano não é individualizado como na Consultoria'
+                        }
                     ]
                 }
             }
