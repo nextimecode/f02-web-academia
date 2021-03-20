@@ -1,9 +1,10 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
+import { PhotoProps } from '../../../types/types'
 
 type Props = {
-    photos: Record<string, any>
+    photos: Record<string, PhotoProps>[]
 }
 
 const PhotoSlider = ({ photos }: Props) => {

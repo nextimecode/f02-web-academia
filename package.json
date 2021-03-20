@@ -1,6 +1,6 @@
 {
   "name": "webacademia",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint --fix .",
     "stylelint": "stylelint ./src/**/*.scss",
-    "precommit": "yarn lint && yarn stylelint"
+    "precommit": "yarn lint && yarn stylelint",
+    "prepush": "yarn build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
@@ -30,7 +31,8 @@
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
     "react-multi-carousel": "^2.6.2",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.2.1",
+    "pre-push": "^0.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.7",
@@ -66,5 +68,8 @@
   },
   "pre-commit": [
     "precommit"
+  ],
+   "pre-push": [
+    "prepush"
   ]
 }

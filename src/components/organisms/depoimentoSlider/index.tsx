@@ -1,10 +1,11 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
+import { DepoimentoProps } from '../../../types/types'
 import Depoimento from '../../molecules/depoimento'
 
 type Props = {
-    depoimentos: Record<string, any>
+    depoimentos: Record<string, DepoimentoProps>[]
 }
 
 const DepoimentoSlider = ({ depoimentos }: Props) => {

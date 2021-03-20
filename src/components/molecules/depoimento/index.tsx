@@ -1,9 +1,10 @@
 import React from 'react'
 import Avatar from '../avatar'
 import TextoDepoimento from '../../atoms/textoDepoimento'
+import { DepoimentoProps } from '../../../types/types'
 
 type Props = {
-    depoimento: Record<string, any>
+    depoimento: DepoimentoProps
 }
 
 const Depoimento = ({ depoimento }: Props) => {
