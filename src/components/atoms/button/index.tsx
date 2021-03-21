@@ -25,7 +25,7 @@ const Button = React.forwardRef<HTMLAnchorElement, Props>(
             prefixIcon,
             suffixIcon,
             href,
-            className = 'btn btn-buy rounded-pill',
+            className = 'btn btn-buy rounded',
             style,
             target = ''
         }: Props,

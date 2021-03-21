@@ -27,7 +27,8 @@ const PageTemplate = ({
                 ></link>
                 <link rel="preconnect" href="https://fonts.gstatic.com"></link>
                 <link
-                    href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap"
+                    href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;700&display=swap"
+                    // href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap"
                     rel="stylesheet"
                 ></link>
             </Head>

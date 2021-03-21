@@ -15,28 +15,33 @@ const Home = ({ urlWallpaper = '' }: Props) => {
                 backgroundImage: `url("${urlWallpaper}")`,
                 backgroundPosition: 'top center',
                 backgroundRepeat: 'no-repeat',
-                backgroundSize: 'length'
+                backgroundSize: 'cover'
             }}
-            className="w-100"
+            className="vh-100"
         >
-            <Container>
-                <Row>
-                    <div
-                        className=""
-                        style={{
-                            margin: '200px auto',
-                            paddingTop: '100px'
-                        }}
-                    >
-                        <Subtitle label="Não deixe para depois" />
-                        <Title label="Alcance a sua melhor forma..." />
+            <div
+                className="vh-100"
+                style={{ backgroundColor: 'rgba(0,0,0,0.6)' }}
+            >
+                <Container>
+                    <Row>
+                        <div
+                            className=""
+                            style={{
+                                margin: '200px auto',
+                                paddingTop: '100px'
+                            }}
+                        >
+                            <Subtitle label="Não deixe para depois" />
+                            <Title label="Alcance a sua melhor forma..." />
 
-                        <div className="d-flex justify-content-center">
-                            <Button label="Comece agora >>" href="/#" />
+                            <div className="d-flex justify-content-center">
+                                <Button label="Comece agora >>" href="/#" />
+                            </div>
                         </div>
-                    </div>
-                </Row>
-            </Container>
+                    </Row>
+                </Container>
+            </div>
         </section>
     )
 }
