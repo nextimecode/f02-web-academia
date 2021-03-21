@@ -13,25 +13,19 @@ const Home = ({ urlWallpaper = '' }: Props) => {
         <section
             style={{
                 backgroundImage: `url("${urlWallpaper}")`,
-                backgroundPosition: 'top center',
+                backgroundPosition: 'bottom center',
                 backgroundRepeat: 'no-repeat',
-                backgroundSize: 'cover'
+                backgroundSize: 'contain'
             }}
             className="vh-100"
         >
             <div
                 className="vh-100"
-                style={{ backgroundColor: 'rgba(0,0,0,0.6)' }}
+                style={{ backgroundColor: 'rgba(0,0,0,0.2)' }}
             >
                 <Container>
                     <Row>
-                        <div
-                            className=""
-                            style={{
-                                margin: '200px auto',
-                                paddingTop: '100px'
-                            }}
-                        >
+                        <div className="position-absolute top-50 start-50 translate-middle text-center">
                             <Subtitle label="Não deixe para depois" />
                             <Title label="Alcance a sua melhor forma..." />
 

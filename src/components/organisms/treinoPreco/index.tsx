@@ -21,7 +21,7 @@ const TreinoPreco = ({
         <section className="py-5">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-md-6 order-md-0 order-last">
                         <CardPlanos
                             title={cardPlanoTitle}
                             price={cardPlanoPreco}
@@ -42,7 +42,7 @@ const TreinoPreco = ({
                             </ul>
                         </CardPlanos>
                     </div>
-                    <div className="col-md-6 d-flex">
+                    <div className="col-md-6 d-flex order-md-1 order-first">
                         <div className="justify-content-center align-middle m-auto">
                             <Title label="Junte-se a nós" />
                         </div>

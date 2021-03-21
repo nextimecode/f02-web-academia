@@ -20,7 +20,27 @@ const Header = () => {
         {
             navLink: {
                 href: '/planos',
-                label: 'Planos'
+                label: 'Planos',
+                items: [
+                    {
+                        navLink: {
+                            href: '/treino-mulheres',
+                            label: 'Treino para mulheres'
+                        }
+                    },
+                    {
+                        navLink: {
+                            href: '/treino-homens',
+                            label: 'Treino para homens'
+                        }
+                    },
+                    {
+                        navLink: {
+                            href: '/consultoria',
+                            label: 'Consultoria personalizada'
+                        }
+                    }
+                ]
             }
         },
         {

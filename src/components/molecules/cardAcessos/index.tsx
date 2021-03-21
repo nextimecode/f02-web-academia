@@ -10,7 +10,7 @@ type Props = {
 const CardAcessos = ({ cardImage, cardLabel, cardText }: Props) => {
     return (
         <div
-            className="col-md-12 d-flex border-bottom border-warning rounded m-2"
+            className="col-md-12 d-flex border-bottom border-primary rounded m-2"
             style={{
                 backgroundImage: `url(${cardImage})`,
                 backgroundPosition: 'center',

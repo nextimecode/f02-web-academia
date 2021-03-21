@@ -25,7 +25,7 @@ const CardPlanos = ({
         <div className="col">
             <div
                 className={`card rounded bg-dark overflow-hidden h-100 ${
-                    recommended && 'border border-warning'
+                    recommended && 'border border-primary'
                 }
                 ' `}
             >
@@ -35,7 +35,7 @@ const CardPlanos = ({
                     {price && <Price price={price} />}
                     {!price && (
                         <div className="lh-lg my-4">
-                            <span className="text-warning display-6">
+                            <span className="text-primary display-6">
                                 <strong>Venha ser vip</strong>
                             </span>
                         </div>

@@ -18,6 +18,7 @@ export interface DepoimentoProps {
 export interface NavLinkProps {
     href: string
     label: string
+    items?: Record<string, NavItemsProps>[]
 }
 
 export interface CardAcessosProps {
@@ -29,4 +30,9 @@ export interface CardAcessosProps {
 export interface PerguntasRespostas {
     question: string
     answer: string
+}
+
+export interface NavItemsProps {
+    href: string
+    label: string
 }

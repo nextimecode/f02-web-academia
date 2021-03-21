@@ -3,7 +3,7 @@ import PageTemplate from '../components/templates/pageTemplate'
 import HomeTemplate from '../components/templates/homeTemplate'
 
 const Index: React.FC = () => {
-    const wallpaper = 'assets/img/personal.jpg'
+    const wallpaper = 'assets/img/personal.png'
 
     const carouselPhotos = [
         {

@@ -21,7 +21,7 @@ const Hero = ({ heroImage }: Props) => {
                     <Title label="Consultoria" />
                 </div>
                 <div>
-                    <Title label="Personalizada" className="text-warning" />
+                    <Title label="Personalizada" className="text-primary" />
                 </div>
             </div>
         </section>

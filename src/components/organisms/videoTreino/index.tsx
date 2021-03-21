@@ -27,7 +27,7 @@ const VideoTreino = ({
                             <Title label={labelTituloLinha1} />
                             <Title
                                 label={labelTituloLinha2}
-                                className="text-warning"
+                                className="text-primary"
                             />
 
                             <div className="ratio ratio-16x9">

@@ -13,7 +13,7 @@ const BeneficiosConsultoria = () => {
                         <FontAwesomeIcon
                             icon={faPlayCircle}
                             size="3x"
-                            color="#ffc401"
+                            className="text-primary"
                         />
                         <p className="text-center">
                             Vídeos para auxiliar a execução dos exercícios.{' '}
@@ -23,7 +23,7 @@ const BeneficiosConsultoria = () => {
                         <FontAwesomeIcon
                             icon={faDumbbell}
                             size="3x"
-                            color="#ffc401"
+                            className="text-primary"
                         />
                         <p className="text-center">
                             Plano de treino criado somente para você.
@@ -33,7 +33,7 @@ const BeneficiosConsultoria = () => {
                         <FontAwesomeIcon
                             icon={faInstagram}
                             size="3x"
-                            color="#ffc401"
+                            className="text-primary"
                         />
                         <p className="text-center">
                             Acesso exclusivo ao Instagram restrito da
@@ -44,7 +44,7 @@ const BeneficiosConsultoria = () => {
                         <FontAwesomeIcon
                             icon={faComments}
                             size="3x"
-                            color="#ffc401"
+                            className="text-primary"
                         />
                         <p className="text-center">
                             Atendimento personalizado.

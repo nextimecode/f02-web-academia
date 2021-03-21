@@ -15,7 +15,7 @@ const RelacaoConsultoria = () => {
                         </div>
                     </div>
                     <div className="col-md-6">
-                        <h1 className="text-start text-warning">
+                        <h1 className="text-start text-primary">
                             MUDE SUA RELAÇÃO COM A ATIVIDADE FÍSICA E ALCANCE
                             SEUS OBJETIVOS DE FORMA PRÁTICA E PRAZEROSA!
                         </h1>
