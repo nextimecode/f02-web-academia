@@ -44,6 +44,7 @@ const Menu = ({ urlLogo, listNavLinks }: Props) => {
                                                                         .href
                                                                 }
                                                                 key={idx}
+                                                                className="text-capitalize"
                                                             >
                                                                 {
                                                                     i.navLink
