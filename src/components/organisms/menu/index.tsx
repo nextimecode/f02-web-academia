@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import React from 'react'
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap'
 import { NavLinkProps } from '../../../types/types'
@@ -21,7 +20,7 @@ const Menu = ({ urlLogo, listNavLinks }: Props) => {
                 <div className="container">
                     <div className="col-md-2">
                         <Navbar.Brand href="#home">
-                            <img src="assets/img/logos/logo.png" height="70" />
+                            <img src={urlLogo} height="70" />
                         </Navbar.Brand>
                     </div>
                     <div className="col-md-8">
