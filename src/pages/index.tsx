@@ -95,8 +95,8 @@ const Index: React.FC = () => {
     const txtBemVindo = [
         {
             paragrafo: {
-                texto: `Conheça Vinícius Dias..`,
-                classes: ""
+                texto: 'Conheça Vinícius Dias..',
+                classes: ''
             }
         },
         {
@@ -110,7 +110,7 @@ const Index: React.FC = () => {
                     em treinos para emagrecimento, hipertrofia
                     e hoje atua como referência nessas áreas.
                 `,
-                classes: ""
+                classes: ''
             }
         },
         {
@@ -121,7 +121,7 @@ const Index: React.FC = () => {
                     emagrecer, definir seu corpo e conquistar sua
                     melhor versão em qualquer lugar que esteja.
                 `,
-                classes: "font-italic"
+                classes: 'font-italic'
             }
         },
         {
@@ -132,7 +132,7 @@ const Index: React.FC = () => {
                     6 mil na plataforma de treinos online. Agora você
                     não estará mais sozinha!
                 `,
-                classes: "font-italic"
+                classes: 'font-italic'
             }
         }
     ]

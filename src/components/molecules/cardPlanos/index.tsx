@@ -1,5 +1,5 @@
 import React from 'react'
-import Price from '../../atoms/price'
+import Price from '../../molecules/price'
 import Button from '../../atoms/button'
 
 type Props = {
@@ -29,9 +29,7 @@ const CardPlanos = ({
             >
                 <img src={image} className="card-img-top"></img>
                 <div className="card-body">
-                    <div className="fs-3 fw-normal card-title">
-                        {title}
-                    </div>
+                    <div className="fs-3 fw-normal card-title">{title}</div>
                     {price && <Price price={price} />}
                     {!price && (
                         <div className="lh-lg my-4 text-center">

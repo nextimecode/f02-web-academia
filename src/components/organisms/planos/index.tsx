@@ -69,7 +69,7 @@ const Planos = () => {
     ]
 
     return (
-        <section id="planos" className='pt-extra'>
+        <section id="planos" className="pt-extra">
             <div className="container">
                 <Title label="Conheça nossos planos" />
                 <Subhead label="Em casa ou na academia agora é a hora de construir a sua melhor versão!" />

@@ -15,10 +15,7 @@ const BemVindo = ({ txtBemVindo }: Props) => {
                 <div className="row px-2 my-2">
                     <div className="col-md-12 col-lg-5 m-auto">
                         {txtBemVindo.map((txt, index) => (
-                            <p
-                                key={index}
-                                className={txt.paragrafo.classes}
-                            >
+                            <p key={index} className={txt.paragrafo.classes}>
                                 {txt.paragrafo.texto}
                             </p>
                         ))}
