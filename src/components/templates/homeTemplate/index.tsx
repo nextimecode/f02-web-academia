@@ -1,5 +1,5 @@
 import React from 'react'
-import { DepoimentoProps, PhotoProps, VideoProps } from '../../../types/types'
+import { DepoimentoProps, PhotoProps, TextoProps, VideoProps } from '../../../types/types'
 import Separator from '../../atoms/separator'
 import BemVindo from '../../organisms/bemVindo'
 import DepoimentosTexto from '../../organisms/depoimentosTexto'
@@ -13,21 +13,23 @@ interface Props {
     wallpaper: string
     carouselPhotos: Record<string, PhotoProps>[]
     videos: Record<string, VideoProps>[]
-    depoimentos: Record<string, DepoimentoProps>[]
+    depoimentos: Record<string, DepoimentoProps>[],
+    txtBemVindo: Record<string, TextoProps>[]
 }
 
 const HomeTemplate = ({
     wallpaper,
     carouselPhotos,
     videos,
-    depoimentos
+    depoimentos,
+    txtBemVindo
 }: Props) => {
     return (
         <>
             <Home urlWallpaper={wallpaper} />
             <Separator />
 
-            <BemVindo />
+            <BemVindo txtBemVindo={txtBemVindo}/>
             <Separator />
 
             <Planos />

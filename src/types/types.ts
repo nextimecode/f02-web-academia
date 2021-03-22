@@ -19,3 +19,8 @@ export interface NavLinkProps {
     href: string
     label: string
 }
+
+export interface TextoProps {
+    texto: string
+    classes: string
+}

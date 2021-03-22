@@ -92,6 +92,51 @@ const Index: React.FC = () => {
         }
     ]
 
+    const txtBemVindo = [
+        {
+            paragrafo: {
+                texto: `Conheça Vinícius Dias..`,
+                classes: ""
+            }
+        },
+        {
+            paragrafo: {
+                texto: `
+                    Vinícius Dias é ex-atleta e ex-jogador de
+                    futebol. Conhecido nas suas redes sociais
+                    como @instrutordefitness, é formado em
+                    Educação Física há 6 anos e atua como
+                    personal trainer. Tornou-se especialista
+                    em treinos para emagrecimento, hipertrofia
+                    e hoje atua como referência nessas áreas.
+                `,
+                classes: ""
+            }
+        },
+        {
+            paragrafo: {
+                texto: `
+                    Hoje, venho dividir meu método de treinamento
+                    para você destravar seus resultados, conseguir
+                    emagrecer, definir seu corpo e conquistar sua
+                    melhor versão em qualquer lugar que esteja.
+                `,
+                classes: "font-italic"
+            }
+        },
+        {
+            paragrafo: {
+                texto: `
+                    Já são mais de 4 mil atendimentos personalizados
+                    que transformaram a vida dos alunos. São mais de
+                    6 mil na plataforma de treinos online. Agora você
+                    não estará mais sozinha!
+                `,
+                classes: "font-italic"
+            }
+        }
+    ]
+
     return (
         <PageTemplate title="Home">
             <HomeTemplate
@@ -99,6 +144,7 @@ const Index: React.FC = () => {
                 carouselPhotos={carouselPhotos}
                 videos={videos}
                 depoimentos={depoimentos}
+                txtBemVindo={txtBemVindo}
             />
         </PageTemplate>
     )
