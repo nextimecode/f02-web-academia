@@ -13,13 +13,13 @@ const Header = () => {
         },
         {
             navLink: {
-                href: '/comece',
-                label: 'Começa Agora'
+                href: '#planos',
+                label: 'Comece Agora'
             }
         },
         {
             navLink: {
-                href: '/planos',
+                href: '/consultoria',
                 label: 'Planos'
             }
         },
