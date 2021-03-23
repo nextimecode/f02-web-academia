@@ -12,6 +12,7 @@ const Planos = () => {
                 price: 40,
                 image: '/assets/img/training-woman.png',
                 linkPage: '/consultoria',
+                buttonLabel: 'Saiba mais',
                 cardText: {
                     listClasses: 'fw-lighter card-text',
                     listItemClasses: 'p-2',
@@ -33,6 +34,7 @@ const Planos = () => {
                 recommended: true,
                 image: '/assets/img/training-custom.png',
                 linkPage: '/consultoria',
+                buttonLabel: 'Saiba mais',
                 cardText: {
                     listClasses: 'fw-lighter',
                     listItemClasses: 'p-2',
@@ -51,6 +53,7 @@ const Planos = () => {
                 price: 40,
                 image: '/assets/img/training-woman.png',
                 linkPage: '/consultoria',
+                buttonLabel: 'Saiba mais',
                 cardText: {
                     listClasses: 'fw-lighter card-text',
                     listItemClasses: 'p-2',
@@ -83,6 +86,7 @@ const Planos = () => {
                                 price={c.card.price}
                                 image={c.card.image}
                                 linkPage={c.card.linkPage}
+                                buttonLabel={c.card.buttonLabel}
                             >
                                 <ul className={c.card.cardText.listClasses}>
                                     {c.card.cardText.listItems.map(

@@ -9,6 +9,7 @@ type Props = {
     title: string
     image: string
     linkPage: string
+    buttonLabel: string
 }
 
 const CardPlanos = ({
@@ -17,13 +18,14 @@ const CardPlanos = ({
     title,
     recommended,
     image,
-    linkPage
+    linkPage,
+    buttonLabel
 }: Props) => {
     return (
         <div className="col">
             <div
                 className={`card rounded bg-dark overflow-hidden h-100 pb-2 ${
-                    recommended && 'border border-warning'
+                    recommended && 'border border-primary'
                 }
                 ' `}
             >
@@ -33,8 +35,8 @@ const CardPlanos = ({
                     {price && <Price price={price} />}
                     {!price && (
                         <div className="lh-lg my-4 text-center">
-                            <span className="text-warning display-6">
-                                <strong>Venha ser VIP</strong>
+                            <span className="text-primary display-6">
+                                <strong>Venha ser vip</strong>
                             </span>
                         </div>
                     )}
@@ -46,7 +48,7 @@ const CardPlanos = ({
                         'card-footer d-flex align-items-center justify-content-center'
                     }
                 >
-                    <Button label="Saiba mais" href={linkPage} />
+                    <Button label={buttonLabel} href={linkPage} />
                 </div>
             </div>
         </div>
