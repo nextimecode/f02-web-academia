@@ -21,8 +21,10 @@ const BemVindo = ({ txtBemVindo }: Props) => {
                             </p>
                         ))}
                     </div>
-                    <div className="col-sm-12 col-md-6 d-flex justify-content-center">
-                        <Video src="https://www.youtube-nocookie.com/embed/xcJtL7QggTI?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=1" />
+                    <div className="col-md-12 col-lg-7 d-flex justify-content-center m-auto">
+                        <div className="ratio ratio-4x3">
+                            <Video src="https://www.youtube-nocookie.com/embed/xcJtL7QggTI?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=1" />
+                        </div>
                     </div>
                 </div>
             </Container>

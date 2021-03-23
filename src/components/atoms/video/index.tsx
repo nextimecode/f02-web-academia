@@ -8,7 +8,7 @@ const Video = ({ src }: Props) => {
     return (
         <iframe
             loading="lazy"
-            className="w-100 h-100 py-4"
+            className="w-100 py-4"
             title="Player de Vídeo youtube"
             src={src}
             data-rocket-lazyload="fitvidscompatible"

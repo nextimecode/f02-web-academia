@@ -1,7 +1,7 @@
 import React from 'react'
 import { PerguntasRespostas } from '../../../types/types'
 import Title from '../../atoms/title'
-import PerguntasFrequentes from '../../molecules/perguntasFrequentes'
+import PerguntasFrequentes from '../perguntasFrequentes'
 
 type Props = {
     perguntasRespostas: PerguntasRespostas[]

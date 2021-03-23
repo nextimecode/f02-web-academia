@@ -19,22 +19,25 @@ const VideoTreino = ({
     labelTituloLinha2
 }: Props) => {
     return (
-        <section className="py-5" style={{ height: '75vh' }}>
-            <div className="container">
-                <div className="row" style={{ height: '75vh' }}>
-                    <div className="col-md-12 d-flex">
-                        <div className="align-middle m-auto justify-content-center text-center">
-                            <Title label={labelTituloLinha1} />
-                            <Title
-                                label={labelTituloLinha2}
-                                className="text-primary"
-                            />
+        <section className="py-5 mt-5">
+            <div className="container py-5">
+                <div className="row">
+                    <div className="col-md-12">
+                        <div>
+                            <div className="text-center">
+                                <Title label={labelTituloLinha1} />
+                                <Title
+                                    label={labelTituloLinha2}
+                                    className="text-primary"
+                                />
+                                <div className="col-md-12 col-lg-6 offset-lg-3">
+                                    <div className="ratio ratio-16x9">
+                                        <Video src={srcVideo} />
+                                    </div>
+                                </div>
 
-                            <div className="ratio ratio-16x9">
-                                <Video src={srcVideo} />
+                                <Button label={buttonLabel} href={buttonHref} />
                             </div>
-
-                            <Button label={buttonLabel} href={buttonHref} />
                         </div>
                     </div>
                 </div>
