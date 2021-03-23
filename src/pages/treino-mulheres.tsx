@@ -5,7 +5,7 @@ import TreinoTemplate from '../components/templates/treinoTemplate'
 const cardsAcessos = [
     {
         card: {
-            image: 'assets/img/training-man.png',
+            image: 'assets/img/training-woman.png',
             label: 'Planilhas completas',
             text:
                 'Planilhas de treinos divididas por níveis – inciante / intermediário / avançado'
@@ -13,7 +13,7 @@ const cardsAcessos = [
     },
     {
         card: {
-            image: 'assets/img/training-man.png',
+            image: 'assets/img/training-woman.png',
             label: 'Planilhas completas',
             text:
                 'Planilhas de treinos divididas por níveis – inciante / intermediário / avançado'
@@ -21,7 +21,7 @@ const cardsAcessos = [
     },
     {
         card: {
-            image: 'assets/img/training-man.png',
+            image: 'assets/img/training-woman.png',
             label: 'Planilhas completas',
             text:
                 'Planilhas de treinos divididas por níveis – inciante / intermediário / avançado'
@@ -29,7 +29,7 @@ const cardsAcessos = [
     },
     {
         card: {
-            image: 'assets/img/training-man.png',
+            image: 'assets/img/training-woman.png',
             label: 'Planilhas completas',
             text:
                 'Planilhas de treinos divididas por níveis – inciante / intermediário / avançado'
@@ -37,7 +37,7 @@ const cardsAcessos = [
     },
     {
         card: {
-            image: 'assets/img/training-man.png',
+            image: 'assets/img/training-woman.png',
             label: 'Planilhas completas',
             text:
                 'Planilhas de treinos divididas por níveis – inciante / intermediário / avançado'

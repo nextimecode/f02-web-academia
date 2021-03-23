@@ -18,7 +18,7 @@ const ConteudoTreino = ({
     const numberColumns = cardsAcessos.length % 2 === 0 ? '6' : '4'
 
     return (
-        <section>
+        <section className="py-5">
             <div className="container">
                 <Subhead label={sectionConteudoSubtitle} />
                 <Title label={sectionConteudoTitle} />
