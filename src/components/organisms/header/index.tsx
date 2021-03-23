@@ -13,8 +13,8 @@ const Header = () => {
         },
         {
             navLink: {
-                href: '/comece',
-                label: 'Começa Agora'
+                href: '#planos',
+                label: 'Comece Agora'
             }
         },
         {

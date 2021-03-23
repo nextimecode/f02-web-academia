@@ -10,11 +10,16 @@ type Props = {
 }
 
 const Resultados = ({ carouselPhotos }: Props) => {
+    const subtitulo = `
+        Já são mais de 5 mil vidas transformadas
+        através de @instrutordefitness.
+    `
+
     return (
         <section className="py-5">
             <Container>
                 <Title label="Resultados reais" />
-                <Subhead label="#HASHTAGPERSONAL" />
+                <Subhead label={subtitulo} />
 
                 <PhotoSlider photos={carouselPhotos} />
             </Container>

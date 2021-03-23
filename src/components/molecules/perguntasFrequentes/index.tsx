@@ -13,7 +13,7 @@ const PerguntasFrequentes = ({ perguntasRespostas }: Props) => {
             <Accordion>
                 {perguntasRespostas.map((item, index) => {
                     return (
-                        <Card className="bg-dark my-2" key={index}>
+                        <Card className="bg-dark my-2 pointer" key={index}>
                             <Accordion.Toggle
                                 as={Card.Header}
                                 eventKey={index.toString()}
