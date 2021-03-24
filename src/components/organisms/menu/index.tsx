@@ -18,12 +18,14 @@ const Menu = ({ urlLogo, listNavLinks }: Props) => {
                 variant="dark"
             >
                 <div className="container">
-                    <div className="col-md-2">
-                        <Navbar.Brand href="#home">
-                            <img src={urlLogo} height="70" />
+                    <div className="col-sm-4 col-md-3">
+                        <Navbar.Brand
+                            href={listNavLinks[0].navLink.href}
+                        >
+                            <img src={urlLogo} height="70px" />
                         </Navbar.Brand>
                     </div>
-                    <div className="col-md-8">
+                    <div className="col-sm-8 col-md-9">
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav>
                                 {listNavLinks.map((n, index) => {

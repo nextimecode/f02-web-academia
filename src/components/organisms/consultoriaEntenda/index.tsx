@@ -1,6 +1,6 @@
 import React from 'react'
 
-const EntendaConsultoria = () => {
+const ConsultoriaEntenda = () => {
     return (
         <section className="my-5 py-5">
             <div className="container">
@@ -45,4 +45,4 @@ const EntendaConsultoria = () => {
     )
 }
 
-export default EntendaConsultoria
+export default ConsultoriaEntenda

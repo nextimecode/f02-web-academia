@@ -9,7 +9,10 @@ const Planos = () => {
             card: {
                 title: 'Treino Feminino',
                 recommended: false,
-                price: 40,
+                price: {
+                    value: 40,
+                    frequency: 'mês'
+                },
                 image: '/assets/img/training-woman.png',
                 linkPage: '/consultoria',
                 buttonLabel: 'Saiba mais',
@@ -50,7 +53,10 @@ const Planos = () => {
             card: {
                 title: 'Treino Masculino',
                 recommended: false,
-                price: 40,
+                price: {
+                    value: 40,
+                    frequency: 'mês'
+                },
                 image: '/assets/img/training-woman.png',
                 linkPage: '/consultoria',
                 buttonLabel: 'Saiba mais',

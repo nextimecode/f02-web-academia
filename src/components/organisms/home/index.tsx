@@ -4,6 +4,8 @@ import Subtitle from '../../atoms/subtitle'
 import Title from '../../atoms/title'
 import Button from '../../atoms/button'
 
+import './style.scss'
+
 type Props = {
     urlWallpaper: string
 }
@@ -11,13 +13,9 @@ type Props = {
 const Home = ({ urlWallpaper = '' }: Props) => {
     return (
         <section
-            style={{
-                backgroundImage: `url("${urlWallpaper}")`,
-                backgroundPosition: 'bottom center',
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: 'contain'
-            }}
-            className="vh-100"
+            style={{backgroundImage: `url("${urlWallpaper}")`}}
+            className="vh-100 background-home"
+            id="home"
         >
             <div
                 className="vh-100"

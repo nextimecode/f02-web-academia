@@ -1,14 +1,15 @@
 import React from 'react'
 import { PerguntasRespostas } from '../../../types/types'
 import Separator from '../../atoms/separator'
-import BeneficiosConsultoria from '../../organisms/beneficiosConsultoria'
-import EntendaConsultoria from '../../organisms/entendaConsultoria'
+import ConsultoriaBeneficios from '../../organisms/consultoriaBeneficios'
+import ConsultoriaPagamento from '../../organisms/consultoriaPagamento'
+import ConsultoriaEntenda from '../../organisms/consultoriaEntenda'
 import Faq from '../../organisms/faq'
 import Hero from '../../organisms/hero'
 import PlanoTreino from '../../organisms/planoTreino'
-import RelacaoConsultoria from '../../organisms/relacaoConsultoria'
-import TransformacoesConsultoria from '../../organisms/transformacoesConsultoria'
-import VideoConsultoria from '../../organisms/videoConsultoria'
+import ConsultoriaRelacao from '../../organisms/consultoriaRelacao'
+import ConsultoriaTransformacoes from '../../organisms/consultoriaTransformacoes'
+import ConsultoriaVideo from '../../organisms/consultoriaVideo'
 
 type Props = {
     heroImage: string
@@ -19,15 +20,17 @@ const ConsultoriaTemplate = ({ heroImage, perguntasRespostasFaq }: Props) => {
     return (
         <>
             <Hero heroImage={heroImage}></Hero>
-            <BeneficiosConsultoria />
-            <RelacaoConsultoria />
+            <ConsultoriaBeneficios />
+            <ConsultoriaRelacao />
             <Separator />
-            <VideoConsultoria />
+            <ConsultoriaVideo />
             <Separator />
             <PlanoTreino />
             <Separator />
-            <TransformacoesConsultoria />
-            <EntendaConsultoria />
+            <ConsultoriaTransformacoes />
+            <ConsultoriaEntenda />
+            <Separator />
+            <ConsultoriaPagamento />
             <Separator />
             <Faq perguntasRespostas={perguntasRespostasFaq} />
         </>

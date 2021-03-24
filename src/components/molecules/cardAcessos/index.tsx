@@ -1,6 +1,8 @@
 import React from 'react'
 import Title from '../../atoms/title'
 
+import './style.scss'
+
 type Props = {
     cardImage: string
     cardLabel: string
@@ -9,21 +11,21 @@ type Props = {
 
 const CardAcessos = ({ cardImage, cardLabel, cardText }: Props) => {
     return (
-        <div
-            className="col-md-12 d-flex border-bottom border-primary rounded m-2"
-            style={{
-                backgroundImage: `url(${cardImage})`,
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: 'cover',
-                height: '300px'
-            }}
-        >
-            <div className="justify-content-center align-middle m-auto p-3">
-                <Title label={cardLabel} />
-                <p>{cardText}</p>
+        <div className="col my-2">
+            <div
+                className="border-bottom border-primary rounded card-acesso p-3"
+                style={{backgroundImage: `url(${cardImage})`}}
+            >
+                <div className="justify-content-center align-middle m-auto">
+                    <Title label={cardLabel} />
+                    <div className="card-acesso-texto p-2 rounded">
+                        <p>{cardText}</p>
+                    </div>
+                    
+                </div>
             </div>
         </div>
+        
     )
 }
 

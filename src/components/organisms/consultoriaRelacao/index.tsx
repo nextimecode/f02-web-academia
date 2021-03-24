@@ -1,6 +1,6 @@
 import React from 'react'
 
-const RelacaoConsultoria = () => {
+const ConsultoriaRelacao = () => {
     return (
         <section>
             <div className="container my-5 py-5">
@@ -14,7 +14,7 @@ const RelacaoConsultoria = () => {
                             />
                         </div>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 p-3">
                         <h1 className="text-start text-primary">
                             MUDE SUA RELAÇÃO COM A ATIVIDADE FÍSICA E ALCANCE
                             SEUS OBJETIVOS DE FORMA PRÁTICA E PRAZEROSA!
@@ -39,4 +39,4 @@ const RelacaoConsultoria = () => {
     )
 }
 
-export default RelacaoConsultoria
+export default ConsultoriaRelacao

@@ -183,7 +183,7 @@ const Treino: React.FC = () => {
                 depoimentos={depoimentos}
                 perguntasRespostasFaq={perguntasRespostas}
                 cardPlanoTitle="Plano masculino"
-                cardPlanoPreco={40}
+                cardPlanoPreco={{value: 40, frequency: 'mês'}}
                 cardPlanoImage="/assets/img/training-man.png"
                 cardPlanoLinkPage="/#"
                 cardPlanoButtonLabel="Adquira já"

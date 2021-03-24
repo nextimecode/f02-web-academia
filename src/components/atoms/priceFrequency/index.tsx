@@ -1,7 +1,13 @@
 import React from 'react'
 
-const PriceFrequency = () => {
-    return <span className="fs-6 fw-lighter"> /mês</span>
+type Props = {
+    frequency: string
+}
+
+const PriceFrequency = ({
+    frequency
+}) => {
+    return <span className="fs-6 fw-lighter"> /{frequency}</span>
 }
 
 export default PriceFrequency

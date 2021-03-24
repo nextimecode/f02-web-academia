@@ -31,7 +31,7 @@ const VideoTreino = ({
                                     className="text-primary"
                                 />
                                 <div className="col-md-12 col-lg-6 offset-lg-3">
-                                    <div className="ratio ratio-16x9">
+                                    <div className="ratio ratio-4x3">
                                         <Video src={srcVideo} />
                                     </div>
                                 </div>

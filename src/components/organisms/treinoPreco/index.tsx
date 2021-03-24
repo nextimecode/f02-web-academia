@@ -4,7 +4,7 @@ import CardPlanos from '../../molecules/cardPlanos'
 
 type Props = {
     cardPlanoTitle: string
-    cardPlanoPreco: number
+    cardPlanoPreco: Record<string, any>
     cardPlanoImage: string
     cardPlanoLinkPage: string
     cardPlanoButtonLabel: string
