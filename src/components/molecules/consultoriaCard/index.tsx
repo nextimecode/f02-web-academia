@@ -22,14 +22,13 @@ const ConsultoriaCard = ({
     linkUrl,
     price
 }: Props) => {
-
     return (
         <div
-            className='container border border-primary'
-            style={{backgroundColor: 'black'}}
+            className="container border border-primary"
+            style={{ backgroundColor: 'black' }}
         >
             <div className="row">
-                <Title label={title}/>
+                <Title label={title} />
             </div>
             <hr />
             <div
@@ -43,9 +42,7 @@ const ConsultoriaCard = ({
                         price={price}
                         frequency="por Programa de Treinamento"
                     />
-                    <div className="card-consultoria-list">
-                        {children}
-                    </div>                 
+                    <div className="card-consultoria-list">{children}</div>
                     <div className="text-center">
                         <Button
                             label={buttonLabel}
@@ -56,8 +53,6 @@ const ConsultoriaCard = ({
                         />
                     </div>
                 </div>
-
-                
             </div>
         </div>
     )

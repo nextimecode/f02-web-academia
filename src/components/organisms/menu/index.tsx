@@ -19,9 +19,7 @@ const Menu = ({ urlLogo, listNavLinks }: Props) => {
             >
                 <div className="container">
                     <div className="col-sm-4 col-md-3">
-                        <Navbar.Brand
-                            href={listNavLinks[0].navLink.href}
-                        >
+                        <Navbar.Brand href={listNavLinks[0].navLink.href}>
                             <img src={urlLogo} height="70px" />
                         </Navbar.Brand>
                     </div>

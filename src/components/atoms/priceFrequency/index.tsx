@@ -4,9 +4,7 @@ type Props = {
     frequency: string
 }
 
-const PriceFrequency = ({
-    frequency
-}) => {
+const PriceFrequency = ({ frequency }: Props) => {
     return <span className="fs-6 fw-lighter"> /{frequency}</span>
 }
 

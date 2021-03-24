@@ -10,8 +10,7 @@ const Planos = () => {
                 title: 'Treino Feminino',
                 recommended: false,
                 price: {
-                    value: 40,
-                    frequency: 'mês'
+                    value: 40
                 },
                 image: '/assets/img/training-woman.png',
                 linkPage: '/consultoria',
@@ -54,8 +53,7 @@ const Planos = () => {
                 title: 'Treino Masculino',
                 recommended: false,
                 price: {
-                    value: 40,
-                    frequency: 'mês'
+                    value: 40
                 },
                 image: '/assets/img/training-woman.png',
                 linkPage: '/consultoria',

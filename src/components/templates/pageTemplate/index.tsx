@@ -10,7 +10,7 @@ type Props = {
     mensagem?: string
 }
 
-export const telefone: string = '5531991464894'
+export const telefone = '5531991464894'
 
 const PageTemplate = ({
     children,

@@ -13,7 +13,7 @@ type Props = {
 const Home = ({ urlWallpaper = '' }: Props) => {
     return (
         <section
-            style={{backgroundImage: `url("${urlWallpaper}")`}}
+            style={{ backgroundImage: `url("${urlWallpaper}")` }}
             className="vh-100 background-home"
             id="home"
         >

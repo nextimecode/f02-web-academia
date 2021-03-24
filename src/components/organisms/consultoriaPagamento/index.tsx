@@ -1,43 +1,42 @@
 import React from 'react'
 import Title from '../../atoms/title'
 import ConsultoriaCard from '../../molecules/consultoriaCard'
-import {telefone} from '../../templates/pageTemplate'
+import { telefone } from '../../templates/pageTemplate'
 
 import './style.scss'
 
-const mensagem = 'Olá, Vinícius! Gostaria de agendar uma vaga na sua consultoria.'
+const mensagem =
+    'Olá, Vinícius! Gostaria de agendar uma vaga na sua consultoria.'
 const linkContato = `https://api.whatsapp.com/send?phone=${telefone}&text=${mensagem}`
 
-
 const cardPlano = {
-        card: {
-            title: 'Consultoria Personalizada',
-            price: 300,
-            image: 'assets/img/personal.png',
-            buttonLabel: 'Vagas',
-            linkUrl: linkContato,
-            cardText: {
-                listClasses: 'fw-lighter card-text',
-                listItemClasses: 'p-2',
-                listItems: [
-                    { item: 'Assinatura mensal com renovação automática' },
-                    { item: 'Cancele quando quiser' },
-                    { item: 'Garantia de 7 Dias' },
-                    {
-                        item:
-                            'Este plano não é individualizado como na Consultoria'
-                    }
-                ]
-            }
+    card: {
+        title: 'Consultoria Personalizada',
+        price: 300,
+        image: 'assets/img/personal.png',
+        buttonLabel: 'Vagas',
+        linkUrl: linkContato,
+        cardText: {
+            listClasses: 'fw-lighter card-text',
+            listItemClasses: 'p-2',
+            listItems: [
+                { item: 'Assinatura mensal com renovação automática' },
+                { item: 'Cancele quando quiser' },
+                { item: 'Garantia de 7 Dias' },
+                {
+                    item: 'Este plano não é individualizado como na Consultoria'
+                }
+            ]
         }
     }
+}
 
 const ConsultoriaPagamento = () => {
     return (
         <section>
             <div className="container">
                 <div className="row my-5">
-                <Title label="Vagas"/>
+                    <Title label="Vagas" />
                     <div className="col-md-6 col-sm-12">
                         <ConsultoriaCard
                             title={cardPlano.card.title}
@@ -74,8 +73,10 @@ const ConsultoriaPagamento = () => {
                                 </a>
                             </div>
                             <div className="row mt-2">
-                                <Title label="Garanta sua vaga" />
-                            </div>                            
+                                <a href={cardPlano.card.linkUrl}>
+                                    <Title label="Garanta sua vaga" />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

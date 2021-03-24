@@ -4,9 +4,7 @@ import Menu from '../../organisms/menu'
 
 const Header = () => {
     const currentUrl = useRouter().pathname
-    const homeUrl = (currentUrl == '/') ?
-        '#home' :
-        '/'
+    const homeUrl = currentUrl === '/' ? '#home' : '/'
 
     const urlLogo = 'assets/img/logos/logo.png'
 
