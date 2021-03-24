@@ -6,10 +6,10 @@ import {
     PhotoProps
 } from '../../../types/types'
 import Separator from '../../atoms/separator'
-import TreinoConteudo from '../../organisms/treinoConteudo'
 import DepoimentosTexto from '../../organisms/depoimentosTexto'
 import Faq from '../../organisms/faq'
 import Resultados from '../../organisms/resultados'
+import TreinoConteudo from '../../organisms/treinoConteudo'
 import TreinoPreco from '../../organisms/treinoPreco'
 import TreinosFuncionam from '../../organisms/treinosFuncionam'
 import VideoTreino from '../../organisms/videoTreino'
