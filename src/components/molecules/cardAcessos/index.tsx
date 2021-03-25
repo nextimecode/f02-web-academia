@@ -14,15 +14,13 @@ const CardAcessos = ({ cardImage, cardLabel, cardText }: Props) => {
         <div className="col my-2">
             <div
                 className="border-bottom border-primary rounded card-acesso p-3 m-auto"
-                style={{ backgroundImage: `url(${cardImage})`}}
+                style={{ backgroundImage: `url(${cardImage})` }}
             >
-                
-                    <Title label={cardLabel} />
-                    <div className="card-acesso-texto p-2 rounded">
-                        <p>{cardText}</p>
-                    </div>
+                <Title label={cardLabel} />
+                <div className="card-acesso-texto p-2 rounded">
+                    <p>{cardText}</p>
+                </div>
             </div>
-            
         </div>
     )
 }

@@ -43,7 +43,7 @@ const ConsultoriaCard = ({
                         frequency="por Programa de Treinamento"
                     />
                     <div className="card-consultoria-list">{children}</div>
-                    <div className="text-center">
+                    <div className="text-center my-3">
                         <Button
                             label={buttonLabel}
                             prefixIcon="whatsapp"

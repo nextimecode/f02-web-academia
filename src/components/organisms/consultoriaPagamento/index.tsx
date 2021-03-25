@@ -33,7 +33,7 @@ const cardPlano = {
 
 const ConsultoriaPagamento = () => {
     return (
-        <section>
+        <section id="planos">
             <div className="container">
                 <div className="row my-5">
                     <Title label="Vagas" />
@@ -65,7 +65,11 @@ const ConsultoriaPagamento = () => {
                     <div className="col-md-6 col-sm-12 m-auto">
                         <div className="justify-content-center align-middle mt-5">
                             <div className="row text-center">
-                                <a href={cardPlano.card.linkUrl}>
+                                <a
+                                    href={cardPlano.card.linkUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     <img
                                         className="consultoria-contato"
                                         src="assets/img/logos/whatsapp.png"
@@ -73,7 +77,11 @@ const ConsultoriaPagamento = () => {
                                 </a>
                             </div>
                             <div className="row mt-2">
-                                <a href={cardPlano.card.linkUrl}>
+                                <a
+                                    href={cardPlano.card.linkUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     <Title label="Garanta sua vaga" />
                                 </a>
                             </div>
