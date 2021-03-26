@@ -13,7 +13,7 @@ const Planos = () => {
                     value: 40
                 },
                 image: '/assets/img/training-woman.png',
-                linkPage: '/consultoria',
+                linkPage: '/treino-mulheres',
                 buttonLabel: 'Saiba mais',
                 cardText: {
                     listClasses: 'fw-lighter card-text',
@@ -56,7 +56,7 @@ const Planos = () => {
                     value: 40
                 },
                 image: '/assets/img/training-woman.png',
-                linkPage: '/consultoria',
+                linkPage: '/treino-homens',
                 buttonLabel: 'Saiba mais',
                 cardText: {
                     listClasses: 'fw-lighter card-text',
