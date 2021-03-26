@@ -19,7 +19,7 @@ const VideoTreino = ({
     labelTituloLinha2
 }: Props) => {
     return (
-        <section className="py-5 mt-5">
+        <section>
             <div className="container py-5">
                 <div className="row">
                     <div className="col-md-12">

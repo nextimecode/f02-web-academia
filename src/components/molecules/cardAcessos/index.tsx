@@ -17,8 +17,8 @@ const CardAcessos = ({ cardImage, cardLabel, cardText }: Props) => {
                 style={{ backgroundImage: `url(${cardImage})` }}
             >
                 <Title label={cardLabel} />
-                <div className="card-acesso-texto p-2 rounded">
-                    <p>{cardText}</p>
+                <div className="p-2 rounded">
+                    <p className="card-acesso-texto">{cardText}</p>
                 </div>
             </div>
         </div>
