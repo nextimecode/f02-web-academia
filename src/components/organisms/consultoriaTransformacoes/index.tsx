@@ -1,7 +1,7 @@
 import React from 'react'
-import PhotoSlider from '../../organisms/photoSlider'
+import PhotoSlider from '../photoSlider'
 
-const TransformacoesConsultoria = () => {
+const ConsultoriaTransformacoes = () => {
     const carouselPhotos = [
         {
             photo: {
@@ -31,4 +31,4 @@ const TransformacoesConsultoria = () => {
     )
 }
 
-export default TransformacoesConsultoria
+export default ConsultoriaTransformacoes

@@ -18,8 +18,8 @@ const TreinosFuncionam = ({
     return (
         <section className="py-5">
             <div className="container">
-                <div className="row">
-                    <div className="col-md-7 d-flex">
+                <div className="row mx-3">
+                    <div className="col-12 d-flex">
                         <div className="justify-content-center align-middle m-auto">
                             <Title
                                 label={treinosFuncionamTitle}
@@ -28,11 +28,15 @@ const TreinosFuncionam = ({
                             <p>{treinosFuncionamText}</p>
                         </div>
                     </div>
-                    <div className="col-md-5">
-                        <div className="ratio ratio-16x9">
+                </div>
+                <div className="row">
+                    <div className="col-xs-12 col-lg-6">
+                        <div className="ratio ratio-4x3">
                             <Video src={treinosFuncionamVideo1} />
                         </div>
-                        <div className="ratio ratio-16x9">
+                    </div>
+                    <div className="col-xs-12 col-lg-6">
+                        <div className="ratio ratio-4x3">
                             <Video src={treinosFuncionamVideo2} />
                         </div>
                     </div>

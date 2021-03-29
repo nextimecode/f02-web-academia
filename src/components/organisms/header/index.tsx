@@ -1,13 +1,17 @@
+import { useRouter } from 'next/dist/client/router'
 import React from 'react'
 import Menu from '../../organisms/menu'
 
 const Header = () => {
+    const currentUrl = useRouter().pathname
+    const homeUrl = currentUrl === '/' ? '#home' : '/'
+
     const urlLogo = 'assets/img/logos/logo.png'
 
     const listNavLinks = [
         {
             navLink: {
-                href: '/',
+                href: homeUrl,
                 label: 'Home'
             }
         },

@@ -4,7 +4,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faPlayCircle, faComments } from '@fortawesome/free-regular-svg-icons'
 import { faDumbbell } from '@fortawesome/free-solid-svg-icons'
 
-const BeneficiosConsultoria = () => {
+const ConsultoriaBeneficios = () => {
     return (
         <section className="py-5 bg-dark">
             <div className="container align-bottom">
@@ -56,4 +56,4 @@ const BeneficiosConsultoria = () => {
     )
 }
 
-export default BeneficiosConsultoria
+export default ConsultoriaBeneficios

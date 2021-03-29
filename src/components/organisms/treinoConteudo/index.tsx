@@ -10,13 +10,11 @@ type Props = {
     cardsAcessos: Record<string, CardAcessosProps>[]
 }
 
-const ConteudoTreino = ({
+const TreinoConteudo = ({
     sectionConteudoTitle,
     sectionConteudoSubtitle,
     cardsAcessos
 }: Props) => {
-    const numberColumns = cardsAcessos.length % 2 === 0 ? '6' : '4'
-
     return (
         <section className="py-5">
             <div className="container">
@@ -24,7 +22,10 @@ const ConteudoTreino = ({
                 <Title label={sectionConteudoTitle} />
                 <div className="row">
                     {cardsAcessos.map((c, index) => (
-                        <div key={index} className={`col-md-${numberColumns}`}>
+                        <div
+                            key={index}
+                            className="col-xs-12 col-sm-6 col-lg-4"
+                        >
                             <CardAcessos
                                 cardImage={c.card.image}
                                 cardLabel={c.card.label}
@@ -38,4 +39,4 @@ const ConteudoTreino = ({
     )
 }
 
-export default ConteudoTreino
+export default TreinoConteudo

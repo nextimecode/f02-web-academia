@@ -2,6 +2,8 @@ import React from 'react'
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap'
 import { NavLinkProps } from '../../../types/types'
 
+import './style.scss'
+
 type Props = {
     urlLogo: string
     listNavLinks: Record<string, NavLinkProps>[]
@@ -9,72 +11,57 @@ type Props = {
 
 const Menu = ({ urlLogo, listNavLinks }: Props) => {
     return (
-        <nav id="menu">
-            <Navbar
-                collapseOnSelect
-                fixed="top"
-                expand="sm"
-                bg="dark"
-                variant="dark"
-            >
-                <div className="container">
-                    <div className="col-md-2">
-                        <Navbar.Brand href="#home">
-                            <img src={urlLogo} height="70" />
-                        </Navbar.Brand>
-                    </div>
-                    <div className="col-md-8">
-                        <Navbar.Collapse id="responsive-navbar-nav">
-                            <Nav>
-                                {listNavLinks.map((n, index) => {
-                                    if (n.navLink.items) {
+        <Navbar
+            collapseOnSelect
+            expand="md"
+            bg="dark"
+            variant="dark"
+            className="px-4 menu-position"
+        >
+            <Navbar.Brand href={listNavLinks[0].navLink.href}>
+                <img src={urlLogo} height="70px" />
+            </Navbar.Brand>
+
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav" className="nav-right">
+                <Nav>
+                    {listNavLinks.map((l, index) => {
+                        if (l.navLink.items) {
+                            return (
+                                <NavDropdown
+                                    key={index}
+                                    title={l.navLink.label}
+                                    id="collasible-nav-dropdown"
+                                    className="px-3"
+                                >
+                                    {l.navLink.items.map((li, idx) => {
                                         return (
-                                            <NavDropdown
-                                                key={index}
-                                                className="text-uppercase font-weight-bold menu-link mx-2 bg-dark p-0"
-                                                title={n.navLink.label}
-                                                id={n.navLink.label}
+                                            <NavDropdown.Item
+                                                key={idx}
+                                                href={li.navLink.href}
+                                                className="py-3 text-center"
                                             >
-                                                {n.navLink.items.map(
-                                                    (i, idx) => {
-                                                        return (
-                                                            <NavDropdown.Item
-                                                                href={
-                                                                    i.navLink
-                                                                        .href
-                                                                }
-                                                                key={idx}
-                                                                className="text-capitalize"
-                                                            >
-                                                                {
-                                                                    i.navLink
-                                                                        .label
-                                                                }
-                                                            </NavDropdown.Item>
-                                                        )
-                                                    }
-                                                )}
-                                            </NavDropdown>
+                                                {li.navLink.label}
+                                            </NavDropdown.Item>
                                         )
-                                    } else {
-                                        return (
-                                            <Nav.Link
-                                                key={index}
-                                                href={n.navLink.href}
-                                                className="text-uppercase font-weight-bold menu-link mx-2"
-                                            >
-                                                {n.navLink.label}
-                                            </Nav.Link>
-                                        )
-                                    }
-                                })}
-                            </Nav>
-                        </Navbar.Collapse>
-                        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    </div>
-                </div>
-            </Navbar>
-        </nav>
+                                    })}
+                                </NavDropdown>
+                            )
+                        } else {
+                            return (
+                                <Nav.Link
+                                    key={index}
+                                    href={l.navLink.href}
+                                    className="px-3"
+                                >
+                                    {l.navLink.label}
+                                </Nav.Link>
+                            )
+                        }
+                    })}
+                </Nav>
+            </Navbar.Collapse>
+        </Navbar>
     )
 }
 

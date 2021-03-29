@@ -4,7 +4,7 @@ import Button from '../../atoms/button'
 
 type Props = {
     children: React.ReactNode
-    price?: number
+    price?: Record<string, any>
     recommended?: boolean
     title: string
     image: string
@@ -32,11 +32,16 @@ const CardPlanos = ({
                 <img src={image} className="card-img-top"></img>
                 <div className="card-body">
                     <div className="fs-3 fw-normal card-title">{title}</div>
-                    {price && <Price price={price} />}
+                    {price && (
+                        <Price
+                            price={price.value}
+                            frequency={price.frequency}
+                        />
+                    )}
                     {!price && (
                         <div className="lh-lg my-4 text-center">
                             <span className="text-primary display-6">
-                                <strong>Venha ser vip</strong>
+                                <strong>Venha ser VIP</strong>
                             </span>
                         </div>
                     )}

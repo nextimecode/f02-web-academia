@@ -4,7 +4,7 @@ import CardPlanos from '../../molecules/cardPlanos'
 
 type Props = {
     cardPlanoTitle: string
-    cardPlanoPreco: number
+    cardPlanoPreco: Record<string, any>
     cardPlanoImage: string
     cardPlanoLinkPage: string
     cardPlanoButtonLabel: string
@@ -18,7 +18,7 @@ const TreinoPreco = ({
     cardPlanoButtonLabel
 }: Props) => {
     return (
-        <section className="py-5">
+        <section className="py-5" id="planos">
             <div className="container">
                 <div className="row">
                     <div className="col-md-6 order-md-0 order-last">

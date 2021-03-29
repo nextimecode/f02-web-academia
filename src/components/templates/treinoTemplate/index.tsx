@@ -6,10 +6,10 @@ import {
     PhotoProps
 } from '../../../types/types'
 import Separator from '../../atoms/separator'
-import ConteudoTreino from '../../organisms/conteudoTreino'
 import DepoimentosTexto from '../../organisms/depoimentosTexto'
 import Faq from '../../organisms/faq'
 import Resultados from '../../organisms/resultados'
+import TreinoConteudo from '../../organisms/treinoConteudo'
 import TreinoPreco from '../../organisms/treinoPreco'
 import TreinosFuncionam from '../../organisms/treinosFuncionam'
 import VideoTreino from '../../organisms/videoTreino'
@@ -31,7 +31,7 @@ type Props = {
     depoimentos: Record<string, DepoimentoProps>[]
     perguntasRespostasFaq: PerguntasRespostas[]
     cardPlanoTitle: string
-    cardPlanoPreco: number
+    cardPlanoPreco: Record<string, any>
     cardPlanoImage: string
     cardPlanoLinkPage: string
     cardPlanoButtonLabel: string
@@ -69,7 +69,7 @@ const TreinoTemplate = ({
                 buttonHref={buttonHref}
             />
             <Separator />
-            <ConteudoTreino
+            <TreinoConteudo
                 cardsAcessos={cardsAcessos}
                 sectionConteudoSubtitle={sectionConteudoSubtitle}
                 sectionConteudoTitle={sectionConteudoTitle}

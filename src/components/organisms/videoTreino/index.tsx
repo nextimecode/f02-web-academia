@@ -19,7 +19,7 @@ const VideoTreino = ({
     labelTituloLinha2
 }: Props) => {
     return (
-        <section className="py-5 mt-5">
+        <section>
             <div className="container py-5">
                 <div className="row">
                     <div className="col-md-12">
@@ -31,7 +31,7 @@ const VideoTreino = ({
                                     className="text-primary"
                                 />
                                 <div className="col-md-12 col-lg-6 offset-lg-3">
-                                    <div className="ratio ratio-16x9">
+                                    <div className="ratio ratio-4x3">
                                         <Video src={srcVideo} />
                                     </div>
                                 </div>

@@ -7,14 +7,14 @@ import Button from '../../atoms/button'
 type Props = {
     children: unknown
     title: string
-    telefone?: string
     mensagem?: string
 }
+
+export const telefone = '5531991464894'
 
 const PageTemplate = ({
     children,
     title,
-    telefone = '5531991464894',
     mensagem = 'Olá, gostaria de saber mais sobre os treinamentos.'
 }: Props) => {
     return (
