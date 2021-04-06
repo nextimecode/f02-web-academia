@@ -5,3 +5,9 @@
     border-color: $primary;
     border-style: inset;
 }
+
+.insta-post {
+    border-radius: 8px;
+    background-color: $white;
+    object-fit: cover;
+}

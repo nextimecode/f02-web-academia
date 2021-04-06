@@ -5,13 +5,13 @@ export interface VideoProps {
 
 export interface PhotoProps {
     src: string
-    alt: string
+    alt?: string
 }
 
 export interface DepoimentoProps {
-    foto: string
+    foto?: string
     nome: string
-    profissao: string
+    profissao?: string
     texto: string
 }
 

@@ -3,14 +3,22 @@ import React from 'react'
 import './style.scss'
 
 type Props = {
-    foto: string
+    foto?: string
     nome: string
     profissao?: string
     width: string
     height: string
 }
 
-const Avatar = ({ foto, nome, profissao = '', width, height }: Props) => (
+const patternAvatar = 'assets/img/avatars/user.png'
+
+const Avatar = ({
+    foto = patternAvatar,
+    nome,
+    profissao = '',
+    width,
+    height
+}: Props) => (
     <div className="d-flex justify-content-center">
         <div className="m-auto">
             <img

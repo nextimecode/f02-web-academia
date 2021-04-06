@@ -17,6 +17,7 @@ import Resultados from '../../organisms/resultados'
 interface Props {
     wallpaper: string
     carouselPhotos: Record<string, PhotoProps>[]
+    instagramPosts: Record<string, PhotoProps>[]
     videos: Record<string, VideoProps>[]
     depoimentos: Record<string, DepoimentoProps>[]
     txtBemVindo: Record<string, TextoProps>[]
@@ -25,6 +26,7 @@ interface Props {
 const HomeTemplate = ({
     wallpaper,
     carouselPhotos,
+    instagramPosts,
     videos,
     depoimentos,
     txtBemVindo
@@ -44,7 +46,7 @@ const HomeTemplate = ({
             <DepoimentosVideo videos={videos} />
             <Separator />
 
-            <RedesSociais />
+            <RedesSociais instagramPosts={instagramPosts} />
             <Separator />
 
             <DepoimentosTexto depoimentos={depoimentos} />

@@ -19,13 +19,19 @@ const Planos = () => {
                     listClasses: 'fw-lighter card-text',
                     listItemClasses: 'p-2',
                     listItems: [
-                        { item: 'Assinatura mensal com renovação automática' },
-                        { item: 'Cancele quando quiser' },
-                        { item: 'Garantia de 7 Dias' },
                         {
                             item:
-                                'Este plano não é individualizado como na Consultoria'
-                        }
+                                'Treinos em casa e na academia por um valor acessível.'
+                        },
+                        {
+                            item:
+                                'Assinatura mensal / com renovação automática.'
+                        },
+                        {
+                            item:
+                                'Este plano é para todas da plataforma / porém não é individualizado como na consultoria personalizada.'
+                        },
+                        { item: '7 dias de garantia.' }
                     ]
                 }
             }
@@ -41,9 +47,13 @@ const Planos = () => {
                     listClasses: 'fw-lighter',
                     listItemClasses: 'p-2',
                     listItems: [
-                        { item: 'Plano de treino criado somente para você.' },
-                        { item: 'Atendimento personalizado com Vini Dias' },
-                        { item: 'Vídeos para auxiliar a execução' }
+                        { item: 'CONSULTORIA2021TIMEVINIDIAS' },
+                        {
+                            item:
+                                'Consultoria online: seu treino na palma da sua mão.'
+                        },
+                        { item: 'Atendimento personalizado com VINIDIAS' },
+                        { item: 'Acompanhamento online' }
                     ]
                 }
             }
@@ -62,13 +72,19 @@ const Planos = () => {
                     listClasses: 'fw-lighter card-text',
                     listItemClasses: 'p-2',
                     listItems: [
-                        { item: 'Assinatura mensal com renovação automática' },
-                        { item: 'Cancele quando quiser' },
-                        { item: 'Garantia de 7 Dias' },
                         {
                             item:
-                                'Este plano não é individualizado como na Consultoria'
-                        }
+                                'Treinos em casa e na academia por um valor acessível.'
+                        },
+                        {
+                            item:
+                                'Assinatura mensal / com renovação automática.'
+                        },
+                        {
+                            item:
+                                'Este plano é para todos da plataforma / porém não é individualizado como na consultoria personalizada.'
+                        },
+                        { item: '7 dias de garantia.' }
                     ]
                 }
             }

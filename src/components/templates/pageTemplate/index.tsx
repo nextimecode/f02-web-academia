@@ -3,14 +3,13 @@ import Head from 'next/head'
 import Header from '../../organisms/header'
 import Footer from '../../organisms/footer'
 import Button from '../../atoms/button'
+import { telefone } from '../../../pages/index'
 
 type Props = {
     children: unknown
     title: string
     mensagem?: string
 }
-
-export const telefone = '5531991464894'
 
 const PageTemplate = ({
     children,

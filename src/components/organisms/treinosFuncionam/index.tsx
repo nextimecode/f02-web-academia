@@ -10,8 +10,8 @@ type Props = {
 }
 
 const TreinosFuncionam = ({
-    treinosFuncionamTitle,
-    treinosFuncionamText,
+    treinosFuncionamTitle = 'Os treinos online realmente funcionam?',
+    treinosFuncionamText = 'Sem dúvida alguma, tudo que envolve a sua saúde física, mental e estética eu vou te ajudar; treinovinidias você emagrece de forma saudável e também para aqueles que desejam aumentar a massa muscular (o shape) respeitando seus objetivos, limitações, gostos e focando claro nos seus limites como treinos iniciantes intermediário e avançados, treinovinidias é para todas as idades.',
     treinosFuncionamVideo1,
     treinosFuncionamVideo2
 }: Props) => {

@@ -1,7 +1,7 @@
 import React from 'react'
 import Title from '../../atoms/title'
 import ConsultoriaCard from '../../molecules/consultoriaCard'
-import { telefone } from '../../templates/pageTemplate'
+import { telefone } from '../../../pages/index'
 
 import './style.scss'
 

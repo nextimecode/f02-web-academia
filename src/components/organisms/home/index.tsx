@@ -25,7 +25,7 @@ const Home = ({ urlWallpaper = '' }: Props) => {
                     <Row>
                         <div className="position-absolute top-50 start-50 translate-middle text-center">
                             <Subtitle label="Não deixe para depois" />
-                            <Title label="Alcance a sua melhor forma..." />
+                            <Title label="Conquiste seu resultado neste ano" />
 
                             <div className="d-flex justify-content-center">
                                 <Button label="Comece agora >>" href="/#" />

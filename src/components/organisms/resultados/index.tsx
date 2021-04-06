@@ -11,8 +11,7 @@ type Props = {
 
 const Resultados = ({ carouselPhotos }: Props) => {
     const subtitulo = `
-        Já são mais de 5 mil vidas transformadas
-        através de @instrutordefitnessvinicius.
+        Mais de 5 mil vidas transformadas através de @instrutordefitness
     `
 
     return (

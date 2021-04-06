@@ -1,5 +1,4 @@
 import React from 'react'
-import { PerguntasRespostas } from '../../../types/types'
 import Separator from '../../atoms/separator'
 import ConsultoriaBeneficios from '../../organisms/consultoriaBeneficios'
 import ConsultoriaPagamento from '../../organisms/consultoriaPagamento'
@@ -13,10 +12,9 @@ import ConsultoriaVideo from '../../organisms/consultoriaVideo'
 
 type Props = {
     heroImage: string
-    perguntasRespostasFaq: PerguntasRespostas[]
 }
 
-const ConsultoriaTemplate = ({ heroImage, perguntasRespostasFaq }: Props) => {
+const ConsultoriaTemplate = ({ heroImage }: Props) => {
     return (
         <>
             <Hero heroImage={heroImage}></Hero>
@@ -32,7 +30,7 @@ const ConsultoriaTemplate = ({ heroImage, perguntasRespostasFaq }: Props) => {
             <Separator />
             <ConsultoriaPagamento />
             <Separator />
-            <Faq perguntasRespostas={perguntasRespostasFaq} />
+            <Faq />
         </>
     )
 }

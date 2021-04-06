@@ -9,6 +9,7 @@ type Props = {
     srcVideo: string
     buttonLabel: string
     buttonHref: string
+    videoTreinoText: string
 }
 
 const VideoTreino = ({
@@ -16,7 +17,8 @@ const VideoTreino = ({
     buttonLabel,
     buttonHref,
     labelTituloLinha1,
-    labelTituloLinha2
+    labelTituloLinha2,
+    videoTreinoText
 }: Props) => {
     return (
         <section>
@@ -30,6 +32,11 @@ const VideoTreino = ({
                                     label={labelTituloLinha2}
                                     className="text-primary"
                                 />
+                                <div className="row mx-3">
+                                    <div className="col-12 d-flex">
+                                        <p>{videoTreinoText}</p>
+                                    </div>
+                                </div>
                                 <div className="col-md-12 col-lg-6 offset-lg-3">
                                     <div className="ratio ratio-4x3">
                                         <Video src={srcVideo} />

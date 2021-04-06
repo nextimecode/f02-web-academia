@@ -69,6 +69,10 @@ p.apresentacao {
     font-weight: 900;
 }
 
+.bottom-slider .react-multiple-carousel__arrow {
+    bottom: 84px;
+}
+
 .ratio-9x16 {
     --bs-aspect-ratio: calc(16 / 9 * 100%);
 }
