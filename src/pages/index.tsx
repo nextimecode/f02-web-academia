@@ -6,150 +6,165 @@ export const telefone = '5531991464894'
 export const instagramLink =
     'https://www.instagram.com/instrutordefitnessvinicius/'
 
+const instagrapPostsPath = 'assets/img/instagramPosts/insta_'
 export const instagramPosts = [
     {
         photo: {
-            src: 'assets/img/instagramPosts/insta_0.jpg',
+            src: `${instagrapPostsPath}0.jpg`,
             alt: 'description'
         }
     },
     {
         photo: {
-            src: 'assets/img/instagramPosts/insta_1.jpg',
+            src: `${instagrapPostsPath}1.jpg`,
             alt: 'description'
         }
     },
     {
         photo: {
-            src: 'assets/img/instagramPosts/insta_3.jpg',
+            src: `${instagrapPostsPath}2.jpg`,
             alt: 'description'
         }
     },
     {
         photo: {
-            src: 'assets/img/instagramPosts/insta_4.jpg',
+            src: `${instagrapPostsPath}3.jpg`,
             alt: 'description'
         }
     },
     {
         photo: {
-            src: 'assets/img/instagramPosts/insta_5.jpg',
+            src: `${instagrapPostsPath}4.jpg`,
             alt: 'description'
         }
     },
     {
         photo: {
-            src: 'assets/img/instagramPosts/insta_6.jpg',
+            src: `${instagrapPostsPath}5.jpg`,
             alt: 'description'
         }
     },
     {
         photo: {
-            src: 'assets/img/instagramPosts/insta_7.jpg',
+            src: `${instagrapPostsPath}6.jpg`,
             alt: 'description'
         }
     },
     {
         photo: {
-            src: 'assets/img/instagramPosts/insta_8.jpg',
+            src: `${instagrapPostsPath}7.jpg`,
             alt: 'description'
         }
     },
     {
         photo: {
-            src: 'assets/img/instagramPosts/insta_9.jpg',
+            src: `${instagrapPostsPath}8.jpg`,
             alt: 'description'
         }
     },
     {
         photo: {
-            src: 'assets/img/instagramPosts/insta_10.jpg',
+            src: `${instagrapPostsPath}9.jpg`,
+            alt: 'description'
+        }
+    },
+    {
+        photo: {
+            src: `${instagrapPostsPath}10.jpg`,
             alt: 'description'
         }
     }
 ]
+
+const carouselPhotosPath = 'assets/img/carouselPhotos/r'
 export const carouselPhotos = [
     {
         photo: {
-            src: 'assets/img/carouselPhotos/r1.jpg',
+            src: `${carouselPhotosPath}1.jpg`,
             alt: 'description'
         }
     },
     {
         photo: {
-            src: 'assets/img/carouselPhotos/r2.jpg',
+            src: `${carouselPhotosPath}2.jpg`,
             alt: 'description'
         }
     },
     {
         photo: {
-            src: 'assets/img/carouselPhotos/r3.jpg',
+            src: `${carouselPhotosPath}3.jpg`,
             alt: 'description'
         }
     },
     {
         photo: {
-            src: 'assets/img/carouselPhotos/r4.jpg',
+            src: `${carouselPhotosPath}4.jpg`,
             alt: 'description'
         }
     },
     {
         photo: {
-            src: 'assets/img/carouselPhotos/r5.jpg',
+            src: `${carouselPhotosPath}5.jpg`,
             alt: 'description'
         }
     },
     {
         photo: {
-            src: 'assets/img/carouselPhotos/r6.jpg',
+            src: `${carouselPhotosPath}6.jpg`,
             alt: 'description'
         }
     },
     {
         photo: {
-            src: 'assets/img/carouselPhotos/r7.jpg',
+            src: `${carouselPhotosPath}7.jpg`,
             alt: 'description'
         }
     },
     {
         photo: {
-            src: 'assets/img/carouselPhotos/r8.jpg',
+            src: `${carouselPhotosPath}8.jpg`,
             alt: 'description'
         }
     },
     {
         photo: {
-            src: 'assets/img/carouselPhotos/r9.jpg',
+            src: `${carouselPhotosPath}9.jpg`,
             alt: 'description'
         }
     },
     {
         photo: {
-            src: 'assets/img/carouselPhotos/r10.jpg',
+            src: `${carouselPhotosPath}10.jpg`,
             alt: 'description'
         }
     },
     {
         photo: {
-            src: 'assets/img/carouselPhotos/r11.jpg',
+            src: `${carouselPhotosPath}11.jpg`,
             alt: 'description'
         }
     },
     {
         photo: {
-            src: 'assets/img/carouselPhotos/r12.jpg',
+            src: `${carouselPhotosPath}12.jpg`,
             alt: 'description'
         }
     },
     {
         photo: {
-            src: 'assets/img/carouselPhotos/r13.jpeg',
+            src: `${carouselPhotosPath}13.jpg`,
             alt: 'description'
         }
     },
     {
         photo: {
-            src: 'assets/img/carouselPhotos/r14.jpeg',
+            src: `${carouselPhotosPath}14.jpg`,
+            alt: 'description'
+        }
+    },
+    {
+        photo: {
+            src: `${carouselPhotosPath}15.jpg`,
             alt: 'description'
         }
     }
