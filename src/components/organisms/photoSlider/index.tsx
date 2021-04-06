@@ -48,11 +48,7 @@ const PhotoSlider = ({ photos }: Props) => {
         >
             {photos.map((p, index) => (
                 <div key={index} style={{ height: '100%' }}>
-                    <a
-                        href={instagramLink}
-                        target="_blank"
-                        rel='noreferrer'    
-                    >
+                    <a href={instagramLink} target="_blank" rel="noreferrer">
                         <img
                             className="d-block w-100 px-1 m-auto insta-post"
                             src={p.photo.src}
