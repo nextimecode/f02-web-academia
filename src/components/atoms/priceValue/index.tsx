@@ -5,7 +5,11 @@ type Props = {
 }
 
 const PriceValue = ({ price }: Props) => {
-    return <span className="display-5 lh-1 font-weight-bold">{price}</span>
+    return (
+        <span className="display-3 lh-1" style={{ fontWeight: 400 }}>
+            {price}
+        </span>
+    )
 }
 
 export default PriceValue

@@ -24,19 +24,17 @@ const ConsultoriaCard = ({
 }: Props) => {
     return (
         <div
-            className="container border border-primary"
-            style={{ backgroundColor: 'black' }}
+            className="container border border-primary pt-3 card-consultoria"
+            style={{
+                backgroundColor: 'black',
+                backgroundImage: `url("${image}")`
+            }}
         >
-            <div className="row">
+            <div className="row card-consultoria-texto rounded p-1">
                 <Title label={title} />
             </div>
             <hr />
-            <div
-                className="card-body card-consultoria py-5"
-                style={{
-                    backgroundImage: `url("${image}")`
-                }}
-            >
+            <div className="card-body py-5">
                 <div className="card-consultoria-texto rounded p-2">
                     <Price
                         price={price}

@@ -6,169 +6,33 @@ export const telefone = '5531991464894'
 export const instagramLink =
     'https://www.instagram.com/instrutordefitnessvinicius/'
 
-const instagrapPostsPath = 'assets/img/instagramPosts/insta_'
-export const instagramPosts = [
-    {
+const fotosInstagram = []
+const fotosInstagramPath = 'assets/img/instagramPosts/'
+const nFotosInstagram = 11
+for (let i = 0; i < nFotosInstagram; i++) {
+    const photo = {
         photo: {
-            src: `${instagrapPostsPath}0.jpg`,
-            alt: 'description'
-        }
-    },
-    {
-        photo: {
-            src: `${instagrapPostsPath}1.jpg`,
-            alt: 'description'
-        }
-    },
-    {
-        photo: {
-            src: `${instagrapPostsPath}2.jpg`,
-            alt: 'description'
-        }
-    },
-    {
-        photo: {
-            src: `${instagrapPostsPath}3.jpg`,
-            alt: 'description'
-        }
-    },
-    {
-        photo: {
-            src: `${instagrapPostsPath}4.jpg`,
-            alt: 'description'
-        }
-    },
-    {
-        photo: {
-            src: `${instagrapPostsPath}5.jpg`,
-            alt: 'description'
-        }
-    },
-    {
-        photo: {
-            src: `${instagrapPostsPath}6.jpg`,
-            alt: 'description'
-        }
-    },
-    {
-        photo: {
-            src: `${instagrapPostsPath}7.jpg`,
-            alt: 'description'
-        }
-    },
-    {
-        photo: {
-            src: `${instagrapPostsPath}8.jpg`,
-            alt: 'description'
-        }
-    },
-    {
-        photo: {
-            src: `${instagrapPostsPath}9.jpg`,
-            alt: 'description'
-        }
-    },
-    {
-        photo: {
-            src: `${instagrapPostsPath}10.jpg`,
-            alt: 'description'
+            src: `${fotosInstagramPath}insta_${i + 1}.jpg`,
+            alt: `photo_${i + 1}`
         }
     }
-]
+    fotosInstagram.push(photo)
+}
+export const carouselFotosInstagram = fotosInstagram
 
-const carouselPhotosPath = 'assets/img/carouselPhotos/r'
-export const carouselPhotos = [
-    {
+const fotosResultados = []
+const fotosResultadosPath = 'assets/img/carouselPhotos/'
+const nFotosResultados = 15
+for (let i = 0; i < nFotosResultados; i++) {
+    const photo = {
         photo: {
-            src: `${carouselPhotosPath}1.jpg`,
-            alt: 'description'
-        }
-    },
-    {
-        photo: {
-            src: `${carouselPhotosPath}2.jpg`,
-            alt: 'description'
-        }
-    },
-    {
-        photo: {
-            src: `${carouselPhotosPath}3.jpg`,
-            alt: 'description'
-        }
-    },
-    {
-        photo: {
-            src: `${carouselPhotosPath}4.jpg`,
-            alt: 'description'
-        }
-    },
-    {
-        photo: {
-            src: `${carouselPhotosPath}5.jpg`,
-            alt: 'description'
-        }
-    },
-    {
-        photo: {
-            src: `${carouselPhotosPath}6.jpg`,
-            alt: 'description'
-        }
-    },
-    {
-        photo: {
-            src: `${carouselPhotosPath}7.jpg`,
-            alt: 'description'
-        }
-    },
-    {
-        photo: {
-            src: `${carouselPhotosPath}8.jpg`,
-            alt: 'description'
-        }
-    },
-    {
-        photo: {
-            src: `${carouselPhotosPath}9.jpg`,
-            alt: 'description'
-        }
-    },
-    {
-        photo: {
-            src: `${carouselPhotosPath}10.jpg`,
-            alt: 'description'
-        }
-    },
-    {
-        photo: {
-            src: `${carouselPhotosPath}11.jpg`,
-            alt: 'description'
-        }
-    },
-    {
-        photo: {
-            src: `${carouselPhotosPath}12.jpg`,
-            alt: 'description'
-        }
-    },
-    {
-        photo: {
-            src: `${carouselPhotosPath}13.jpg`,
-            alt: 'description'
-        }
-    },
-    {
-        photo: {
-            src: `${carouselPhotosPath}14.jpg`,
-            alt: 'description'
-        }
-    },
-    {
-        photo: {
-            src: `${carouselPhotosPath}15.jpg`,
-            alt: 'description'
+            src: `${fotosResultadosPath}r${i + 1}.jpeg`,
+            alt: `photo_${i + 1}`
         }
     }
-]
+    fotosResultados.push(photo)
+}
+export const carouselFotosResultados = fotosResultados
 
 export const depoimentos = [
     {
@@ -195,7 +59,7 @@ export const depoimentos = [
 ]
 
 const Index: React.FC = () => {
-    const wallpaper = 'assets/img/personal.png'
+    const wallpaper = 'assets/img/background.jpg'
 
     const videos = [
         {
@@ -249,11 +113,11 @@ const Index: React.FC = () => {
         <PageTemplate title="Home">
             <HomeTemplate
                 wallpaper={wallpaper}
-                carouselPhotos={carouselPhotos}
+                carouselPhotos={carouselFotosResultados}
                 videos={videos}
                 depoimentos={depoimentos}
                 txtBemVindo={txtBemVindo}
-                instagramPosts={instagramPosts}
+                instagramPosts={carouselFotosInstagram}
             />
         </PageTemplate>
     )

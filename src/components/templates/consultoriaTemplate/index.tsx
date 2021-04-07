@@ -7,8 +7,9 @@ import Faq from '../../organisms/faq'
 import Hero from '../../organisms/hero'
 import PlanoTreino from '../../organisms/planoTreino'
 import ConsultoriaRelacao from '../../organisms/consultoriaRelacao'
-import ConsultoriaTransformacoes from '../../organisms/consultoriaTransformacoes'
 import ConsultoriaVideo from '../../organisms/consultoriaVideo'
+import Resultados from '../../organisms/resultados'
+import { carouselFotosResultados } from '../../../pages/index'
 
 type Props = {
     heroImage: string
@@ -25,7 +26,7 @@ const ConsultoriaTemplate = ({ heroImage }: Props) => {
             <Separator />
             <PlanoTreino />
             <Separator />
-            <ConsultoriaTransformacoes />
+            <Resultados carouselPhotos={carouselFotosResultados} />
             <ConsultoriaEntenda />
             <Separator />
             <ConsultoriaPagamento />

@@ -1,0 +1,12 @@
+@import '../../../styles/custom/variables.scss';
+
+.react-multiple-carousel__arrow {
+    border-width: 5px;
+    border-color: $primary;
+    border-style: inset;
+}
+
+.insta-post {
+    border-radius: 8px;
+    object-fit: cover;
+}

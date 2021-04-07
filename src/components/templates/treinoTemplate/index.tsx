@@ -10,7 +10,6 @@ import TreinosFuncionam from '../../organisms/treinosFuncionam'
 import VideoTreino from '../../organisms/videoTreino'
 import { depoimentos } from '../../../pages/index'
 type Props = {
-    sex: string
     srcVideo: string
     buttonLabel: string
     buttonHref: string
@@ -29,7 +28,6 @@ type Props = {
 }
 
 const TreinoTemplate = ({
-    sex = 'woman',
     srcVideo,
     buttonLabel,
     buttonHref,
@@ -46,20 +44,34 @@ const TreinoTemplate = ({
     cardPlanoLinkPage,
     cardPlanoButtonLabel
 }: Props) => {
-    const patternCardImage = `assets/img/training-${sex}.png`
+    const patternCardImage = 'assets/img/cards/'
+    const extensao = '.jpg'
 
     const cardAcessos = [
         {
             card: {
-                image: patternCardImage,
-                label: 'Em qualquer lugar',
-                text:
-                    'Treinos completos para fazer em casa e na academia, feminino e masculino'
+                image: `${patternCardImage}card_01${extensao}`,
+                label: 'Treinos Femininos',
+                text: 'Treinos completos para fazer em casa e na academia'
             }
         },
         {
             card: {
-                image: patternCardImage,
+                image: `${patternCardImage}card_02${extensao}`,
+                label: 'Consultoria Personalizada',
+                text: 'Programas por WhatsApp e acesso a Instagram exclusivo'
+            }
+        },
+        {
+            card: {
+                image: `${patternCardImage}card_03${extensao}`,
+                label: 'Treinos Masculinos',
+                text: 'Treinos completos para fazer em casa e na academia'
+            }
+        },
+        {
+            card: {
+                image: `${patternCardImage}card_04${extensao}`,
                 label: 'Planilhas completas',
                 text:
                     'Planilhas de treinos completas divididas por nível – inciante / intermediário / avançado'
@@ -67,28 +79,28 @@ const TreinoTemplate = ({
         },
         {
             card: {
-                image: patternCardImage,
+                image: `${patternCardImage}card_05${extensao}`,
                 label: 'Lives',
                 text: 'Lives salvas dos meus treinos em casa'
             }
         },
         {
             card: {
-                image: patternCardImage,
+                image: `${patternCardImage}card_06${extensao}`,
                 label: 'Bônus de abdômen',
                 text: 'Treinos bônus abdômen e cárdio'
             }
         },
         {
             card: {
-                image: patternCardImage,
+                image: `${patternCardImage}card_07${extensao}`,
                 label: 'Bônus de pernas',
                 text: 'Treinos bônus glúteos e posteriores'
             }
         },
         {
             card: {
-                image: patternCardImage,
+                image: `${patternCardImage}card_08${extensao}`,
                 label: 'Bônus de dieta',
                 text:
                     'Dicas de como desenvolver seu planejamento alimentar e seleção dos suprimentos com nutrólogas e nutricionistas'
@@ -96,7 +108,7 @@ const TreinoTemplate = ({
         },
         {
             card: {
-                image: patternCardImage,
+                image: `${patternCardImage}card_09${extensao}`,
                 label: 'Bônus de suplementação',
                 text: 'Dicas de suplementação para emagrecimento e hipertrofia'
             }

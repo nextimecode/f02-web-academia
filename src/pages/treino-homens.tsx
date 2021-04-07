@@ -1,13 +1,12 @@
 import React from 'react'
 import PageTemplate from '../components/templates/pageTemplate'
 import TreinoTemplate from '../components/templates/treinoTemplate'
-import { carouselPhotos } from '../pages/index'
+import { carouselFotosResultados } from '../pages/index'
 
 const Treino: React.FC = () => {
     return (
         <PageTemplate title="Treino">
             <TreinoTemplate
-                sex="man"
                 srcVideo="https://www.youtube-nocookie.com/embed/xcJtL7QggTI?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=1"
                 buttonLabel="Alcance seus objetivos"
                 buttonHref="#planos"
@@ -15,10 +14,10 @@ const Treino: React.FC = () => {
                 sectionConteudoSubtitle="Confira tudo que você"
                 treinosFuncionamVideo1="https://www.youtube-nocookie.com/embed/xcJtL7QggTI?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=1"
                 treinosFuncionamVideo2="https://www.youtube-nocookie.com/embed/xcJtL7QggTI?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=1"
-                carouselPhotos={carouselPhotos}
+                carouselPhotos={carouselFotosResultados}
                 cardPlanoTitle="Plano masculino"
                 cardPlanoPreco={{ value: 40 }}
-                cardPlanoImage="/assets/img/training-man.png"
+                cardPlanoImage="/assets/img/cards/card_03.jpg"
                 cardPlanoLinkPage="/#"
                 cardPlanoButtonLabel="Adquira já"
             />
