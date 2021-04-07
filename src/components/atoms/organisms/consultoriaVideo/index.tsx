@@ -1,5 +1,5 @@
 import React from 'react'
-import Video from '../../atoms/video'
+import Video from '../../video'
 
 const ConsultoriaVideo = () => {
     return (

@@ -1,10 +1,10 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
-import { PhotoProps } from '../../../types/types'
+import { PhotoProps } from '../../../../types/types'
 import './style.scss'
 
-import { instagramLink } from '../../../pages/index'
+import { instagramLink } from '../../../../pages/index'
 
 type Props = {
     photos: Record<string, PhotoProps>[]

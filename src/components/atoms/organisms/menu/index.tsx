@@ -1,6 +1,6 @@
 import React from 'react'
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap'
-import { NavLinkProps } from '../../../types/types'
+import { NavLinkProps } from '../../../../types/types'
 
 import './style.scss'
 

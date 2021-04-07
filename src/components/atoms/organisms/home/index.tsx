@@ -1,8 +1,8 @@
 import React from 'react'
 import { Container, Row } from 'react-bootstrap'
-import Subtitle from '../../atoms/subtitle'
-import Title from '../../atoms/title'
-import Button from '../../atoms/button'
+import Subtitle from '../../subtitle'
+import Title from '../../title'
+import Button from '../../button'
 
 import './style.scss'
 

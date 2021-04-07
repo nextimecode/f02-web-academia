@@ -1,6 +1,6 @@
 import React from 'react'
-import { DepoimentoProps } from '../../../types/types'
-import Avatar from '../../molecules/avatar'
+import { DepoimentoProps } from '../../../../types/types'
+import Avatar from '../../../molecules/avatar'
 import DepoimentoSlider from '../depoimentoSlider'
 
 type Props = {

@@ -1,8 +1,8 @@
 import React from 'react'
-import { CardAcessosProps } from '../../../types/types'
-import Subhead from '../../atoms/subhead'
-import Title from '../../atoms/title'
-import CardAcessos from '../../molecules/cardAcessos'
+import { CardAcessosProps } from '../../../../types/types'
+import Subhead from '../../subhead'
+import Title from '../../title'
+import CardAcessos from '../../../molecules/cardAcessos'
 
 type Props = {
     sectionConteudoTitle: string
@@ -29,7 +29,6 @@ const TreinoConteudo = ({
                             <CardAcessos
                                 cardImage={c.card.image}
                                 cardLabel={c.card.label}
-                                cardText={c.card.text}
                             />
                         </div>
                     ))}

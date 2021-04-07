@@ -1,5 +1,5 @@
 import React from 'react'
-import Title from '../../atoms/title'
+import Title from '../../title'
 import PerguntasFrequentes from '../perguntasFrequentes'
 
 const perguntasRespostas = [

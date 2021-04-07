@@ -1,8 +1,8 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import { TextoProps } from '../../../types/types'
-import Title from '../../atoms/title'
-import Video from '../../atoms/video'
+import { TextoProps } from '../../../../types/types'
+import Title from '../../title'
+import Video from '../../video'
 
 type Props = {
     txtBemVindo: Record<string, TextoProps>[]

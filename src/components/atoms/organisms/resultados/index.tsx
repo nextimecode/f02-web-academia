@@ -1,9 +1,9 @@
 import { Container } from 'next/app'
 import React from 'react'
-import { PhotoProps } from '../../../types/types'
-import Subhead from '../../atoms/subhead'
-import Title from '../../atoms/title'
-import PhotoSlider from '../../organisms/photoSlider'
+import { PhotoProps } from '../../../../types/types'
+import Subhead from '../../subhead'
+import Title from '../../title'
+import PhotoSlider from '../photoSlider'
 
 type Props = {
     carouselPhotos: Record<string, PhotoProps>[]

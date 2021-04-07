@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
 import Accordion from 'react-bootstrap/Accordion'
-import { PerguntasRespostas } from '../../../types/types'
+import { PerguntasRespostas } from '../../../../types/types'
 import './style.scss'
 
 type Props = {

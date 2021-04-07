@@ -1,6 +1,6 @@
 import React from 'react'
-import Title from '../../atoms/title'
-import CardPlanos from '../../molecules/cardPlanos'
+import Title from '../../title'
+import CardPlanos from '../../../molecules/cardPlanos'
 
 type Props = {
     cardPlanoTitle: string

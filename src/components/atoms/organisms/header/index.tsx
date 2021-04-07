@@ -1,6 +1,6 @@
 import { useRouter } from 'next/dist/client/router'
 import React from 'react'
-import Menu from '../../organisms/menu'
+import Menu from '../menu'
 
 const Header = () => {
     const currentUrl = useRouter().pathname

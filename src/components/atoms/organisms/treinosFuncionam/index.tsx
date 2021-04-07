@@ -1,6 +1,6 @@
 import React from 'react'
-import Title from '../../atoms/title'
-import Video from '../../atoms/video'
+import Title from '../../title'
+import Video from '../../video'
 
 type Props = {
     treinosFuncionamTitle: string
