@@ -1,7 +1,7 @@
 import React from 'react'
-import Button from '../../atoms/button'
-import Title from '../../atoms/title'
-import Video from '../../atoms/video'
+import Button from '../../button'
+import Title from '../../title'
+import Video from '../../video'
 
 type Props = {
     labelTituloLinha1: string
