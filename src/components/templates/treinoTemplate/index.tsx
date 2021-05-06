@@ -15,7 +15,6 @@ type Props = {
     sectionConteudoTitle: string
     treinosFuncionamTitle?: string
     treinosFuncionamText?: string
-    carouselPhotos: Record<string, PhotoProps>[]
     cardPlanoTitle: string
     cardPlanoPreco: Record<string, any>
     cardPlanoImage: string

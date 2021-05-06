@@ -1,7 +1,6 @@
 import React from 'react'
 import PageTemplate from '../components/templates/pageTemplate'
 import TreinoTemplate from '../components/templates/treinoTemplate'
-import { carouselFotosResultados } from '../pages/index'
 
 const Treino: React.FC = () => {
     return (
@@ -11,7 +10,6 @@ const Treino: React.FC = () => {
                 srcVideo="assets/video/treino.mov"
                 sectionConteudoTitle="terá acesso"
                 sectionConteudoSubtitle="Confira tudo que você"
-                carouselPhotos={carouselFotosResultados}
                 cardPlanoTitle="Plano masculino"
                 cardPlanoPreco={{ value: '41,90' }}
                 cardPlanoImage="/assets/img/cards/card_03.jpg"
