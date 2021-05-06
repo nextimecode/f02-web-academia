@@ -7,7 +7,7 @@ const Treino: React.FC = () => {
         <PageTemplate title="Treino">
             <TreinoTemplate
                 heroImage="assets/img/cards/plano_masc.jpg"
-                srcVideo="assets/video/treino.mov"
+                srcVideo="assets/video/treino.MOV"
                 sectionConteudoTitle="terá acesso"
                 sectionConteudoSubtitle="Confira tudo que você"
                 cardPlanoTitle="Plano masculino"

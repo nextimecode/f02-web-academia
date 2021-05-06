@@ -169,7 +169,7 @@ export const depoimentos = [
 
 const Index: React.FC = () => {
     const wallpaper = 'assets/img/background.jpg'
-    const videoMain = 'assets/video/consultoria.mov'
+    const videoMain = 'assets/video/consultoria.MOV'
 
     const videos = [
         {
@@ -180,19 +180,19 @@ const Index: React.FC = () => {
         },
         {
             video: {
-                src: 'assets/video/video_2.mov',
+                src: 'assets/video/video_2.MOV',
                 alt: 'description'
             }
         },
         {
             video: {
-                src: 'assets/video/video_3.mov',
+                src: 'assets/video/video_3.MOV',
                 alt: 'description'
             }
         },
         {
             video: {
-                src: 'assets/video/video_4.mov',
+                src: 'assets/video/video_4.MOV',
                 alt: 'description'
             }
         }
