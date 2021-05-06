@@ -1,12 +1,12 @@
 import React from 'react'
 
 type Props = {
-    price: number
+    price: string
 }
 
 const PriceValue = ({ price }: Props) => {
     return (
-        <span className="display-3 lh-1" style={{ fontWeight: 400 }}>
+        <span className="display-3 lh-1" style={{ fontWeight: 300 }}>
             {price}
         </span>
     )

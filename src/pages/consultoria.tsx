@@ -3,9 +3,15 @@ import PageTemplate from '../components/templates/pageTemplate'
 import ConsultoriaTemplate from '../components/templates/consultoriaTemplate'
 
 const Consultoria: React.FC = () => {
+    const heroImage = 'assets/img/consultoria.jpg'
+    const videoConsultoria = 'assets/video/consultoria.mov'
+
     return (
         <PageTemplate title="Consultoria">
-            <ConsultoriaTemplate heroImage="assets/img/consultoria.jpg" />
+            <ConsultoriaTemplate
+                heroImage={heroImage}
+                videoConsultoria={videoConsultoria}
+            />
         </PageTemplate>
     )
 }

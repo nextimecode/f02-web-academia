@@ -7,29 +7,28 @@ import Faq from '../../atoms/organisms/faq'
 import Hero from '../../atoms/organisms/hero'
 import PlanoTreino from '../../atoms/organisms/planoTreino'
 import ConsultoriaRelacao from '../../atoms/organisms/consultoriaRelacao'
-import ConsultoriaVideo from '../../atoms/organisms/consultoriaVideo'
-import Resultados from '../../atoms/organisms/resultados'
-import { carouselFotosResultados } from '../../../pages/index'
 
 type Props = {
     heroImage: string
+    videoConsultoria: string
 }
 
-const ConsultoriaTemplate = ({ heroImage }: Props) => {
+const ConsultoriaTemplate = ({ heroImage, videoConsultoria }: Props) => {
     return (
         <>
-            <Hero heroImage={heroImage}></Hero>
+            <Hero
+                heroImage={heroImage}
+                label1="Consultoria"
+                label2="Personalizada"
+            />
             <ConsultoriaBeneficios />
             <ConsultoriaRelacao />
             <Separator />
-            <ConsultoriaVideo />
+            <ConsultoriaPagamento videoMain={videoConsultoria} />
             <Separator />
             <PlanoTreino />
             <Separator />
-            <Resultados carouselPhotos={carouselFotosResultados} />
             <ConsultoriaEntenda />
-            <Separator />
-            <ConsultoriaPagamento />
             <Separator />
             <Faq />
         </>

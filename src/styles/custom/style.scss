@@ -19,6 +19,16 @@ a.link {
 a.link:hover {
     color: $yellow;
 }
+
+a:link svg {
+    transition: .3s;
+    fill: $white;
+}
+
+a:hover svg {
+    transition: .3s;
+    fill: $red;
+}
 h1,
 h2,
 h3 {
@@ -83,4 +93,60 @@ p.apresentacao {
 
 .text-red {
     color: $red;
+}
+
+.btn-buy {
+    font-family: 'Saira', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $light;
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 21px -9px $primary;
+}
+.btn-buy:hover {
+    box-shadow: 0 0 0 0 $primary;
+    transform: scale(1);
+    color: $light;
+    animation: pulse 1s infinite;
+}
+
+.btn-buy-course {
+    background-color: $primary;
+    font-size: 18px;
+}
+
+.btn-buy-vip {
+    background-color: $green;
+    font-size: 1.8rem;
+}
+
+.mh-80 { max-height: 80vh; }
+.mh-60 { max-height: 60vh; }
+
+.mh-full { max-height: 100vh; }
+
+.card-consultoria {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 80vh;
+}
+.card-consultoria-texto {
+    background-color: rgba(0,0,0,0.7);
+}
+.card-consultoria-list ul {
+    list-style: none;
+    margin: auto;
+    padding: 0;
+}
+
+.card-consultoria-list ul li {
+    text-align: center;
+    font-weight: 600;
+}
+
+.bg-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

@@ -8,9 +8,11 @@ import { instagramLink } from '../../../../pages/index'
 
 type Props = {
     photos: Record<string, PhotoProps>[]
+    showDots?: boolean
+    draggable?: boolean
 }
 
-const PhotoSlider = ({ photos }: Props) => {
+const PhotoSlider = ({ photos, showDots = true, draggable = false }: Props) => {
     const responsive = {
         desktop: {
             breakpoint: { max: 3000, min: 1025 },
@@ -33,8 +35,8 @@ const PhotoSlider = ({ photos }: Props) => {
         <Carousel
             partialVisible={true}
             swipeable={true}
-            draggable={false}
-            showDots={true}
+            draggable={draggable}
+            showDots={showDots}
             responsive={responsive}
             ssr={true}
             infinite={true}

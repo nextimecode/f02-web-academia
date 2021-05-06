@@ -4,7 +4,7 @@ import PriceFrequency from '../../atoms/priceFrequency'
 import PriceCurrency from '../../atoms/priceCurrency'
 
 type Props = {
-    price: number
+    price: string
     frequency?: string
 }
 

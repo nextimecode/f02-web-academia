@@ -1,30 +1,29 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import { TextoProps } from '../../../../types/types'
+import Film from '../../film'
 import Title from '../../title'
-import Video from '../../video'
 
 type Props = {
     txtBemVindo: Record<string, TextoProps>[]
+    videoMain: string
 }
 
-const BemVindo = ({ txtBemVindo }: Props) => {
+const BemVindo = ({ txtBemVindo, videoMain }: Props) => {
     return (
         <section>
             <Container className="px-2 my-2">
                 <Title label="Seja bem-vindo!" />
                 <div className="row px-2 my-2">
-                    <div className="col-md-12 col-lg-5 m-auto">
+                    <div className="col-sm-12 col-md-6 m-auto">
                         {txtBemVindo.map((txt, index) => (
                             <p key={index} className={txt.paragrafo.classes}>
                                 {txt.paragrafo.texto}
                             </p>
                         ))}
                     </div>
-                    <div className="col-md-12 col-lg-7 d-flex justify-content-center m-auto">
-                        <div className="ratio ratio-4x3">
-                            <Video src="https://www.youtube-nocookie.com/embed/xcJtL7QggTI?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=1" />
-                        </div>
+                    <div className="col-sm-12 col-md-6 m-auto text-center">
+                        <Film src={videoMain} classes="mh-60" />
                     </div>
                 </div>
             </Container>

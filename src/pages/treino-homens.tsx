@@ -7,19 +7,16 @@ const Treino: React.FC = () => {
     return (
         <PageTemplate title="Treino">
             <TreinoTemplate
-                srcVideo="https://www.youtube-nocookie.com/embed/xcJtL7QggTI?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=1"
-                buttonLabel="Alcance seus objetivos"
-                buttonHref="#planos"
+                heroImage="assets/img/cards/plano_masc.jpg"
+                srcVideo="assets/video/treino.mov"
                 sectionConteudoTitle="terá acesso"
                 sectionConteudoSubtitle="Confira tudo que você"
-                treinosFuncionamVideo1="https://www.youtube-nocookie.com/embed/xcJtL7QggTI?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=1"
-                treinosFuncionamVideo2="https://www.youtube-nocookie.com/embed/xcJtL7QggTI?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=1"
                 carouselPhotos={carouselFotosResultados}
                 cardPlanoTitle="Plano masculino"
-                cardPlanoPreco={{ value: 40 }}
+                cardPlanoPreco={{ value: '41,90' }}
                 cardPlanoImage="/assets/img/cards/card_03.jpg"
                 cardPlanoLinkPage="/#"
-                cardPlanoButtonLabel="Adquira já"
+                cardPlanoButtonLabel="Alcance seus objetivos"
             />
         </PageTemplate>
     )

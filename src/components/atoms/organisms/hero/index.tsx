@@ -5,9 +5,11 @@ import Title from '../../title'
 
 type Props = {
     heroImage?: string
+    label1?: string
+    label2?: string
 }
 
-const Hero = ({ heroImage }: Props) => {
+const Hero = ({ heroImage, label1, label2 }: Props) => {
     return (
         <section
             style={{ backgroundImage: `url("${heroImage}")` }}
@@ -27,9 +29,9 @@ const Hero = ({ heroImage }: Props) => {
                                     borderRadius: '10px'
                                 }}
                             >
-                                <Title label="Consultoria" />
+                                <Title label={label1} />
                                 <Title
-                                    label="Personalizada"
+                                    label={label2}
                                     className="text-primary"
                                 />
                             </div>

@@ -61,7 +61,7 @@ const perguntasRespostas = [
 
 const Faq = () => {
     return (
-        <section className="py-5">
+        <section className="py-2">
             <Title label="Perguntas Frequentes" />
             <PerguntasFrequentes perguntasRespostas={perguntasRespostas} />
         </section>

@@ -21,6 +21,7 @@ interface Props {
     videos: Record<string, VideoProps>[]
     depoimentos: Record<string, DepoimentoProps>[]
     txtBemVindo: Record<string, TextoProps>[]
+    videoMain: string
 }
 
 const HomeTemplate = ({
@@ -29,20 +30,23 @@ const HomeTemplate = ({
     instagramPosts,
     videos,
     depoimentos,
-    txtBemVindo
+    txtBemVindo,
+    videoMain
 }: Props) => {
     return (
         <>
             <Home urlWallpaper={wallpaper} />
             <Separator />
 
-            <BemVindo txtBemVindo={txtBemVindo} />
+            <BemVindo txtBemVindo={txtBemVindo} videoMain={videoMain} />
             <Separator />
 
             <Planos />
             <Separator />
 
             <Resultados carouselPhotos={carouselPhotos} />
+            <Separator />
+
             <DepoimentosVideo videos={videos} />
             <Separator />
 

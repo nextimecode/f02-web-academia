@@ -20,7 +20,11 @@ const Resultados = ({ carouselPhotos }: Props) => {
                 <Title label="Resultados reais" />
                 <Subhead label={subtitulo} />
 
-                <PhotoSlider photos={carouselPhotos} />
+                <PhotoSlider
+                    photos={carouselPhotos}
+                    showDots={false}
+                    draggable={true}
+                />
             </Container>
         </section>
     )

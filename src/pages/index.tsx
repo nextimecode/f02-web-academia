@@ -8,11 +8,11 @@ export const instagramLink =
 
 const fotosInstagram = []
 const fotosInstagramPath = 'assets/img/instagramPosts/'
-const nFotosInstagram = 11
+const nFotosInstagram = 8
 for (let i = 0; i < nFotosInstagram; i++) {
     const photo = {
         photo: {
-            src: `${fotosInstagramPath}insta_${i + 1}.jpg`,
+            src: `${fotosInstagramPath}insta_${i}.jpg`,
             alt: `photo_${i + 1}`
         }
     }
@@ -20,19 +20,128 @@ for (let i = 0; i < nFotosInstagram; i++) {
 }
 export const carouselFotosInstagram = fotosInstagram
 
-const fotosResultados = []
-const fotosResultadosPath = 'assets/img/carouselPhotos/'
-const nFotosResultados = 15
-for (let i = 0; i < nFotosResultados; i++) {
-    const photo = {
-        photo: {
-            src: `${fotosResultadosPath}r${i + 1}.jpeg`,
-            alt: `photo_${i + 1}`
+const pessoasResultados = [
+    {
+        pessoa: {
+            nome: 'BRUNO',
+            antes: 1,
+            depois: 1
+        }
+    },
+    {
+        pessoa: {
+            nome: 'CAMILA',
+            antes: 1,
+            depois: 1
+        }
+    },
+    {
+        pessoa: {
+            nome: 'FLAVIA',
+            antes: 1,
+            depois: 1
+        }
+    },
+    {
+        pessoa: {
+            nome: 'FLAVIASANTIAGO',
+            antes: 2,
+            depois: 2
+        }
+    },
+    {
+        pessoa: {
+            nome: 'FRED',
+            antes: 1,
+            depois: 1
+        }
+    },
+    {
+        pessoa: {
+            nome: 'HELEM',
+            antes: 1,
+            depois: 2
+        }
+    },
+    {
+        pessoa: {
+            nome: 'IZABELA',
+            antes: 1,
+            depois: 1
+        }
+    },
+    {
+        pessoa: {
+            nome: 'JULIA',
+            antes: 1,
+            depois: 1
+        }
+    },
+    {
+        pessoa: {
+            nome: 'MARIANA',
+            antes: 1,
+            depois: 1
+        }
+    },
+    {
+        pessoa: {
+            nome: 'MARIANA2',
+            antes: 1,
+            depois: 1
+        }
+    },
+    {
+        pessoa: {
+            nome: 'MARIANA3',
+            antes: 1,
+            depois: 1
+        }
+    },
+    {
+        pessoa: {
+            nome: 'MARILIA',
+            antes: 1,
+            depois: 1
+        }
+    },
+    {
+        pessoa: {
+            nome: 'ROSILENE',
+            antes: 1,
+            depois: 1
         }
     }
-    fotosResultados.push(photo)
-}
-export const carouselFotosResultados = fotosResultados
+]
+const fotosResultados = []
+const fotosResultadosPath = 'assets/img/antesEDepois/'
+
+pessoasResultados.map(p => {
+    for (let i = 0; i < p.pessoa.antes; i++) {
+        const photoAntes = {
+            photo: {
+                src: `${fotosResultadosPath}${p.pessoa.nome}/${
+                    p.pessoa.nome
+                }-ANTES-${i + 1}.jpg`,
+                alt: `${p.pessoa.nome} - Antes`
+            }
+        }
+        fotosResultados.push(photoAntes)
+    }
+    for (let i = 0; i < p.pessoa.depois; i++) {
+        const photoDepois = {
+            photo: {
+                src: `${fotosResultadosPath}${p.pessoa.nome}/${
+                    p.pessoa.nome
+                }-DEPOIS-${i + 1}.jpg`,
+                alt: `${p.pessoa.nome} - Depois`
+            }
+        }
+        fotosResultados.push(photoDepois)
+    }
+    return 0
+})
+const carouselFotosResultados = fotosResultados
 
 export const depoimentos = [
     {
@@ -60,6 +169,7 @@ export const depoimentos = [
 
 const Index: React.FC = () => {
     const wallpaper = 'assets/img/background.jpg'
+    const videoMain = 'assets/video/consultoria.mov'
 
     const videos = [
         {
@@ -70,7 +180,19 @@ const Index: React.FC = () => {
         },
         {
             video: {
-                src: 'assets/video/video_2.mp4',
+                src: 'assets/video/video_2.mov',
+                alt: 'description'
+            }
+        },
+        {
+            video: {
+                src: 'assets/video/video_3.mov',
+                alt: 'description'
+            }
+        },
+        {
+            video: {
+                src: 'assets/video/video_4.mov',
                 alt: 'description'
             }
         }
@@ -118,6 +240,7 @@ const Index: React.FC = () => {
                 depoimentos={depoimentos}
                 txtBemVindo={txtBemVindo}
                 instagramPosts={carouselFotosInstagram}
+                videoMain={videoMain}
             />
         </PageTemplate>
     )

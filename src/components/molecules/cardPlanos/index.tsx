@@ -10,6 +10,7 @@ type Props = {
     image: string
     linkPage: string
     buttonLabel: string
+    buttonClass?: string
 }
 
 const CardPlanos = ({
@@ -19,17 +20,24 @@ const CardPlanos = ({
     recommended,
     image,
     linkPage,
-    buttonLabel
+    buttonLabel,
+    buttonClass
 }: Props) => {
     return (
-        <div className="col">
+        <div className="col h-100">
             <div
-                className={`card rounded bg-dark overflow-hidden h-100 pb-2 ${
+                className={`card rounded bg-dark overflow-hidden ${
                     recommended && 'border border-primary'
                 }
                 ' `}
             >
-                <img src={image} className="card-img-top"></img>
+                <div
+                    className="card-header h-50 bg-image"
+                    style={{
+                        backgroundImage: `url(${image})`,
+                        minHeight: '300px'
+                    }}
+                ></div>
                 <div className="card-body">
                     <div className="fs-3 fw-normal card-title">{title}</div>
                     {price && (
@@ -53,7 +61,11 @@ const CardPlanos = ({
                         'card-footer d-flex align-items-center justify-content-center'
                     }
                 >
-                    <Button label={buttonLabel} href={linkPage} />
+                    <Button
+                        label={buttonLabel}
+                        className={`${buttonClass} btn rounded`}
+                        href={linkPage}
+                    />
                 </div>
             </div>
         </div>

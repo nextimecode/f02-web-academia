@@ -31,13 +31,14 @@ const Home = ({ urlWallpaper = '' }: Props) => {
                                 }}
                             >
                                 <Subtitle label="Não deixe para depois" />
-                                <Title label="Conquiste seu resultado neste ano" />
+                                <Title label="Ganhe massa e perca peso fácil a jato" />
                             </div>
 
                             <div className="d-flex justify-content-center">
                                 <Button
                                     label="Comece agora >>"
                                     href="#planos"
+                                    className="btn rounded btn-buy btn-buy-course"
                                 />
                             </div>
                         </div>

@@ -16,7 +16,7 @@ const Menu = ({ urlLogo, listNavLinks }: Props) => {
             expand="md"
             bg="dark"
             variant="dark"
-            className="px-4 menu-position"
+            className="px-4 menu-position fixed-top w-100"
         >
             <Navbar.Brand href={listNavLinks[0].navLink.href}>
                 <img src={urlLogo} height="70px" />

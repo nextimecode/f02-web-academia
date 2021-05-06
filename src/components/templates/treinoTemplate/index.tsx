@@ -3,22 +3,18 @@ import { PhotoProps } from '../../../types/types'
 import Separator from '../../atoms/separator'
 import DepoimentosTexto from '../../atoms/organisms/depoimentosTexto'
 import Faq from '../../atoms/organisms/faq'
-import Resultados from '../../atoms/organisms/resultados'
 import TreinoConteudo from '../../atoms/organisms/treinoConteudo'
-import TreinoPreco from '../../atoms/organisms/treinoPreco'
 import TreinosFuncionam from '../../atoms/organisms/treinosFuncionam'
 import VideoTreino from '../../atoms/organisms/videoTreino'
 import { depoimentos } from '../../../pages/index'
+import Hero from '../../atoms/organisms/hero'
 type Props = {
+    heroImage: string
     srcVideo: string
-    buttonLabel: string
-    buttonHref: string
     sectionConteudoSubtitle: string
     sectionConteudoTitle: string
     treinosFuncionamTitle?: string
     treinosFuncionamText?: string
-    treinosFuncionamVideo1: string
-    treinosFuncionamVideo2: string
     carouselPhotos: Record<string, PhotoProps>[]
     cardPlanoTitle: string
     cardPlanoPreco: Record<string, any>
@@ -28,16 +24,12 @@ type Props = {
 }
 
 const TreinoTemplate = ({
+    heroImage,
     srcVideo,
-    buttonLabel,
-    buttonHref,
     sectionConteudoSubtitle,
     sectionConteudoTitle,
     treinosFuncionamTitle,
     treinosFuncionamText,
-    treinosFuncionamVideo1,
-    treinosFuncionamVideo2,
-    carouselPhotos,
     cardPlanoTitle,
     cardPlanoPreco,
     cardPlanoImage,
@@ -117,30 +109,17 @@ const TreinoTemplate = ({
 
     return (
         <>
+            <Hero
+                heroImage={heroImage}
+                label1="A mais completa plataforma de"
+                label2="Treinos Online"
+            />
+            <Separator />
             <VideoTreino
-                labelTituloLinha1="A mais completa plataforma de"
-                labelTituloLinha2="treinos online"
-                videoTreinoText="Treinos exclusivos que ajudam mulheres e homens de todas as idades tanto no brasil como no exterior: Estados Unidos, Irlanda, Portugal, etc.  Visando cuidar da saúde e da mente e manter a autoestima sempre elevada."
+                labelTituloLinha1="Treinos"
+                labelTituloLinha2="Exclusivos"
+                videoTreinoText="que ajudam mulheres e homens de todas as idades tanto no brasil como no exterior: Estados Unidos, Irlanda, Portugal, etc.  Visando cuidar da saúde e da mente e manter a autoestima sempre elevada."
                 srcVideo={srcVideo}
-                buttonLabel={buttonLabel}
-                buttonHref={buttonHref}
-            />
-            <Separator />
-            <TreinoConteudo
-                cardsAcessos={cardAcessos}
-                sectionConteudoSubtitle={sectionConteudoSubtitle}
-                sectionConteudoTitle={sectionConteudoTitle}
-            />
-            <TreinosFuncionam
-                treinosFuncionamTitle={treinosFuncionamTitle}
-                treinosFuncionamText={treinosFuncionamText}
-                treinosFuncionamVideo1={treinosFuncionamVideo1}
-                treinosFuncionamVideo2={treinosFuncionamVideo2}
-            />
-            <Separator />
-            <Resultados carouselPhotos={carouselPhotos} />
-            <Separator />
-            <TreinoPreco
                 cardPlanoTitle={cardPlanoTitle}
                 cardPlanoPreco={cardPlanoPreco}
                 cardPlanoImage={cardPlanoImage}
@@ -148,6 +127,16 @@ const TreinoTemplate = ({
                 cardPlanoButtonLabel={cardPlanoButtonLabel}
             />
             <Separator />
+            <TreinoConteudo
+                cardsAcessos={cardAcessos}
+                sectionConteudoSubtitle={sectionConteudoSubtitle}
+                sectionConteudoTitle={sectionConteudoTitle}
+            />
+            <Separator />
+            <TreinosFuncionam
+                treinosFuncionamTitle={treinosFuncionamTitle}
+                treinosFuncionamText={treinosFuncionamText}
+            />
             <Faq />
             <Separator />
             <DepoimentosTexto depoimentos={depoimentos} />

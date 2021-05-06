@@ -10,11 +10,12 @@ const Planos = () => {
                 title: 'Treino Feminino',
                 recommended: false,
                 price: {
-                    value: 40
+                    value: '41,90'
                 },
-                image: '/assets/img/cards/card_01.jpg',
+                image: '/assets/img/cards/plano_fem.jpg',
                 linkPage: '/treino-mulheres',
                 buttonLabel: 'Saiba mais',
+                buttonClass: 'btn-buy btn-buy-course',
                 cardText: {
                     listClasses: 'fw-lighter card-text',
                     listItemClasses: 'p-2',
@@ -40,9 +41,10 @@ const Planos = () => {
             card: {
                 title: 'Consultoria Personalizada',
                 recommended: true,
-                image: '/assets/img/cards/card_02.jpg',
+                image: '/assets/img/cards/card_08.jpg',
                 linkPage: '/consultoria',
-                buttonLabel: 'Saiba mais',
+                buttonLabel: 'Seja Vip',
+                buttonClass: 'btn-buy btn-buy-vip',
                 cardText: {
                     listClasses: 'fw-lighter',
                     listItemClasses: 'p-2',
@@ -63,11 +65,12 @@ const Planos = () => {
                 title: 'Treino Masculino',
                 recommended: false,
                 price: {
-                    value: 40
+                    value: '41,90'
                 },
-                image: '/assets/img/cards/card_03.jpg',
+                image: '/assets/img/cards/plano_masc.jpg',
                 linkPage: '/treino-homens',
                 buttonLabel: 'Saiba mais',
+                buttonClass: 'btn-buy btn-buy-course',
                 cardText: {
                     listClasses: 'fw-lighter card-text',
                     listItemClasses: 'p-2',
@@ -107,6 +110,7 @@ const Planos = () => {
                                 image={c.card.image}
                                 linkPage={c.card.linkPage}
                                 buttonLabel={c.card.buttonLabel}
+                                buttonClass={c.card.buttonClass}
                             >
                                 <ul className={c.card.cardText.listClasses}>
                                     {c.card.cardText.listItems.map(
