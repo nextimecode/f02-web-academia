@@ -5,10 +5,7 @@ type Props = {
     classes?: string
 }
 
-const Film = ({
-    src,
-    classes
-}: Props) => (
+const Film = ({ src, classes }: Props) => (
     <video controls className={`${classes} my-1`}>
         <source src={src} />
     </video>

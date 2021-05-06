@@ -1,5 +1,4 @@
 import React from 'react'
-import { PhotoProps } from '../../../types/types'
 import Separator from '../../atoms/separator'
 import DepoimentosTexto from '../../atoms/organisms/depoimentosTexto'
 import Faq from '../../atoms/organisms/faq'
@@ -8,6 +7,7 @@ import TreinosFuncionam from '../../atoms/organisms/treinosFuncionam'
 import VideoTreino from '../../atoms/organisms/videoTreino'
 import { depoimentos } from '../../../pages/index'
 import Hero from '../../atoms/organisms/hero'
+
 type Props = {
     heroImage: string
     srcVideo: string
