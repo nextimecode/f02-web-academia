@@ -78,6 +78,17 @@ p.apresentacao {
     content: '>' !important;
     font-weight: 900;
 }
+.react-multiple-carousel__arrow {
+    border-width: 5px !important;
+    border-color: #dc3545 !important;
+    border-style: inset !important;
+    z-index: 1 !important;
+}
+
+.insta-post {
+    border-radius: 8px;
+    object-fit: cover;
+}
 
 .bottom-slider .react-multiple-carousel__arrow {
     bottom: 84px;
@@ -149,4 +160,15 @@ p.apresentacao {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.menu-position { z-index: 2; }
+
+.menu-position > * {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 768px) {
+    .nav-right { justify-content: center; }
 }

@@ -1,12 +1,12 @@
 import React from 'react'
 import Separator from '../../atoms/separator'
-import DepoimentosTexto from '../../atoms/organisms/depoimentosTexto'
-import Faq from '../../atoms/organisms/faq'
-import TreinoConteudo from '../../atoms/organisms/treinoConteudo'
-import TreinosFuncionam from '../../atoms/organisms/treinosFuncionam'
-import VideoTreino from '../../atoms/organisms/videoTreino'
+import DepoimentosTexto from '../../organisms/depoimentosTexto'
+import Faq from '../../organisms/faq'
+import TreinoConteudo from '../../organisms/treinoConteudo'
+import TreinosFuncionam from '../../organisms/treinosFuncionam'
+import VideoTreino from '../../organisms/videoTreino'
 import { depoimentos } from '../../../pages/index'
-import Hero from '../../atoms/organisms/hero'
+import Hero from '../../organisms/hero'
 
 type Props = {
     heroImage: string

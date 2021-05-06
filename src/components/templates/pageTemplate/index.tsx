@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
-import Header from '../../atoms/organisms/header'
-import Footer from '../../atoms/organisms/footer'
+import Header from '../../organisms/header'
+import Footer from '../../organisms/footer'
 import Button from '../../atoms/button'
 import { telefone } from '../../../pages/index'
 
