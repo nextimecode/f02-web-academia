@@ -24,7 +24,7 @@ const TreinoPreco = ({
             <div className="container">
                 <div className="row">
                     <div className="col-md-6 col-sm-12 m-auto text-center">
-                        <Film src={srcVideo} classes="mh-full" />
+                        <Film src={srcVideo}/>
                     </div>
                     <div className="col-md-6 order-md-0 order-last">
                         <CardPlanos
