@@ -42,10 +42,13 @@ const ConsultoriaPagamento = ({ videoMain }: Props) => {
             <div className="container">
                 <div className="row my-5">
                     <Title label="Consultoria Personalizada" />
-                    <div className="col-md-6 col-sm-12 m-auto text-center">
-                        <Film src={videoMain} classes="mh-80" />
+
+                    <div className="col-md-12 col-lg-5 text-center">
+                        <div className="ratio ratio-9x16 mh-80 my-1">
+                            <Film src={videoMain} />
+                        </div>
                     </div>
-                    <div className="col-md-6 col-sm-12 m-auto">
+                    <div className="col-md-12 col-lg-7 order-md-0 order-last p-0 my-1 text-center">
                         <ConsultoriaCard
                             image={cardPlano.card.image}
                             buttonLabel={cardPlano.card.buttonLabel}

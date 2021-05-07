@@ -8,6 +8,7 @@ type Props = {
 const NextimeSvg = ({ size = 1.5, color = 'white' }: Props) => {
     const height = `${size}rem`
     const width = `${4 * size}rem`
+
     return (
         <svg
             width={width}

@@ -37,7 +37,7 @@ const Menu = ({ urlLogo, listNavLinks }: Props) => {
                                             <NavDropdown.Item
                                                 key={idx}
                                                 href={li.navLink.href}
-                                                className="py-3 text-center"
+                                                className="py-3"
                                             >
                                                 {li.navLink.label}
                                             </NavDropdown.Item>

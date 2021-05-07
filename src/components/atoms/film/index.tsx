@@ -2,12 +2,12 @@ import React from 'react'
 
 type Props = {
     src: string
-    classes?: string
 }
 
-const Film = ({ src, classes }: Props) => (
-    <video controls className={`${classes} my-1`}>
-        <source src={src} />
+const Film = ({ src }: Props) => (
+    <video controls>
+        {' '}
+        <source src={src} />{' '}
     </video>
 )
 

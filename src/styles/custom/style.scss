@@ -12,12 +12,14 @@ body {
 .footer {
     background-color: $black;
 }
-a.link {
+a:link {
     text-decoration: none;
     color: inherit;
+    transition: .3s;
 }
-a.link:hover {
+a:hover {
     color: $yellow;
+    transition: .3s;
 }
 
 a:link svg {
@@ -131,8 +133,20 @@ p.apresentacao {
     font-size: 1.8rem;
 }
 
+.btn-sticky {
+    display: inline-table;
+    bottom: 1.5em;
+    right: 1.5em;
+    position: fixed;
+}
+
+@media only screen and (min-width: 511px) {
+    .footer-item {
+        text-align: center;
+    }
+}
+
 .mh-80 { max-height: 80vh; }
-.mh-60 { max-height: 60vh; }
 
 .mh-full { max-height: 100vh; }
 
@@ -140,7 +154,6 @@ p.apresentacao {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 80vh;
 }
 .card-consultoria-texto {
     background-color: rgba(0,0,0,0.7);
@@ -153,7 +166,7 @@ p.apresentacao {
 
 .card-consultoria-list ul li {
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .bg-image {

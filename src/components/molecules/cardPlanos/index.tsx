@@ -1,6 +1,7 @@
 import React from 'react'
 import Price from '../../molecules/price'
 import Button from '../../atoms/button'
+import ConsultoriaCard from '../consultoriaCard'
 
 type Props = {
     children: React.ReactNode
@@ -22,20 +23,23 @@ const CardPlanos = ({
     linkPage,
     buttonLabel,
     buttonClass
-}: Props) => {
-    return (
-        <div className="col h-100">
-            <div
-                className={`card rounded bg-dark overflow-hidden ${
-                    recommended && 'border border-primary'
-                }
-                ' `}
-            >
+}: Props) => recommended ? (
+        <div className="col">
+            <ConsultoriaCard
+                buttonLabel={buttonLabel}
+                children={children}
+                image={image}
+                linkUrl={linkPage}
+            />
+        </div>
+    ) : (
+        <div className="col">
+            <div className="card rounded bg-dark overflow-hidden h-100">
                 <div
-                    className="card-header h-50 bg-image"
+                    className="card-header bg-image"
                     style={{
                         backgroundImage: `url(${image})`,
-                        minHeight: '300px'
+                        minHeight: '35vh'
                     }}
                 ></div>
                 <div className="card-body">
@@ -70,6 +74,5 @@ const CardPlanos = ({
             </div>
         </div>
     )
-}
 
 export default CardPlanos

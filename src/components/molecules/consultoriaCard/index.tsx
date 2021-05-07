@@ -11,7 +11,7 @@ type Props = {
 const ConsultoriaCard = ({ children, image, buttonLabel, linkUrl }: Props) => {
     return (
         <div
-            className="d-flex border border-primary card-consultoria my-1"
+            className="h-100 d-flex border border-primary card-consultoria"
             style={{
                 backgroundColor: 'black',
                 backgroundImage: `url("${image}")`

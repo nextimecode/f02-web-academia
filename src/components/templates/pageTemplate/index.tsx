@@ -40,7 +40,7 @@ const PageTemplate = ({
                 <footer>
                     <Footer />
                 </footer>
-                <div className="fixed-bottom d-flex justify-content-end m-4">
+                <div className="btn-sticky">
                     <Button
                         label="Dúvidas?"
                         prefixIcon="whatsapp"

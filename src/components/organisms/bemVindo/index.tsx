@@ -22,8 +22,10 @@ const BemVindo = ({ txtBemVindo, videoMain }: Props) => {
                             </p>
                         ))}
                     </div>
-                    <div className="col-sm-12 col-md-6 m-auto text-center">
-                        <Film src={videoMain} classes="mh-60" />
+                    <div className="col-sm-12 col-md-6 text-center">
+                        <div className="ratio ratio-9x16 mh-80 my-1">
+                            <Film src={videoMain} />
+                        </div>
                     </div>
                 </div>
             </Container>
