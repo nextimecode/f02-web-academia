@@ -6,9 +6,16 @@ type Props = {
     image: string
     buttonLabel: string
     linkUrl: string
+    target?: string
 }
 
-const ConsultoriaCard = ({ children, image, buttonLabel, linkUrl }: Props) => {
+const ConsultoriaCard = ({
+    children,
+    image,
+    buttonLabel,
+    linkUrl,
+    target = '_self'
+}: Props) => {
     return (
         <div
             className="h-100 d-flex border border-primary card-consultoria"
@@ -25,7 +32,7 @@ const ConsultoriaCard = ({ children, image, buttonLabel, linkUrl }: Props) => {
                             label={buttonLabel}
                             prefixIcon="whatsapp"
                             href={linkUrl}
-                            target="_blank"
+                            target={target}
                             className="btn rounded btn-buy btn-buy-vip"
                             style={{ backgroundColor: '$orange' }}
                         />

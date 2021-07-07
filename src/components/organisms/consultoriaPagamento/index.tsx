@@ -52,6 +52,7 @@ const ConsultoriaPagamento = ({ videoMain }: Props) => {
                         <ConsultoriaCard
                             image={cardPlano.card.image}
                             buttonLabel={cardPlano.card.buttonLabel}
+                            target="_blank"
                             linkUrl={cardPlano.card.linkUrl}
                         >
                             <ul className={cardPlano.card.cardText.listClasses}>

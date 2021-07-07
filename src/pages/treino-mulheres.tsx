@@ -13,7 +13,7 @@ const TreinoMulheres: React.FC = () => {
                 cardPlanoTitle="Plano feminino"
                 cardPlanoPreco={{ value: '41,90' }}
                 cardPlanoImage="/assets/img/cards/card_01.jpg"
-                cardPlanoLinkPage="/#"
+                cardPlanoLinkPage="https://pay.hotmart.com/L50679467Q"
                 cardPlanoButtonLabel="Alcance seus objetivos"
             />
         </PageTemplate>
