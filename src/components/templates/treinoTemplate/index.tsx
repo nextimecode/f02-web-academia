@@ -5,7 +5,7 @@ import Faq from '../../organisms/faq'
 import TreinoConteudo from '../../organisms/treinoConteudo'
 import TreinosFuncionam from '../../organisms/treinosFuncionam'
 import VideoTreino from '../../organisms/videoTreino'
-import { depoimentos } from '../../../pages/index'
+import { depoimentos, hotmartCourseUrl } from '../../../pages/index'
 import Hero from '../../organisms/hero'
 
 type Props = {
@@ -18,7 +18,6 @@ type Props = {
     cardPlanoTitle: string
     cardPlanoPreco: Record<string, any>
     cardPlanoImage: string
-    cardPlanoLinkPage: string
     cardPlanoButtonLabel: string
 }
 
@@ -32,7 +31,6 @@ const TreinoTemplate = ({
     cardPlanoTitle,
     cardPlanoPreco,
     cardPlanoImage,
-    cardPlanoLinkPage,
     cardPlanoButtonLabel
 }: Props) => {
     const patternCardImage = 'assets/img/cards/'
@@ -122,7 +120,7 @@ const TreinoTemplate = ({
                 cardPlanoTitle={cardPlanoTitle}
                 cardPlanoPreco={cardPlanoPreco}
                 cardPlanoImage={cardPlanoImage}
-                cardPlanoLinkPage={cardPlanoLinkPage}
+                cardPlanoLinkPage={hotmartCourseUrl}
                 cardPlanoButtonLabel={cardPlanoButtonLabel}
             />
             <Separator />

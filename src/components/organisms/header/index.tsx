@@ -49,7 +49,7 @@ const Header = () => {
         },
         {
             navLink: {
-                href: '/area-do-aluno',
+                href: 'https://app-vlc.hotmart.com/login',
                 label: 'Área de Alunos'
             }
         }
