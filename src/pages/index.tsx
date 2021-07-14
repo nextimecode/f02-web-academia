@@ -6,7 +6,7 @@ export const telefone = '5531991464894'
 export const instagramLink =
     'https://www.instagram.com/instrutordefitnessvinicius/'
 
-export const hotmartCourseUrl = 'https://pay.hotmart.com/L50679467Q'
+export const hotmartCourseUrl = 'https://go.hotmart.com/L50679467Q'
 
 const fotosInstagram = []
 const fotosInstagramPath = 'assets/img/instagramPosts/'
