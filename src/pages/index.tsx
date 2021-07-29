@@ -167,7 +167,28 @@ export const depoimentos = [
             texto:
                 'Já são 3 meses treinando com o Vinícius, 3 meses que vem transformando minha vida! O treinamento está me ajudando muito, principalmente pelo fato de eu ter hérnia de disco. Parabéns pelo trabalho e paciência comigo, profissional que sempre se empenha para ver o melhor para seus alunos.'
         }
-    }
+    },
+    {
+        depoimento: {
+            nome: 'Daniela',
+            texto:
+                'Bom dia Vinícius, tudo bem? Passando só para falar que estou gostando muito! Tem duas semanas que estou treinado e já super recomendo; inclusive minha amiga marcou avaliação com vc pra quarta-feira!! 😊😊 Eu  vou e ainda levo as amigas hahahaha.'
+        }
+    },
+    {
+        depoimento: {
+            nome: 'Rafaela',
+            texto:
+                'Você é bravo demais; já vi evolução no meu corpo e na minha saúde, até meu filho comentou sobre minhas pernas e bumbum. Estou evoluindo muito rápido! Agora preciso acertar na alimentação, obg e em breve estarei aqui novamente para te agradecer. Tmj!'
+        }
+    },
+    {
+        depoimento: {
+            nome: 'Renata',
+            texto:
+                'Obg Vini pela aula de hoje. Super gostei do treino, até que as horas passaram rápido por ser a primeira aula. Foi muito bom, porque se não, estaria morta. Confesso que amei a sua dedicação ao trabalho. Sou iniciante e jamais conseguiria treinar se não estivesse com um ótimo profissional que é você. Abraços'
+        }
+    },
 ]
 
 const Index: React.FC = () => {

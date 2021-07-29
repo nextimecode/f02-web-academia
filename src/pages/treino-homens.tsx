@@ -2,7 +2,7 @@ import React from 'react'
 import PageTemplate from '../components/templates/pageTemplate'
 import TreinoTemplate from '../components/templates/treinoTemplate'
 
-import {HOTMART_COURSE_MEN} from '../pages/index'
+import { HOTMART_COURSE_MEN } from '../pages/index'
 
 const Treino: React.FC = () => {
     return (

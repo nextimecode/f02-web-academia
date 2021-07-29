@@ -42,7 +42,7 @@ const PageTemplate = ({
                 </footer>
                 <div className="btn-sticky">
                     <Button
-                        label="Dúvidas?"
+                        label={`Compre Aqui!`}
                         prefixIcon="whatsapp"
                         href={`https://api.whatsapp.com/send?phone=${telefone}&text=${mensagem}`}
                         target="_blank"

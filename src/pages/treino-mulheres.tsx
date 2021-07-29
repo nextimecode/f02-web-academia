@@ -2,7 +2,7 @@ import React from 'react'
 import PageTemplate from '../components/templates/pageTemplate'
 import TreinoTemplate from '../components/templates/treinoTemplate'
 
-import {HOTMART_COURSE_WOMEN} from '../pages/index'
+import { HOTMART_COURSE_WOMEN } from '../pages/index'
 
 const TreinoMulheres: React.FC = () => {
     return (
