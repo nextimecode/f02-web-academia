@@ -1,89 +1,124 @@
 import React from 'react'
-import {
-    CardAcessosProps,
-    DepoimentoProps,
-    PerguntasRespostas,
-    PhotoProps
-} from '../../../types/types'
 import Separator from '../../atoms/separator'
 import DepoimentosTexto from '../../organisms/depoimentosTexto'
 import Faq from '../../organisms/faq'
-import Resultados from '../../organisms/resultados'
 import TreinoConteudo from '../../organisms/treinoConteudo'
-import TreinoPreco from '../../organisms/treinoPreco'
 import TreinosFuncionam from '../../organisms/treinosFuncionam'
 import VideoTreino from '../../organisms/videoTreino'
+import { depoimentos } from '../../../pages/index'
+import Hero from '../../organisms/hero'
 
 type Props = {
-    labelTituloLinha1: string
-    labelTituloLinha2: string
+    heroImage: string
     srcVideo: string
-    buttonLabel: string
-    buttonHref: string
-    cardsAcessos: Record<string, CardAcessosProps>[]
     sectionConteudoSubtitle: string
     sectionConteudoTitle: string
-    treinosFuncionamTitle: string
-    treinosFuncionamText: string
-    treinosFuncionamVideo1: string
-    treinosFuncionamVideo2: string
-    carouselPhotos: Record<string, PhotoProps>[]
-    depoimentos: Record<string, DepoimentoProps>[]
-    perguntasRespostasFaq: PerguntasRespostas[]
+    treinosFuncionamTitle?: string
+    treinosFuncionamText?: string
     cardPlanoTitle: string
     cardPlanoPreco: Record<string, any>
     cardPlanoImage: string
-    cardPlanoLinkPage: string
     cardPlanoButtonLabel: string
+    cardPlanoLinkPage: string
 }
 
 const TreinoTemplate = ({
-    labelTituloLinha1,
-    labelTituloLinha2,
+    heroImage,
     srcVideo,
-    buttonLabel,
-    buttonHref,
-    cardsAcessos,
     sectionConteudoSubtitle,
     sectionConteudoTitle,
     treinosFuncionamTitle,
     treinosFuncionamText,
-    treinosFuncionamVideo1,
-    treinosFuncionamVideo2,
-    carouselPhotos,
-    depoimentos,
-    perguntasRespostasFaq,
     cardPlanoTitle,
     cardPlanoPreco,
     cardPlanoImage,
-    cardPlanoLinkPage,
-    cardPlanoButtonLabel
+    cardPlanoButtonLabel,
+    cardPlanoLinkPage
 }: Props) => {
+    const patternCardImage = 'assets/img/cards/'
+    const extensao = '.jpg'
+
+    const cardAcessos = [
+        {
+            card: {
+                image: `${patternCardImage}card_01${extensao}`,
+                label: 'Treinos Femininos',
+                text: 'Treinos completos para fazer em casa e na academia'
+            }
+        },
+        {
+            card: {
+                image: `${patternCardImage}card_02${extensao}`,
+                label: 'Consultoria Personalizada',
+                text: 'Programas por WhatsApp e acesso a Instagram exclusivo'
+            }
+        },
+        {
+            card: {
+                image: `${patternCardImage}card_03${extensao}`,
+                label: 'Treinos Masculinos',
+                text: 'Treinos completos para fazer em casa e na academia'
+            }
+        },
+        {
+            card: {
+                image: `${patternCardImage}card_04${extensao}`,
+                label: 'Planilhas completas',
+                text:
+                    'Planilhas de treinos completas divididas por nível – inciante / intermediário / avançado'
+            }
+        },
+        {
+            card: {
+                image: `${patternCardImage}card_05${extensao}`,
+                label: 'Lives',
+                text: 'Lives salvas dos meus treinos em casa'
+            }
+        },
+        {
+            card: {
+                image: `${patternCardImage}card_06${extensao}`,
+                label: 'Bônus de abdômen',
+                text: 'Treinos bônus abdômen e cárdio'
+            }
+        },
+        {
+            card: {
+                image: `${patternCardImage}card_07${extensao}`,
+                label: 'Bônus de pernas',
+                text: 'Treinos bônus glúteos e posteriores'
+            }
+        },
+        {
+            card: {
+                image: `${patternCardImage}card_08${extensao}`,
+                label: 'Bônus de dieta',
+                text:
+                    'Dicas de como desenvolver seu planejamento alimentar e seleção dos suprimentos com nutrólogas e nutricionistas'
+            }
+        },
+        {
+            card: {
+                image: `${patternCardImage}card_09${extensao}`,
+                label: 'Bônus de suplementação',
+                text: 'Dicas de suplementação para emagrecimento e hipertrofia'
+            }
+        }
+    ]
+
     return (
         <>
+            <Hero
+                heroImage={heroImage}
+                label1="A mais completa plataforma de"
+                label2="Treinos Online"
+            />
+            <Separator />
             <VideoTreino
-                labelTituloLinha1={labelTituloLinha1}
-                labelTituloLinha2={labelTituloLinha2}
+                labelTituloLinha1="Treinos"
+                labelTituloLinha2="Exclusivos"
+                videoTreinoText="que ajudam mulheres e homens de todas as idades tanto no brasil como no exterior: Estados Unidos, Irlanda, Portugal, etc.  Visando cuidar da saúde e da mente e manter a autoestima sempre elevada."
                 srcVideo={srcVideo}
-                buttonLabel={buttonLabel}
-                buttonHref={buttonHref}
-            />
-            <Separator />
-            <TreinoConteudo
-                cardsAcessos={cardsAcessos}
-                sectionConteudoSubtitle={sectionConteudoSubtitle}
-                sectionConteudoTitle={sectionConteudoTitle}
-            />
-            <TreinosFuncionam
-                treinosFuncionamTitle={treinosFuncionamTitle}
-                treinosFuncionamText={treinosFuncionamText}
-                treinosFuncionamVideo1={treinosFuncionamVideo1}
-                treinosFuncionamVideo2={treinosFuncionamVideo2}
-            />
-            <Separator />
-            <Resultados carouselPhotos={carouselPhotos} />
-            <Separator />
-            <TreinoPreco
                 cardPlanoTitle={cardPlanoTitle}
                 cardPlanoPreco={cardPlanoPreco}
                 cardPlanoImage={cardPlanoImage}
@@ -91,7 +126,17 @@ const TreinoTemplate = ({
                 cardPlanoButtonLabel={cardPlanoButtonLabel}
             />
             <Separator />
-            <Faq perguntasRespostas={perguntasRespostasFaq} />
+            <TreinoConteudo
+                cardsAcessos={cardAcessos}
+                sectionConteudoSubtitle={sectionConteudoSubtitle}
+                sectionConteudoTitle={sectionConteudoTitle}
+            />
+            <Separator />
+            <TreinosFuncionam
+                treinosFuncionamTitle={treinosFuncionamTitle}
+                treinosFuncionamText={treinosFuncionamText}
+            />
+            <Faq />
             <Separator />
             <DepoimentosTexto depoimentos={depoimentos} />
         </>

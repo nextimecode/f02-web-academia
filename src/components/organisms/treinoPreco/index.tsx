@@ -1,6 +1,6 @@
 import React from 'react'
-import Title from '../../atoms/title'
 import CardPlanos from '../../molecules/cardPlanos'
+import Film from '../../atoms/film'
 
 type Props = {
     cardPlanoTitle: string
@@ -8,6 +8,7 @@ type Props = {
     cardPlanoImage: string
     cardPlanoLinkPage: string
     cardPlanoButtonLabel: string
+    srcVideo: string
 }
 
 const TreinoPreco = ({
@@ -15,12 +16,16 @@ const TreinoPreco = ({
     cardPlanoPreco,
     cardPlanoImage,
     cardPlanoLinkPage,
-    cardPlanoButtonLabel
+    cardPlanoButtonLabel,
+    srcVideo
 }: Props) => {
     return (
         <section className="py-5" id="planos">
             <div className="container">
                 <div className="row">
+                    <div className="col-md-6 col-sm-12 m-auto text-center">
+                        <Film src={srcVideo} />
+                    </div>
                     <div className="col-md-6 order-md-0 order-last">
                         <CardPlanos
                             title={cardPlanoTitle}
@@ -28,6 +33,7 @@ const TreinoPreco = ({
                             image={cardPlanoImage}
                             linkPage={cardPlanoLinkPage}
                             buttonLabel={cardPlanoButtonLabel}
+                            buttonClass="btn-buy btn-buy-course"
                         >
                             <ul className="fw-lighter card-text">
                                 <li className="p-2">
@@ -41,11 +47,6 @@ const TreinoPreco = ({
                                 </li>
                             </ul>
                         </CardPlanos>
-                    </div>
-                    <div className="col-md-6 d-flex order-md-1 order-first">
-                        <div className="justify-content-center align-middle m-auto">
-                            <Title label="Junte-se a nós" />
-                        </div>
                     </div>
                 </div>
             </div>

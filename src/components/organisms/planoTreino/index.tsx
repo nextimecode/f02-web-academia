@@ -14,10 +14,7 @@ const PlanoTreino = () => {
                     físicas e sua rotina."
                 />
                 <div className="row row-cols-1 row-cols-md-3 g-4 my-5">
-                    <CardTreino
-                        title="Objetivos"
-                        image="assets/img/training-custom.png"
-                    >
+                    <CardTreino title="Objetivos">
                         <p>
                             Um treinamento online personalizado, focado no seu
                             objetivo: redução de % de gordura, definição
@@ -25,10 +22,7 @@ const PlanoTreino = () => {
                             resultado.
                         </p>
                     </CardTreino>
-                    <CardTreino
-                        title="Individualidade"
-                        image="assets/img/training-man.png"
-                    >
+                    <CardTreino title="Individualidade">
                         <p>
                             Considerando o contexto de cada aluno, como dores,
                             nível de treinamento, dias e tempo disponíveis,
@@ -36,10 +30,7 @@ const PlanoTreino = () => {
                             materiais disponíveis na sua residência.
                         </p>
                     </CardTreino>
-                    <CardTreino
-                        title="Preferências"
-                        image="assets/img/training-woman.png"
-                    >
+                    <CardTreino title="Preferências">
                         <p>
                             Levar em consideração seus gostos e preferências é
                             de extrema importância. Sobretudo, o que você não

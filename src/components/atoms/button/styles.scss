@@ -1,23 +1,5 @@
 @import '../../../styles/custom/variables.scss';
 
-.btn-buy {
-    font-family: 'Saira', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: $light;
-    background-color: $primary;
-    border-radius: 0px 0px 0px 0px;
-    box-shadow: 0px 0px 21px -9px $primary;
-}
-.btn-buy:hover {
-    box-shadow: 0 0 0 0 $primary;
-    transform: scale(1);
-    color: $light;
-    animation: pulse 1s infinite;
-    background-color: #cf3c22;
-}
-
 @keyframes pulse {
     0% {
         transform: scale(0.95);

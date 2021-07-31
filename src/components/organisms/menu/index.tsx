@@ -2,8 +2,6 @@ import React from 'react'
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap'
 import { NavLinkProps } from '../../../types/types'
 
-import './style.scss'
-
 type Props = {
     urlLogo: string
     listNavLinks: Record<string, NavLinkProps>[]
@@ -16,7 +14,7 @@ const Menu = ({ urlLogo, listNavLinks }: Props) => {
             expand="md"
             bg="dark"
             variant="dark"
-            className="px-4 menu-position"
+            className="px-4 menu-position fixed-top w-100"
         >
             <Navbar.Brand href={listNavLinks[0].navLink.href}>
                 <img src={urlLogo} height="70px" />
@@ -39,7 +37,7 @@ const Menu = ({ urlLogo, listNavLinks }: Props) => {
                                             <NavDropdown.Item
                                                 key={idx}
                                                 href={li.navLink.href}
-                                                className="py-3 text-center"
+                                                className="py-3"
                                             >
                                                 {li.navLink.label}
                                             </NavDropdown.Item>

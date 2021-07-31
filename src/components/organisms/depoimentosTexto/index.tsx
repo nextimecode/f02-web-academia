@@ -10,19 +10,17 @@ type Props = {
 const DepoimentosTexto = ({ depoimentos }: Props) => {
     return (
         <section>
-            <div className="container">
-                <div className="row p-3">
-                    <div className="col-sm-12 col-md-4 col-lg-2 m-auto">
+            <div className="container p-2">
+                <div className="row mt-3">
+                    <div className="col-md-12 col-lg-5">
                         <Avatar
-                            foto="assets/img/avatars/personal.jpg"
+                            foto="assets/img/avatars/avatar.jpg"
                             nome="Vinícius Dias"
                             profissao="Personal Trainer"
                             width="160px"
                             height="160px"
                         />
-                    </div>
-                    <div className="col-sm-12 col-md-8 col-lg-5 m-auto">
-                        <p className="apresentacao px-2">
+                        <p className="apresentacao">
                             Olá, meu nome é Vinícius Dias! Hoje, venho dividir
                             meu método de treinamento para você destravar seus
                             resultados, conseguir emagrecer, definir seu corpo e
@@ -30,7 +28,7 @@ const DepoimentosTexto = ({ depoimentos }: Props) => {
                             esteja.
                         </p>
                     </div>
-                    <div className="col-sm-12 col-md-12 col-lg-5 m-auto my-4">
+                    <div className="col-md-12 col-lg-7">
                         <DepoimentoSlider depoimentos={depoimentos} />
                     </div>
                 </div>

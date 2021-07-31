@@ -1,5 +1,4 @@
 import React from 'react'
-import { PerguntasRespostas } from '../../../types/types'
 import Separator from '../../atoms/separator'
 import ConsultoriaBeneficios from '../../organisms/consultoriaBeneficios'
 import ConsultoriaPagamento from '../../organisms/consultoriaPagamento'
@@ -8,31 +7,30 @@ import Faq from '../../organisms/faq'
 import Hero from '../../organisms/hero'
 import PlanoTreino from '../../organisms/planoTreino'
 import ConsultoriaRelacao from '../../organisms/consultoriaRelacao'
-import ConsultoriaTransformacoes from '../../organisms/consultoriaTransformacoes'
-import ConsultoriaVideo from '../../organisms/consultoriaVideo'
 
 type Props = {
     heroImage: string
-    perguntasRespostasFaq: PerguntasRespostas[]
+    videoConsultoria: string
 }
 
-const ConsultoriaTemplate = ({ heroImage, perguntasRespostasFaq }: Props) => {
+const ConsultoriaTemplate = ({ heroImage, videoConsultoria }: Props) => {
     return (
         <>
-            <Hero heroImage={heroImage}></Hero>
+            <Hero
+                heroImage={heroImage}
+                label1="Consultoria"
+                label2="Personalizada"
+            />
             <ConsultoriaBeneficios />
             <ConsultoriaRelacao />
             <Separator />
-            <ConsultoriaVideo />
+            <ConsultoriaPagamento videoMain={videoConsultoria} />
             <Separator />
             <PlanoTreino />
             <Separator />
-            <ConsultoriaTransformacoes />
             <ConsultoriaEntenda />
             <Separator />
-            <ConsultoriaPagamento />
-            <Separator />
-            <Faq perguntasRespostas={perguntasRespostasFaq} />
+            <Faq />
         </>
     )
 }

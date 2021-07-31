@@ -33,7 +33,7 @@ const DepoimentoSlider = ({ depoimentos }: Props) => {
             ssr={true}
             infinite={true}
             keyBoardControl={true}
-            containerClass="carousel-container m-1"
+            containerClass="carousel-container m-1 bottom-slider"
             dotListClass="custom-dot-list-style"
             transitionDuration={300}
             arrows={true}

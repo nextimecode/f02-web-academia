@@ -8,8 +8,8 @@ const ConsultoriaEntenda = () => {
                 <ul>
                     <li className="my-2">
                         <p>
-                            Após realizar o pagamento de R$300,00, você receberá
-                            um questionário para ser preenchido com o máximo de
+                            Após realizar o pagamento, você receberá um
+                            questionário para ser preenchido com o máximo de
                             atenção, pois será com base nele e nas fotos da sua
                             academia ou materiais disponíveis que irei elaborar
                             seu plano de treino. Após a confirmação de
@@ -20,13 +20,12 @@ const ConsultoriaEntenda = () => {
                     </li>
                     <li>
                         <p>
-                            A consultoria não é mensal. O tempo para troca vai
-                            de acordo com a sua evolução e necessidade, pois
-                            isso é muito individual. Depende muito do seu
-                            objetivo e da sua assiduidade. Caso você siga
-                            corretamente o treino proposto, recomendo a troca a
-                            partir da sexta semana com base na periodização
-                            prescrita e enviada.
+                            A consultoria não é mensal. O tempo para troca vaide
+                            acordo com a sua evolução e necessidade, poisisso é
+                            muito individual. Depende muito do seu objetivo e da
+                            sua assiduidade. Caso você siga corretamente o
+                            treino proposto, recomendo a troca a partir da sexta
+                            semana com base na periodização prescrita e enviada.
                         </p>
                     </li>
                     <li>
