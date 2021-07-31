@@ -1,54 +1,39 @@
 import React from 'react'
 import Button from '../../atoms/button'
-import Title from '../../atoms/title'
-import Price from '../price'
-
-import './style.scss'
 
 type Props = {
     children: React.ReactNode
     image: string
-    title: string
     buttonLabel: string
     linkUrl: string
-    price: number
+    target?: string
 }
 
 const ConsultoriaCard = ({
     children,
     image,
-    title,
     buttonLabel,
     linkUrl,
-    price
+    target = '_self'
 }: Props) => {
     return (
         <div
-            className="container border border-primary"
-            style={{ backgroundColor: 'black' }}
+            className="h-100 d-flex border border-primary card-consultoria"
+            style={{
+                backgroundColor: 'black',
+                backgroundImage: `url("${image}")`
+            }}
         >
-            <div className="row">
-                <Title label={title} />
-            </div>
-            <hr />
-            <div
-                className="card-body card-consultoria py-5"
-                style={{
-                    backgroundImage: `url("${image}")`
-                }}
-            >
+            <div className="card-body align-self-end">
                 <div className="card-consultoria-texto rounded p-2">
-                    <Price
-                        price={price}
-                        frequency="por Programa de Treinamento"
-                    />
                     <div className="card-consultoria-list">{children}</div>
                     <div className="text-center my-3">
                         <Button
                             label={buttonLabel}
                             prefixIcon="whatsapp"
                             href={linkUrl}
-                            target="_blank"
+                            target={target}
+                            className="btn rounded btn-buy btn-buy-vip"
                             style={{ backgroundColor: '$orange' }}
                         />
                     </div>

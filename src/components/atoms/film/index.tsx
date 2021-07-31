@@ -6,7 +6,8 @@ type Props = {
 
 const Film = ({ src }: Props) => (
     <video controls>
-        <source src={src} />
+        {' '}
+        <source src={src} />{' '}
     </video>
 )
 

@@ -23,12 +23,23 @@ const Home = ({ urlWallpaper = '' }: Props) => {
             >
                 <Container>
                     <Row>
-                        <div className="position-absolute top-50 start-50 translate-middle text-center">
-                            <Subtitle label="Não deixe para depois" />
-                            <Title label="Alcance a sua melhor forma..." />
+                        <div className="position-absolute bottom-0 start-50 translate-middle text-center">
+                            <div
+                                style={{
+                                    backgroundColor: 'rgba(0,0,0,0.6)',
+                                    borderRadius: '10px'
+                                }}
+                            >
+                                <Subtitle label="Não deixe para depois" />
+                                <Title label="Ganhe massa e perca peso fácil a jato" />
+                            </div>
 
                             <div className="d-flex justify-content-center">
-                                <Button label="Comece agora >>" href="/#" />
+                                <Button
+                                    label="Comece agora >>"
+                                    href="#planos"
+                                    className="btn rounded btn-buy btn-buy-course"
+                                />
                             </div>
                         </div>
                     </Row>

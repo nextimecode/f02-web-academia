@@ -4,13 +4,13 @@ import PriceFrequency from '../../atoms/priceFrequency'
 import PriceCurrency from '../../atoms/priceCurrency'
 
 type Props = {
-    price: number
+    price: string
     frequency?: string
 }
 
 const Price = ({ price, frequency = 'mês' }: Props) => {
     return (
-        <div className="my-4 d-flex text-primary d-flex justify-content-center">
+        <div className="my-4 d-flex text-red d-flex justify-content-center">
             <div className="align-items-top">
                 <PriceCurrency />
             </div>

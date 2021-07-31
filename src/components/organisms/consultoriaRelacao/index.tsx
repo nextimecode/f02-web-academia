@@ -9,28 +9,36 @@ const ConsultoriaRelacao = () => {
                         <div className="align-self-center">
                             <img
                                 className="rounded w-100"
-                                src="assets/img/personal.jpg"
+                                src="assets/img/transf.jpg"
                                 alt="transformação"
                             />
                         </div>
                     </div>
                     <div className="col-md-6 p-3">
                         <h1 className="text-start text-primary">
-                            MUDE SUA RELAÇÃO COM A ATIVIDADE FÍSICA E ALCANCE
-                            SEUS OBJETIVOS DE FORMA PRÁTICA E PRAZEROSA!
+                            ALCANCE SEUS OBJETIVOS DE FORMA PRÁTICA E PRAZEROSA!
                         </h1>
                         <p>
-                            Uma das maiores dificuldades das pessoas é dar
-                            continuidade nos treinamentos. Isso acontece por
-                            falta de motivação ou de um bom plano de treino
-                            voltado para a sua real realidade (dores, tempo,
-                            objetivo, material ou equipamentos disponíveis). O
-                            importante não é treinar. O importante é sentir
-                            prazer treinando. E é por isso que estou aqui, para
-                            reformular a maneira com a qual as pessoas encaram o
-                            treinamento em academia, mostrando o quanto ele pode
-                            ser objetivo, prazeroso e ainda sim alcançar
-                            excelentes resultados.
+                            Vá confiante na direção dos seus sonhos. Viva a vida
+                            que você sempre sonhou imaginou, seja você.
+                        </p>
+                        <p>
+                            Venha alcançar seus objetivos, atividade física,
+                            saúde e bem estar.
+                        </p>
+                        <p>
+                            Quanto custa sua academia? Quanto você investe em
+                            treino? Você investe em um treinador para ele
+                            periodizar seus treinos?
+                        </p>
+                        <p>
+                            Pois é, espero que você tenha consciência para saber
+                            o custo-benefício que se propõem a contratar.
+                            Lembre-se o jeito mais eficiente de se conquistar
+                            sua meta é trabalhando nela todo dia, focar e
+                            investir o máximo possível em seus treinos, afinal,
+                            o único lugar que sucesso vem antes de trabalho é no
+                            dicionário, concorda?
                         </p>
                     </div>
                 </div>

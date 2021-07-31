@@ -3,7 +3,7 @@ import React from 'react'
 import { PhotoProps } from '../../../types/types'
 import Subhead from '../../atoms/subhead'
 import Title from '../../atoms/title'
-import PhotoSlider from '../../organisms/photoSlider'
+import PhotoSlider from '../photoSlider'
 
 type Props = {
     carouselPhotos: Record<string, PhotoProps>[]
@@ -11,8 +11,7 @@ type Props = {
 
 const Resultados = ({ carouselPhotos }: Props) => {
     const subtitulo = `
-        Já são mais de 5 mil vidas transformadas
-        através de @instrutordefitnessvinicius.
+        Mais de 5 mil vidas transformadas através de @instrutordefitness
     `
 
     return (
@@ -21,7 +20,11 @@ const Resultados = ({ carouselPhotos }: Props) => {
                 <Title label="Resultados reais" />
                 <Subhead label={subtitulo} />
 
-                <PhotoSlider photos={carouselPhotos} />
+                <PhotoSlider
+                    photos={carouselPhotos}
+                    showDots={false}
+                    draggable={true}
+                />
             </Container>
         </section>
     )

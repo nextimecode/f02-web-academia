@@ -29,7 +29,6 @@ const TreinoConteudo = ({
                             <CardAcessos
                                 cardImage={c.card.image}
                                 cardLabel={c.card.label}
-                                cardText={c.card.text}
                             />
                         </div>
                     ))}

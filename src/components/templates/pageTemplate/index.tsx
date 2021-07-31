@@ -3,14 +3,13 @@ import Head from 'next/head'
 import Header from '../../organisms/header'
 import Footer from '../../organisms/footer'
 import Button from '../../atoms/button'
+import { telefone, HOTMART_COURSE_WOMEN } from '../../../pages/index'
 
 type Props = {
     children: unknown
     title: string
     mensagem?: string
 }
-
-export const telefone = '5531991464894'
 
 const PageTemplate = ({
     children,
@@ -41,13 +40,15 @@ const PageTemplate = ({
                 <footer>
                     <Footer />
                 </footer>
-                <div className="fixed-bottom d-flex justify-content-end m-4">
+                <div className="btn-sticky">
                     <Button
-                        label="Dúvidas?"
-                        prefixIcon="whatsapp"
-                        href={`https://api.whatsapp.com/send?phone=${telefone}&text=${mensagem}`}
+                        label={'Compre Aqui!'}
+                        // prefixIcon="whatsapp"
+                        // href={`https://api.whatsapp.com/send?phone=${telefone}&text=${mensagem}`}
+                        href={HOTMART_COURSE_WOMEN}
                         target="_blank"
-                        style={{ backgroundColor: '#25D366', color: '#fff' }}
+                        // style={{ backgroundColor: '#25D366', color: '#fff' }}
+                        className={'btn rounded btn-buy btn-buy-course'}
                     />
                 </div>
             </div>

@@ -1,12 +1,12 @@
 import { useRouter } from 'next/dist/client/router'
 import React from 'react'
-import Menu from '../../organisms/menu'
+import Menu from '../menu'
 
 const Header = () => {
     const currentUrl = useRouter().pathname
     const homeUrl = currentUrl === '/' ? '#home' : '/'
 
-    const urlLogo = 'assets/img/logos/logo.png'
+    const urlLogo = 'assets/img/logos/logomarca.png'
 
     const listNavLinks = [
         {
@@ -49,7 +49,7 @@ const Header = () => {
         },
         {
             navLink: {
-                href: '/area-do-aluno',
+                href: 'https://app-vlc.hotmart.com/login',
                 label: 'Área de Alunos'
             }
         }
