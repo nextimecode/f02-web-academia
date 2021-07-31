@@ -48,7 +48,7 @@ const PageTemplate = ({
                         href={HOTMART_COURSE_WOMEN}
                         target="_blank"
                         // style={{ backgroundColor: '#25D366', color: '#fff' }}
-                        className={`btn rounded btn-buy btn-buy-course`}
+                        className={'btn rounded btn-buy btn-buy-course'}
                     />
                 </div>
             </div>
