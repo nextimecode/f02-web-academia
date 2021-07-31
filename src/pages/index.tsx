@@ -188,7 +188,7 @@ export const depoimentos = [
             texto:
                 'Obg Vini pela aula de hoje. Super gostei do treino, até que as horas passaram rápido por ser a primeira aula. Foi muito bom, porque se não, estaria morta. Confesso que amei a sua dedicação ao trabalho. Sou iniciante e jamais conseguiria treinar se não estivesse com um ótimo profissional que é você. Abraços'
         }
-    },
+    }
 ]
 
 const Index: React.FC = () => {

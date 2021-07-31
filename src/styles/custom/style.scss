@@ -138,6 +138,7 @@ p.apresentacao {
     bottom: 1.5em;
     right: 1.5em;
     position: fixed;
+    z-index: 2;
 }
 
 @media only screen and (min-width: 511px) {

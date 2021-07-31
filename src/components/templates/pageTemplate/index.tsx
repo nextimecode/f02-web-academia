@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Header from '../../organisms/header'
 import Footer from '../../organisms/footer'
 import Button from '../../atoms/button'
-import { telefone } from '../../../pages/index'
+import { telefone, HOTMART_COURSE_WOMEN } from '../../../pages/index'
 
 type Props = {
     children: unknown
@@ -42,11 +42,13 @@ const PageTemplate = ({
                 </footer>
                 <div className="btn-sticky">
                     <Button
-                        label={`Compre Aqui!`}
-                        prefixIcon="whatsapp"
-                        href={`https://api.whatsapp.com/send?phone=${telefone}&text=${mensagem}`}
+                        label={'Compre Aqui!'}
+                        // prefixIcon="whatsapp"
+                        // href={`https://api.whatsapp.com/send?phone=${telefone}&text=${mensagem}`}
+                        href={HOTMART_COURSE_WOMEN}
                         target="_blank"
-                        style={{ backgroundColor: '#25D366', color: '#fff' }}
+                        // style={{ backgroundColor: '#25D366', color: '#fff' }}
+                        className={`btn rounded btn-buy btn-buy-course`}
                     />
                 </div>
             </div>
