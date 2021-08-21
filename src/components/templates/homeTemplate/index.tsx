@@ -2,7 +2,6 @@ import React from 'react'
 import {
     DepoimentoProps,
     PhotoProps,
-    TextoProps,
     VideoProps
 } from '../../../types/types'
 import Separator from '../../atoms/separator'
@@ -20,7 +19,7 @@ interface Props {
     instagramPosts: Record<string, PhotoProps>[]
     videos: Record<string, VideoProps>[]
     depoimentos: Record<string, DepoimentoProps>[]
-    txtBemVindo: Record<string, TextoProps>[]
+    txtBemVindo: React.ReactElement
     videoMain: string
 }
 

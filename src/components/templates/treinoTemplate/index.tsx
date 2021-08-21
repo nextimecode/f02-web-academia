@@ -9,7 +9,6 @@ import { depoimentos } from '../../../pages/index'
 import Hero from '../../organisms/hero'
 
 type Props = {
-    heroImage: string
     srcVideo: string
     sectionConteudoSubtitle: string
     sectionConteudoTitle: string
@@ -20,49 +19,52 @@ type Props = {
     cardPlanoImage: string
     cardPlanoButtonLabel: string
     cardPlanoLinkPage: string
+    gender: string
 }
 
 const TreinoTemplate = ({
-    heroImage,
     srcVideo,
     sectionConteudoSubtitle,
     sectionConteudoTitle,
     treinosFuncionamTitle,
     treinosFuncionamText,
-    cardPlanoTitle,
     cardPlanoPreco,
     cardPlanoImage,
     cardPlanoButtonLabel,
-    cardPlanoLinkPage
+    cardPlanoLinkPage,
+    gender = 'female'
 }: Props) => {
     const patternCardImage = 'assets/img/cards/'
-    const extensao = '.jpg'
+    const fileExtension = '.jpg'
+
+    const heroImage = `assets/img/cards/plano_${gender}${fileExtension}`
+    const cardPlanoTitle = `Plano ${gender === 'male' ? 'Masculino' : 'Feminino'}`
 
     const cardAcessos = [
         {
             card: {
-                image: `${patternCardImage}card_01${extensao}`,
+                image: `${patternCardImage}card_01${fileExtension}`,
                 label: 'Treinos Femininos',
                 text: 'Treinos completos para fazer em casa e na academia'
             }
         },
         {
             card: {
-                image: `${patternCardImage}card_02${extensao}`,
+                image: `${patternCardImage}card_02${fileExtension}`,
                 label: 'Consultoria Personalizada',
                 text: 'Programas por WhatsApp e acesso a Instagram exclusivo'
             }
         },
         {
             card: {
-                image: `${patternCardImage}card_03${extensao}`,
+                image: `${patternCardImage}card_03${fileExtension}`,
                 label: 'Treinos Masculinos',
                 text: 'Treinos completos para fazer em casa e na academia'
             }
         },
         {
             card: {
-                image: `${patternCardImage}card_04${extensao}`,
+                image: `${patternCardImage}card_04${fileExtension}`,
                 label: 'Planilhas completas',
                 text:
                     'Planilhas de treinos completas divididas por nível – inciante / intermediário / avançado'
@@ -70,28 +72,28 @@ const TreinoTemplate = ({
         },
         {
             card: {
-                image: `${patternCardImage}card_05${extensao}`,
+                image: `${patternCardImage}card_05${fileExtension}`,
                 label: 'Lives',
                 text: 'Lives salvas dos meus treinos em casa'
             }
         },
         {
             card: {
-                image: `${patternCardImage}card_06${extensao}`,
+                image: `${patternCardImage}card_06${fileExtension}`,
                 label: 'Bônus de abdômen',
                 text: 'Treinos bônus abdômen e cárdio'
             }
         },
         {
             card: {
-                image: `${patternCardImage}card_07${extensao}`,
+                image: `${patternCardImage}card_07${fileExtension}`,
                 label: 'Bônus de pernas',
                 text: 'Treinos bônus glúteos e posteriores'
             }
         },
         {
             card: {
-                image: `${patternCardImage}card_08${extensao}`,
+                image: `${patternCardImage}card_08${fileExtension}`,
                 label: 'Bônus de dieta',
                 text:
                     'Dicas de como desenvolver seu planejamento alimentar e seleção dos suprimentos com nutrólogas e nutricionistas'
@@ -99,7 +101,7 @@ const TreinoTemplate = ({
         },
         {
             card: {
-                image: `${patternCardImage}card_09${extensao}`,
+                image: `${patternCardImage}card_09${fileExtension}`,
                 label: 'Bônus de suplementação',
                 text: 'Dicas de suplementação para emagrecimento e hipertrofia'
             }
@@ -124,6 +126,7 @@ const TreinoTemplate = ({
                 cardPlanoImage={cardPlanoImage}
                 cardPlanoLinkPage={cardPlanoLinkPage}
                 cardPlanoButtonLabel={cardPlanoButtonLabel}
+                gender={gender}
             />
             <Separator />
             <TreinoConteudo

@@ -1,7 +1,6 @@
 import React from 'react'
 import Price from '../../molecules/price'
 import Button from '../../atoms/button'
-import ConsultoriaCard from '../consultoriaCard'
 
 type Props = {
     children: React.ReactNode
@@ -11,7 +10,7 @@ type Props = {
     image: string
     linkPage: string
     buttonLabel: string
-    buttonClass?: string
+    gender?: string
 }
 
 const CardPlanos = ({
@@ -22,53 +21,52 @@ const CardPlanos = ({
     image,
     linkPage,
     buttonLabel,
-    buttonClass
+    gender = 'consult'
 }: Props) => {
-    if (recommended) {
-        return (
-            <div className="col">
-                <ConsultoriaCard
-                    buttonLabel={buttonLabel}
-                    image={image}
-                    linkUrl={linkPage}
-                >
-                    {children}
-                </ConsultoriaCard>
-            </div>
-        )
-    } else {
-        return (
-            <div className="col">
-                <div className="card rounded bg-dark overflow-hidden h-100">
-                    <div
-                        className="card-header bg-image"
-                        style={{
-                            backgroundImage: `url(${image})`,
-                            minHeight: '35vh'
-                        }}
-                    ></div>
-                    <div className="card-body">
-                        <div className="fs-3 fw-normal card-title">{title}</div>
-                        {price && (
-                            <Price
-                                price={price.value}
-                                frequency={price.frequency}
-                            />
-                        )}
-                        <hr />
+
+    const btnIcon = recommended ? `whatsapp` : ""
+    const btnFS = recommended ? 1.8 : 1
+
+    return (
+        <div className="col">
+
+            <div
+                className={`card-planos h-100 d-flex border-3 border-${gender} `}
+                style={{
+                    backgroundColor: 'black',
+                    backgroundImage: `url("${image}")`,
+                    borderWidth: '3px',
+                    borderStyle: 'solid'
+                }}
+            >
+                <div className="card-body align-self-end">
+                    <div className="bg-black-fade rounded p-2">
+                        {price &&
+                            <React.Fragment>
+                                <div className="fs-3 fw-normal text-center">{title}</div>
+                                <Price
+                                    price={price.value}
+                                    frequency={price.frequency}
+                                />
+                            </React.Fragment>
+                        }
                         {children}
-                    </div>
-                    <div className="card-footer d-flex align-items-center justify-content-center">
-                        <Button
-                            label={buttonLabel}
-                            className={`${buttonClass} btn rounded`}
-                            href={linkPage}
-                        />
+
+                        <div className="text-center my-3">
+                            <Button
+                                label={buttonLabel}
+                                prefixIcon={btnIcon}
+                                href={linkPage}
+                                target='_blank'
+                                className={`btn rounded fw-500 text-uppercase btn-buy btn-buy-vip bg-${gender}`}
+                                style={{fontSize: `${btnFS}rem`}}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
-        )
-    }
+        </div>
+    )
 }
 
 export default CardPlanos

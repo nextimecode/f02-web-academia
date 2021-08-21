@@ -13,6 +13,7 @@ type Props = {
     cardPlanoImage: string
     cardPlanoLinkPage: string
     cardPlanoButtonLabel: string
+    gender?: string
 }
 
 const VideoTreino = ({
@@ -24,7 +25,8 @@ const VideoTreino = ({
     cardPlanoPreco,
     cardPlanoImage,
     cardPlanoLinkPage,
-    cardPlanoButtonLabel
+    cardPlanoButtonLabel,
+    gender = 'female'
 }: Props) => {
     return (
         <section id="planos">
@@ -53,33 +55,31 @@ const VideoTreino = ({
                             <Film src={srcVideo} />
                         </div>
                     </div>
-                    <div className="col-md-12 col-lg-7 order-md-0 order-last border border-primary p-0 my-1 text-center">
-                        <CardPlanos
-                            title={cardPlanoTitle}
-                            price={cardPlanoPreco}
-                            image={cardPlanoImage}
-                            linkPage={cardPlanoLinkPage}
-                            buttonLabel={cardPlanoButtonLabel}
-                            buttonClass="btn-buy btn-buy-course"
-                        >
-                            <div className="card-consultoria-list">
-                                <ul className="fw-lighter card-text">
-                                    <li className="p-1">
-                                        Assinatura mensal com renovação
-                                        automática
-                                    </li>
-                                    <li className="p-1">
-                                        Cancele quando quiser
-                                    </li>
-                                    <li className="p-1">Garantia de 7 Dias</li>
-                                    <li className="p-1">
-                                        Este plano não é individualizado como na
-                                        Consultoria
-                                    </li>
-                                </ul>
-                            </div>
-                        </CardPlanos>
-                    </div>
+                    <CardPlanos
+                        title={cardPlanoTitle}
+                        price={cardPlanoPreco}
+                        image={cardPlanoImage}
+                        linkPage={cardPlanoLinkPage}
+                        buttonLabel={cardPlanoButtonLabel}
+                        gender={gender}
+                    >
+                        <div className="card-consultoria-list">
+                            <ul className="fw-lighter card-text">
+                                <li className="p-1">
+                                    Assinatura mensal com renovação
+                                    automática
+                                </li>
+                                <li className="p-1">
+                                    Cancele quando quiser
+                                </li>
+                                <li className="p-1">Garantia de 7 Dias</li>
+                                <li className="p-1">
+                                    Este plano não é individualizado como na
+                                    Consultoria
+                                </li>
+                            </ul>
+                        </div>
+                    </CardPlanos>
                 </div>
             </div>
         </section>
