@@ -91,7 +91,7 @@ const Planos = () => {
                     ]
                 }
             }
-        },
+        }
     ]
 
     return (
@@ -129,7 +129,6 @@ const Planos = () => {
                                         )}
                                     </ul>
                                 </div>
-                                
                             </CardPlanos>
                         ))}
                     </div>

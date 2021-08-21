@@ -12,7 +12,7 @@ const BemVindo = ({ txtBemVindo, videoMain }: Props) => {
     return (
         <section>
             <Container className="px-2 my-2">
-                <Title label="Seja bem-vindo!" className="scroll-emphasis"/>
+                <Title label="Seja bem-vindo!" className="scroll-emphasis" />
                 <div className="row px-2 my-2">
                     <div className="col-sm-12 col-md-6 m-auto">
                         {txtBemVindo}

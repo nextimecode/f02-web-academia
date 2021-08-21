@@ -23,13 +23,11 @@ const CardPlanos = ({
     buttonLabel,
     gender = 'consult'
 }: Props) => {
-
-    const btnIcon = recommended ? `whatsapp` : ""
+    const btnIcon = recommended ? 'whatsapp' : ''
     const btnFS = recommended ? 1.8 : 1
 
     return (
         <div className="col">
-
             <div
                 className={`card-planos h-100 d-flex border-3 border-${gender} `}
                 style={{
@@ -41,15 +39,17 @@ const CardPlanos = ({
             >
                 <div className="card-body align-self-end">
                     <div className="bg-black-fade rounded p-2">
-                        {price &&
+                        {price && (
                             <React.Fragment>
-                                <div className="fs-3 fw-normal text-center">{title}</div>
+                                <div className="fs-3 fw-normal text-center">
+                                    {title}
+                                </div>
                                 <Price
                                     price={price.value}
                                     frequency={price.frequency}
                                 />
                             </React.Fragment>
-                        }
+                        )}
                         {children}
 
                         <div className="text-center my-3">
@@ -57,9 +57,9 @@ const CardPlanos = ({
                                 label={buttonLabel}
                                 prefixIcon={btnIcon}
                                 href={linkPage}
-                                target='_blank'
+                                target="_blank"
                                 className={`btn rounded fw-500 text-uppercase btn-buy btn-buy-vip bg-${gender}`}
-                                style={{fontSize: `${btnFS}rem`}}
+                                style={{ fontSize: `${btnFS}rem` }}
                             />
                         </div>
                     </div>

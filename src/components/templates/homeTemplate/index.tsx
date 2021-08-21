@@ -1,9 +1,5 @@
 import React from 'react'
-import {
-    DepoimentoProps,
-    PhotoProps,
-    VideoProps
-} from '../../../types/types'
+import { DepoimentoProps, PhotoProps, VideoProps } from '../../../types/types'
 import Separator from '../../atoms/separator'
 import BemVindo from '../../organisms/bemVindo'
 import DepoimentosTexto from '../../organisms/depoimentosTexto'

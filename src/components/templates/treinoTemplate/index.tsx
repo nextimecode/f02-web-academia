@@ -38,7 +38,9 @@ const TreinoTemplate = ({
     const fileExtension = '.jpg'
 
     const heroImage = `assets/img/cards/plano_${gender}${fileExtension}`
-    const cardPlanoTitle = `Plano ${gender === 'male' ? 'Masculino' : 'Feminino'}`
+    const cardPlanoTitle = `Plano ${
+        gender === 'male' ? 'Masculino' : 'Feminino'
+    }`
 
     const cardAcessos = [
         {

@@ -222,13 +222,43 @@ const Index: React.FC = () => {
         }
     ]
 
-    const txtBemVindo = <React.Fragment>
-        <p>Conheça Vinícius Dias...</p>
-        <p><span className="fw-500 color-primary">Vinicius Dias, ex-atleta jogador de futebol conhecido como <a href={instagramLink}>@instrutordefitness</a>, formado em educação física há 6 anos</span> atuando como personal trainer, tornou-se <span className="fw-500 color-primary">especialista em treinos para emagrecimento e hipertrofia.</span> Hoje atua como referência na área.</p>
-        <p>E hoje <span className="fw-500 color-primary">venho dividir meu método de treinamento para você destravar seus resultados</span>, conseguir emagrecer, <span className="fw-500 color-primary">definir o seu corpo e conquistar sua melhor versão em qualquer lugar que esteja.</span></p>
-        <p><span className="fw-500 color-primary">Já são mais de 4 mil atendimentos personalizados que transformou a vida dos alunos, e mais de 6 mil na plataforma de treinos online.</span></p>
-        <p>Agora você não estará mais sozinha.</p>
-    </React.Fragment>
+    const txtBemVindo = (
+        <React.Fragment>
+            <p>Conheça Vinícius Dias...</p>
+            <p>
+                <span className="fw-500 color-primary">
+                    Vinicius Dias, ex-atleta jogador de futebol conhecido como{' '}
+                    <a href={instagramLink}>@instrutordefitness</a>, formado em
+                    educação física há 6 anos
+                </span>{' '}
+                atuando como personal trainer, tornou-se{' '}
+                <span className="fw-500 color-primary">
+                    especialista em treinos para emagrecimento e hipertrofia.
+                </span>{' '}
+                Hoje atua como referência na área.
+            </p>
+            <p>
+                E hoje{' '}
+                <span className="fw-500 color-primary">
+                    venho dividir meu método de treinamento para você destravar
+                    seus resultados
+                </span>
+                , conseguir emagrecer,{' '}
+                <span className="fw-500 color-primary">
+                    definir o seu corpo e conquistar sua melhor versão em
+                    qualquer lugar que esteja.
+                </span>
+            </p>
+            <p>
+                <span className="fw-500 color-primary">
+                    Já são mais de 4 mil atendimentos personalizados que
+                    transformou a vida dos alunos, e mais de 6 mil na plataforma
+                    de treinos online.
+                </span>
+            </p>
+            <p>Agora você não estará mais sozinha.</p>
+        </React.Fragment>
+    )
 
     return (
         <PageTemplate title="Home">

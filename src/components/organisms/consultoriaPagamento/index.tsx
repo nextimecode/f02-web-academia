@@ -57,12 +57,9 @@ const ConsultoriaPagamento = ({ videoMain }: Props) => {
                         <div className="card-consultoria-list">
                             <ul className="fw-lighter card-text">
                                 <li className="p-1">
-                                    Assinatura mensal com renovação
-                                    automática
+                                    Assinatura mensal com renovação automática
                                 </li>
-                                <li className="p-1">
-                                    Cancele quando quiser
-                                </li>
+                                <li className="p-1">Cancele quando quiser</li>
                                 <li className="p-1">Garantia de 7 Dias</li>
                                 <li className="p-1">
                                     Este plano não é individualizado como na
