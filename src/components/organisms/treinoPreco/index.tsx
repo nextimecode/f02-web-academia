@@ -33,7 +33,6 @@ const TreinoPreco = ({
                             image={cardPlanoImage}
                             linkPage={cardPlanoLinkPage}
                             buttonLabel={cardPlanoButtonLabel}
-                            buttonClass="btn-buy btn-buy-course"
                         >
                             <ul className="fw-lighter card-text">
                                 <li className="p-2">

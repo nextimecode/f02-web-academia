@@ -14,7 +14,6 @@ type Props = {
     sectionConteudoTitle: string
     treinosFuncionamTitle?: string
     treinosFuncionamText?: string
-    cardPlanoTitle: string
     cardPlanoPreco: Record<string, any>
     cardPlanoImage: string
     cardPlanoButtonLabel: string

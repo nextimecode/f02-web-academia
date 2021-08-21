@@ -10,10 +10,7 @@ type Props = {
     title: string
 }
 
-const PageTemplate = ({
-    children,
-    title,
-}: Props) => {
+const PageTemplate = ({ children, title }: Props) => {
     return (
         <>
             <Head>
@@ -42,7 +39,9 @@ const PageTemplate = ({
                         label={'Compre Aqui!'}
                         href={HOTMART_COURSE_WOMEN}
                         target="_blank"
-                        className={'btn rounded btn-buy btn-buy-course text-uppercase fw-500'}
+                        className={
+                            'btn rounded btn-buy btn-buy-course text-uppercase fw-500'
+                        }
                     />
                 </div>
             </div>

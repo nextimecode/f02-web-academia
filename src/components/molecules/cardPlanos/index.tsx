@@ -23,7 +23,6 @@ const CardPlanos = ({
     buttonLabel,
     gender = 'consult'
 }: Props) => {
-    const btnIcon = recommended ? 'whatsapp' : ''
     const btnFS = recommended ? 1.8 : 1
 
     return (
@@ -53,14 +52,25 @@ const CardPlanos = ({
                         {children}
 
                         <div className="text-center my-3">
-                            <Button
-                                label={buttonLabel}
-                                prefixIcon={btnIcon}
-                                href={linkPage}
-                                target="_blank"
-                                className={`btn rounded fw-500 text-uppercase btn-buy btn-buy-vip bg-${gender}`}
-                                style={{ fontSize: `${btnFS}rem` }}
-                            />
+                            {recommended && (
+                                <Button
+                                    label={buttonLabel}
+                                    prefixIcon={'whatsapp'}
+                                    href={linkPage}
+                                    target="_blank"
+                                    className={`btn rounded fw-500 text-uppercase btn-buy btn-buy-vip bg-${gender}`}
+                                    style={{ fontSize: `${btnFS}rem` }}
+                                />
+                            )}
+                            {!recommended && (
+                                <Button
+                                    label={buttonLabel}
+                                    href={linkPage}
+                                    target="_blank"
+                                    className={`btn rounded fw-500 text-uppercase btn-buy btn-buy-vip bg-${gender}`}
+                                    style={{ fontSize: `${btnFS}rem` }}
+                                />
+                            )}
                         </div>
                     </div>
                 </div>
