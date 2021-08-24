@@ -36,8 +36,8 @@ const CardPlanos = ({
                     borderStyle: 'solid'
                 }}
             >
-                <div className={`bg-black-fade card-body d-flex`}>
-                    <div className={`bg-black-fade rounded p-2 align-self-end`}>
+                <div className={'bg-black-fade card-body d-flex'}>
+                    <div className={'bg-black-fade rounded p-2 align-self-end w-100'}>
                         {price && (
                             <React.Fragment>
                                 <div className="fs-3 fw-normal text-center">
