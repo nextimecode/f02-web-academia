@@ -6,7 +6,7 @@ type Props = {
 
 const PriceValue = ({ price }: Props) => {
     return (
-        <span className="display-3 lh-1" style={{ fontWeight: 300 }}>
+        <span className="display-3 lh-1" style={{ fontWeight: 600 }}>
             {price}
         </span>
     )
