@@ -1,7 +1,7 @@
 import React from 'react'
 import { VideoProps } from '../../../types/types'
-import Film from '../../atoms/film'
 import Title from '../../atoms/title'
+import FilmBox from '../../molecules/filmBox'
 
 type Props = {
     videos: Record<string, VideoProps>[]
@@ -19,9 +19,10 @@ const DepoimentosVideo = ({ videos }: Props) => {
                             key={index}
                             className="col-sm-12 col-md-6 col-lg-3 p-1"
                         >
-                            <div className="ratio ratio-9x16">
-                                <Film src={v.video.src} />
-                            </div>
+                            <FilmBox
+                                src={v.video.src}
+                                proportion='9x16'
+                            />
                         </div>
                     ))}
                 </div>

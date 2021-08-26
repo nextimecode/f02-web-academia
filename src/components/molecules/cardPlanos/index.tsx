@@ -28,16 +28,18 @@ const CardPlanos = ({
     return (
         <div className="col">
             <div
-                className={`card-planos h-100 d-flex border-3 border-${gender} `}
+                className={`card-planos h-100 d-flex border-3 border-solid border-${gender} `}
                 style={{
                     backgroundColor: 'black',
                     backgroundImage: `url("${image}")`,
-                    borderWidth: '3px',
-                    borderStyle: 'solid'
                 }}
             >
                 <div className={'bg-black-fade card-body d-flex'}>
-                    <div className={'bg-black-fade rounded p-2 align-self-end w-100'}>
+                    <div
+                        className={
+                            'bg-black-fade rounded p-2 align-self-end w-100'
+                        }
+                    >
                         {price && (
                             <React.Fragment>
                                 <div className="fs-3 fw-normal text-center">
@@ -46,6 +48,7 @@ const CardPlanos = ({
                                 <Price
                                     price={price.value}
                                     frequency={price.frequency}
+                                    textColor={gender}
                                 />
                             </React.Fragment>
                         )}

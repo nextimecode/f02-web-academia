@@ -23,7 +23,7 @@ const Header = () => {
         },
         {
             navLink: {
-                href: '/planos',
+                href: '',
                 label: 'Planos',
                 items: [
                     {

@@ -17,7 +17,7 @@ const Planos = () => {
                 buttonLabel: 'Saiba mais',
                 cardText: {
                     boxClass: '',
-                    listClasses: 'fw-lighter card-text',
+                    listClasses: 'card-text',
                     listItemClasses: 'p-2',
                     listItems: [
                         {
@@ -46,16 +46,16 @@ const Planos = () => {
                 buttonLabel: 'Seja Vip',
                 cardText: {
                     boxClass: 'card-consultoria-list',
-                    listClasses: 'fw-lighter',
+                    listClasses: '',
                     listItemClasses: 'p-2',
                     listItems: [
-                        { item: 'CONSULTORIA VINI DIAS' },
+                        { item: 'CONSULTORIA VINIDIAS' },
                         {
                             item:
-                                'Consultoria online: seu treino na palma da sua mão.'
+                                'Seu treino na palma da sua mão.'
                         },
                         { item: 'Atendimento personalizado com VINIDIAS' },
-                        { item: 'Acompanhamento online' }
+                        { item: 'Acompanhamento Online' }
                     ]
                 }
             }
@@ -72,7 +72,7 @@ const Planos = () => {
                 buttonLabel: 'Saiba mais',
                 cardText: {
                     boxClass: '',
-                    listClasses: 'fw-lighter card-text',
+                    listClasses: 'card-text',
                     listItemClasses: 'p-2',
                     listItems: [
                         {
@@ -96,8 +96,12 @@ const Planos = () => {
 
     return (
         <section id="planos" className="pt-extra">
-            <div className="container">
-                <Title label="Conheça nossos planos" />
+            <div className="container mt-2">
+                <Title label="Conheça os" />
+                <Title
+                    label="Planos"
+                    className="text-primary"
+                />
                 <Subhead label="Em casa ou na academia agora é a hora de construir a sua melhor versão!" />
                 <div className="my-4">
                     <div className="row row-cols-1 row-cols-md-3 g-4">
@@ -118,9 +122,9 @@ const Planos = () => {
                                             (i, index) => (
                                                 <li
                                                     key={index}
-                                                    className={
-                                                        c.card.cardText
-                                                            .listItemClasses
+                                                    className={`${c.card.cardText
+                                                            .listItemClasses} fw-bolder`
+                                                        
                                                     }
                                                 >
                                                     {i.item}

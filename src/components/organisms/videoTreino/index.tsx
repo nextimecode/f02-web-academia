@@ -2,6 +2,7 @@ import React from 'react'
 import CardPlanos from '../../molecules/cardPlanos'
 import Film from '../../atoms/film'
 import Title from '../../atoms/title'
+import FilmBox from '../../molecules/filmBox'
 
 type Props = {
     srcVideo: string
@@ -28,6 +29,14 @@ const VideoTreino = ({
     cardPlanoButtonLabel,
     gender = 'female'
 }: Props) => {
+
+    const benefits = [
+        'Assinatura mensal com renovação automática',
+        'Cancele quando quiser',
+        'Garantia de 7 Dias',
+        'Este plano não é individualizado como na Consultoria'
+    ]
+
     return (
         <section id="planos">
             <div className="container py-2">
@@ -51,9 +60,11 @@ const VideoTreino = ({
                 </div>
                 <div className="row p-3">
                     <div className="col-md-12 col-lg-5 text-center">
-                        <div className="ratio ratio-9x16 mh-80 my-1">
-                            <Film src={srcVideo} />
-                        </div>
+                        <FilmBox
+                            src={srcVideo}
+                            proportion='9x16'
+                            classes="mh-80 my-1"
+                        />
                     </div>
                     <CardPlanos
                         title={cardPlanoTitle}
@@ -64,16 +75,12 @@ const VideoTreino = ({
                         gender={gender}
                     >
                         <div className="card-consultoria-list">
-                            <ul className="fw-lighter card-text">
-                                <li className="p-1">
-                                    Assinatura mensal com renovação automática
-                                </li>
-                                <li className="p-1">Cancele quando quiser</li>
-                                <li className="p-1">Garantia de 7 Dias</li>
-                                <li className="p-1">
-                                    Este plano não é individualizado como na
-                                    Consultoria
-                                </li>
+                            <ul className="card-text">
+                                {benefits.map(b => (
+                                    <li className="p-1 fs-5 fw-bold">
+                                        {b}
+                                    </li>
+                                ))}
                             </ul>
                         </div>
                     </CardPlanos>

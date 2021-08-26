@@ -6,11 +6,16 @@ import PriceCurrency from '../../atoms/priceCurrency'
 type Props = {
     price: string
     frequency?: string
+    textColor?: string
 }
 
-const Price = ({ price, frequency = 'mês' }: Props) => {
+const Price = ({
+    price,
+    frequency = 'mês',
+    textColor = 'primary'
+}: Props) => {
     return (
-        <div className="my-4 d-flex text-red d-flex justify-content-center bg-black-fade rounded">
+        <div className={`color-${textColor} my-4 d-flex d-flex justify-content-center bg-black-fade rounded`}>
             <div className="align-items-top">
                 <PriceCurrency />
             </div>

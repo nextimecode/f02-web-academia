@@ -23,6 +23,11 @@ a:hover {
     transition: .3s;
 }
 
+.dropdown-menu a:hover {
+    color: $white !important;
+    background: $red !important;
+}
+
 a:link svg {
     transition: .3s;
     fill: $white;
@@ -157,10 +162,9 @@ p.apresentacao {
 
 .border-consult {border-color: $consult !important;}
 
-.border-3 {
-    border-style: 'solid';
-    border-width: 3px;
-}
+.border-primary {border-color: $primary !important;}
+
+.border-solid {border-style: solid;}
 
 .card-planos {
     background-size: cover;
@@ -215,6 +219,12 @@ p.apresentacao {
 .color-primary {
     color: $primary;
 }
+
+.color-male { color: $male }
+
+.color-female { color: $female }
+
+.color-consult { color: $consult }
 
 .nav-link:hover {
     background-color: rgba(230, 69, 42, 0.7);

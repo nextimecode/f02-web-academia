@@ -1,4 +1,3 @@
-import { Container } from 'next/app'
 import React from 'react'
 import { PhotoProps } from '../../../types/types'
 import Subhead from '../../atoms/subhead'
@@ -16,7 +15,7 @@ const Resultados = ({ carouselPhotos }: Props) => {
 
     return (
         <section className="py-5">
-            <Container>
+            <div className="container">
                 <Title label="Resultados reais" />
                 <Subhead label={subtitulo} />
 
@@ -25,7 +24,7 @@ const Resultados = ({ carouselPhotos }: Props) => {
                     showDots={false}
                     draggable={true}
                 />
-            </Container>
+            </div>
         </section>
     )
 }

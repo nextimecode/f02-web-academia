@@ -1,7 +1,6 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
-import Film from '../../atoms/film'
 import Title from '../../atoms/title'
+import FilmBox from '../../molecules/filmBox'
 
 type Props = {
     txtBemVindo: React.ReactElement
@@ -11,19 +10,21 @@ type Props = {
 const BemVindo = ({ txtBemVindo, videoMain }: Props) => {
     return (
         <section>
-            <Container className="px-2 my-2">
+            <div className="container px-2 my-2">
                 <Title label="Seja bem-vindo!" className="scroll-emphasis" />
                 <div className="row px-2 my-2">
                     <div className="col-sm-12 col-md-6 m-auto">
                         {txtBemVindo}
                     </div>
                     <div className="col-sm-12 col-md-6 text-center">
-                        <div className="ratio ratio-9x16 mh-80 my-1">
-                            <Film src={videoMain} />
-                        </div>
+                        <FilmBox
+                            src={videoMain}
+                            proportion='9x16'
+                            classes="mh-80 my-1 border-primary border-solid border-3 rounded"
+                        />
                     </div>
                 </div>
-            </Container>
+            </div>
         </section>
     )
 }

@@ -9,6 +9,8 @@ export const instagramLink =
 export const HOTMART_COURSE_WOMEN = 'https://pay.hotmart.com/L50679467Q'
 export const HOTMART_COURSE_MEN = 'https://pay.hotmart.com/H57214382C'
 
+export const VIDEO_INVITATION = 'https://www.youtube.com/embed/gizcBiJ7I9Y'
+
 const fotosInstagram = []
 const fotosInstagramPath = 'assets/img/instagramPosts/'
 const nFotosInstagram = 8
@@ -193,7 +195,6 @@ export const depoimentos = [
 
 const Index: React.FC = () => {
     const wallpaper = 'assets/img/background.jpg'
-    const videoMain = 'assets/video/consultoria.MOV'
 
     const videos = [
         {
@@ -269,7 +270,7 @@ const Index: React.FC = () => {
                 depoimentos={depoimentos}
                 instagramPosts={carouselFotosInstagram}
                 txtBemVindo={txtBemVindo}
-                videoMain={videoMain}
+                videoMain={VIDEO_INVITATION}
             />
         </PageTemplate>
     )

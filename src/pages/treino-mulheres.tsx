@@ -2,13 +2,13 @@ import React from 'react'
 import PageTemplate from '../components/templates/pageTemplate'
 import TreinoTemplate from '../components/templates/treinoTemplate'
 
-import { HOTMART_COURSE_WOMEN } from '../pages/index'
+import { HOTMART_COURSE_WOMEN, VIDEO_INVITATION } from '../pages/index'
 
 const TreinoMulheres: React.FC = () => {
     return (
         <PageTemplate title="Treino">
             <TreinoTemplate
-                srcVideo="assets/video/treino.MOV"
+                srcVideo={VIDEO_INVITATION}
                 sectionConteudoTitle="terá acesso"
                 sectionConteudoSubtitle="Confira tudo que você"
                 cardPlanoPreco={{ value: '41,90' }}

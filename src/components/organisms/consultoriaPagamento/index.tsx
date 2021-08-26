@@ -3,8 +3,8 @@ import Title from '../../atoms/title'
 import { telefone } from '../../../pages/index'
 
 import './style.scss'
-import Film from '../../atoms/film'
 import CardPlanos from '../../molecules/cardPlanos'
+import FilmBox from '../../molecules/filmBox'
 
 const mensagem =
     'Olá, Vinícius! Gostaria de agendar uma vaga na sua consultoria.'
@@ -37,6 +37,14 @@ type Props = {
 }
 
 const ConsultoriaPagamento = ({ videoMain }: Props) => {
+
+    const benefits = [
+        'Assinatura mensal com renovação automática',
+        'Cancele quando quiser',
+        'Garantia de 7 Dias',
+        'Acompanhamento Individual'
+    ]
+
     return (
         <section id="planos">
             <div className="container">
@@ -44,27 +52,26 @@ const ConsultoriaPagamento = ({ videoMain }: Props) => {
                     <Title label="Consultoria Personalizada" />
 
                     <div className="col-md-12 col-lg-5 text-center">
-                        <div className="ratio ratio-9x16 mh-80 my-1">
-                            <Film src={videoMain} />
-                        </div>
+                        <FilmBox
+                            src={videoMain}
+                            proportion='9x16'
+                            classes="mh-80 my-1"
+                        />
                     </div>
                     <CardPlanos
                         title={cardPlano.card.title}
                         image={cardPlano.card.image}
                         linkPage={cardPlano.card.linkUrl}
                         buttonLabel={cardPlano.card.buttonLabel}
+                        recommended={true}
                     >
                         <div className="card-consultoria-list">
-                            <ul className="fw-lighter card-text">
-                                <li className="p-1">
-                                    Assinatura mensal com renovação automática
-                                </li>
-                                <li className="p-1">Cancele quando quiser</li>
-                                <li className="p-1">Garantia de 7 Dias</li>
-                                <li className="p-1">
-                                    Este plano não é individualizado como na
-                                    Consultoria
-                                </li>
+                            <ul className="fw-lighter card-text py-3">
+                                {benefits.map(b => (
+                                    <li className="p-1 fs-5 fw-bold">
+                                        {b}
+                                    </li>
+                                ))}
                             </ul>
                         </div>
                     </CardPlanos>
