@@ -1,4 +1,3 @@
-import { Container } from 'next/app'
 import React from 'react'
 import { Row } from 'react-bootstrap'
 import Title from '../../atoms/title'
