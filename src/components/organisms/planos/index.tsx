@@ -15,6 +15,7 @@ const Planos = () => {
                 image: '/assets/img/cards/plano_female.jpg',
                 linkPage: '/treino-mulheres',
                 buttonLabel: 'Saiba mais',
+                buttonClass: 'btn-buy btn-buy-course',
                 cardText: {
                     boxClass: '',
                     listClasses: 'card-text',
@@ -69,6 +70,7 @@ const Planos = () => {
                 image: '/assets/img/cards/plano_male.jpg',
                 linkPage: '/treino-homens',
                 buttonLabel: 'Saiba mais',
+                buttonClass: 'btn-buy btn-buy-course',
                 cardText: {
                     boxClass: '',
                     listClasses: 'card-text',
