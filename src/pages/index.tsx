@@ -9,6 +9,8 @@ export const instagramLink =
 export const HOTMART_COURSE_WOMEN = 'https://pay.hotmart.com/L50679467Q'
 export const HOTMART_COURSE_MEN = 'https://pay.hotmart.com/H57214382C'
 
+export const VIDEO_INVITATION = 'https://www.youtube.com/embed/gizcBiJ7I9Y'
+
 const fotosInstagram = []
 const fotosInstagramPath = 'assets/img/instagramPosts/'
 const nFotosInstagram = 8
@@ -193,7 +195,6 @@ export const depoimentos = [
 
 const Index: React.FC = () => {
     const wallpaper = 'assets/img/background.jpg'
-    const videoMain = 'assets/video/consultoria.MOV'
 
     const videos = [
         {
@@ -216,44 +217,49 @@ const Index: React.FC = () => {
         },
         {
             video: {
-                src: 'assets/video/video_4.MOV',
+                src: 'assets/video/video_4.mp4',
                 alt: 'description'
             }
         }
     ]
 
-    const txtBemVindo = [
-        {
-            paragrafo: {
-                texto: 'Conheça Vinícius Dias..',
-                classes: ''
-            }
-        },
-        {
-            paragrafo: {
-                texto: `
-                    Vinicius Dias, ex-atleta jogador de futebol, conhecido nas suas redes sociais como @instrutordefitness, formado em educação física há  6 anos atuando como personal trainer, tornou-se especialista em treinos para emagrecimento , hipertrofia e hoje atua como referência nesta área.
-                `,
-                classes: ''
-            }
-        },
-        {
-            paragrafo: {
-                texto: `
-                    E hoje venho dividir meu método de treinamento para você destravar seus resultados, conseguir emagrecer, definir o seu corpo e conquistar sua melhor versão em qualquer lugar que esteja.
-                `,
-                classes: 'font-italic'
-            }
-        },
-        {
-            paragrafo: {
-                texto: `
-                    Já são mais de 4 mil atendimentos personalizados que transformou a vida dos alunos, e mais de 6 mil na plataforma de treinos online. Agora você não estará mais sozinha.
-                `,
-                classes: 'font-italic'
-            }
-        }
-    ]
+    const txtBemVindo = (
+        <React.Fragment>
+            <p>Conheça Vinícius Dias...</p>
+            <p>
+                <span className="fw-500 color-primary">
+                    Vinicius Dias, ex-atleta jogador de futebol conhecido como{' '}
+                    <a href={instagramLink}>@instrutordefitness</a>, formado em
+                    educação física há 6 anos
+                </span>{' '}
+                atuando como personal trainer, tornou-se{' '}
+                <span className="fw-500 color-primary">
+                    especialista em treinos para emagrecimento e hipertrofia.
+                </span>{' '}
+                Hoje atua como referência na área.
+            </p>
+            <p>
+                E hoje{' '}
+                <span className="fw-500 color-primary">
+                    venho dividir meu método de treinamento para você destravar
+                    seus resultados
+                </span>
+                , conseguir emagrecer,{' '}
+                <span className="fw-500 color-primary">
+                    definir o seu corpo e conquistar sua melhor versão em
+                    qualquer lugar que esteja.
+                </span>
+            </p>
+            <p>
+                <span className="fw-500 color-primary">
+                    Já são mais de 4 mil atendimentos personalizados que
+                    transformou a vida dos alunos, e mais de 6 mil na plataforma
+                    de treinos online.
+                </span>
+            </p>
+            <p>Agora você não estará mais sozinha.</p>
+        </React.Fragment>
+    )
 
     return (
         <PageTemplate title="Home">
@@ -262,9 +268,9 @@ const Index: React.FC = () => {
                 carouselPhotos={carouselFotosResultados}
                 videos={videos}
                 depoimentos={depoimentos}
-                txtBemVindo={txtBemVindo}
                 instagramPosts={carouselFotosInstagram}
-                videoMain={videoMain}
+                txtBemVindo={txtBemVindo}
+                videoMain={VIDEO_INVITATION}
             />
         </PageTemplate>
     )

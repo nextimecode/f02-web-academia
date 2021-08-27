@@ -1,10 +1,10 @@
 import React from 'react'
 import Title from '../../atoms/title'
-import ConsultoriaCard from '../../molecules/consultoriaCard'
 import { telefone } from '../../../pages/index'
 
 import './style.scss'
-import Film from '../../atoms/film'
+import CardPlanos from '../../molecules/cardPlanos'
+import FilmBox from '../../molecules/filmBox'
 
 const mensagem =
     'Olá, Vinícius! Gostaria de agendar uma vaga na sua consultoria.'
@@ -37,6 +37,13 @@ type Props = {
 }
 
 const ConsultoriaPagamento = ({ videoMain }: Props) => {
+    const benefits = [
+        'Assinatura mensal com renovação automática',
+        'Cancele quando quiser',
+        'Garantia de 7 Dias',
+        'Acompanhamento Individual'
+    ]
+
     return (
         <section id="planos">
             <div className="container">
@@ -44,34 +51,32 @@ const ConsultoriaPagamento = ({ videoMain }: Props) => {
                     <Title label="Consultoria Personalizada" />
 
                     <div className="col-md-12 col-lg-5 text-center">
-                        <div className="ratio ratio-9x16 mh-80 my-1">
-                            <Film src={videoMain} />
-                        </div>
+                        <FilmBox
+                            src={videoMain}
+                            proportion="9x16"
+                            classes="mh-80 my-1"
+                        />
                     </div>
-                    <div className="col-md-12 col-lg-7 order-md-0 order-last p-0 my-1 text-center">
-                        <ConsultoriaCard
-                            image={cardPlano.card.image}
-                            buttonLabel={cardPlano.card.buttonLabel}
-                            target="_blank"
-                            linkUrl={cardPlano.card.linkUrl}
-                        >
-                            <ul className={cardPlano.card.cardText.listClasses}>
-                                {cardPlano.card.cardText.listItems.map(
-                                    (i, index) => (
-                                        <li
-                                            key={index}
-                                            className={
-                                                cardPlano.card.cardText
-                                                    .listItemClasses
-                                            }
-                                        >
-                                            {i.item}
-                                        </li>
-                                    )
-                                )}
+                    <CardPlanos
+                        title={cardPlano.card.title}
+                        image={cardPlano.card.image}
+                        linkPage={cardPlano.card.linkUrl}
+                        buttonLabel={cardPlano.card.buttonLabel}
+                        recommended={true}
+                    >
+                        <div className="card-consultoria-list">
+                            <ul className="fw-lighter card-text py-3">
+                                {benefits.map((b, index) => (
+                                    <li
+                                        key={index}
+                                        className="p-1 fs-5 fw-bold"
+                                    >
+                                        {b}
+                                    </li>
+                                ))}
                             </ul>
-                        </ConsultoriaCard>
-                    </div>
+                        </div>
+                    </CardPlanos>
                 </div>
             </div>
         </section>

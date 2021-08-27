@@ -1,10 +1,5 @@
 import React from 'react'
-import {
-    DepoimentoProps,
-    PhotoProps,
-    TextoProps,
-    VideoProps
-} from '../../../types/types'
+import { DepoimentoProps, PhotoProps, VideoProps } from '../../../types/types'
 import Separator from '../../atoms/separator'
 import BemVindo from '../../organisms/bemVindo'
 import DepoimentosTexto from '../../organisms/depoimentosTexto'
@@ -20,7 +15,7 @@ interface Props {
     instagramPosts: Record<string, PhotoProps>[]
     videos: Record<string, VideoProps>[]
     depoimentos: Record<string, DepoimentoProps>[]
-    txtBemVindo: Record<string, TextoProps>[]
+    txtBemVindo: React.ReactElement
     videoMain: string
 }
 

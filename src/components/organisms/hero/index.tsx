@@ -1,4 +1,3 @@
-import { Container } from 'next/app'
 import React from 'react'
 import { Row } from 'react-bootstrap'
 import Title from '../../atoms/title'
@@ -20,7 +19,7 @@ const Hero = ({ heroImage, label1, label2 }: Props) => {
                 className="vh-100"
                 style={{ backgroundColor: 'rgba(0,0,0,0.2)' }}
             >
-                <Container>
+                <div className="container">
                     <Row>
                         <div className="position-absolute bottom-0 start-50 translate-middle text-center">
                             <div
@@ -37,7 +36,7 @@ const Hero = ({ heroImage, label1, label2 }: Props) => {
                             </div>
                         </div>
                     </Row>
-                </Container>
+                </div>
             </div>
         </section>
     )
