@@ -19,7 +19,7 @@ const BemVindo = ({ txtBemVindo, videoMain }: Props) => {
                     <div className="col-sm-12 col-md-6 text-center">
                         <FilmBox
                             src={videoMain}
-                            proportion='9x16'
+                            proportion="9x16"
                             classes="mh-80 my-1 border-primary border-solid border-3 rounded"
                         />
                     </div>

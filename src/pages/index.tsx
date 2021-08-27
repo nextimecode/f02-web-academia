@@ -217,7 +217,7 @@ const Index: React.FC = () => {
         },
         {
             video: {
-                src: 'assets/video/video_4.MOV',
+                src: 'assets/video/video_4.mp4',
                 alt: 'description'
             }
         }

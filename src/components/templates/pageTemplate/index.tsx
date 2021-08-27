@@ -30,7 +30,7 @@ const PageTemplate = ({ children, title }: Props) => {
             <footer>
                 <Footer />
             </footer>
-            
+
             <div className="btn-sticky">
                 <Button
                     label={'Compre Aqui!'}

@@ -9,13 +9,11 @@ type Props = {
     textColor?: string
 }
 
-const Price = ({
-    price,
-    frequency = 'mês',
-    textColor = 'primary'
-}: Props) => {
+const Price = ({ price, frequency = 'mês', textColor = 'primary' }: Props) => {
     return (
-        <div className={`color-${textColor} my-4 d-flex d-flex justify-content-center bg-black-fade rounded`}>
+        <div
+            className={`color-${textColor} my-4 d-flex d-flex justify-content-center bg-black-fade rounded`}
+        >
             <div className="align-items-top">
                 <PriceCurrency />
             </div>

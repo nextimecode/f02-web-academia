@@ -1,6 +1,5 @@
 import React from 'react'
 import CardPlanos from '../../molecules/cardPlanos'
-import Film from '../../atoms/film'
 import Title from '../../atoms/title'
 import FilmBox from '../../molecules/filmBox'
 
@@ -29,7 +28,6 @@ const VideoTreino = ({
     cardPlanoButtonLabel,
     gender = 'female'
 }: Props) => {
-
     const benefits = [
         'Assinatura mensal com renovação automática',
         'Cancele quando quiser',
@@ -62,7 +60,7 @@ const VideoTreino = ({
                     <div className="col-md-12 col-lg-5 text-center">
                         <FilmBox
                             src={srcVideo}
-                            proportion='9x16'
+                            proportion="9x16"
                             classes="mh-80 my-1"
                         />
                     </div>
@@ -76,8 +74,11 @@ const VideoTreino = ({
                     >
                         <div className="card-consultoria-list">
                             <ul className="card-text">
-                                {benefits.map(b => (
-                                    <li className="p-1 fs-5 fw-bold">
+                                {benefits.map((b, index) => (
+                                    <li
+                                        key={index}
+                                        className="p-1 fs-5 fw-bold"
+                                    >
                                         {b}
                                     </li>
                                 ))}

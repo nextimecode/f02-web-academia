@@ -37,7 +37,6 @@ type Props = {
 }
 
 const ConsultoriaPagamento = ({ videoMain }: Props) => {
-
     const benefits = [
         'Assinatura mensal com renovação automática',
         'Cancele quando quiser',
@@ -54,7 +53,7 @@ const ConsultoriaPagamento = ({ videoMain }: Props) => {
                     <div className="col-md-12 col-lg-5 text-center">
                         <FilmBox
                             src={videoMain}
-                            proportion='9x16'
+                            proportion="9x16"
                             classes="mh-80 my-1"
                         />
                     </div>
@@ -67,8 +66,11 @@ const ConsultoriaPagamento = ({ videoMain }: Props) => {
                     >
                         <div className="card-consultoria-list">
                             <ul className="fw-lighter card-text py-3">
-                                {benefits.map(b => (
-                                    <li className="p-1 fs-5 fw-bold">
+                                {benefits.map((b, index) => (
+                                    <li
+                                        key={index}
+                                        className="p-1 fs-5 fw-bold"
+                                    >
                                         {b}
                                     </li>
                                 ))}

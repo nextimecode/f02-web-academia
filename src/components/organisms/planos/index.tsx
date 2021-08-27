@@ -51,8 +51,7 @@ const Planos = () => {
                     listItems: [
                         { item: 'CONSULTORIA VINIDIAS' },
                         {
-                            item:
-                                'Seu treino na palma da sua mão.'
+                            item: 'Seu treino na palma da sua mão.'
                         },
                         { item: 'Atendimento personalizado com VINIDIAS' },
                         { item: 'Acompanhamento Online' }
@@ -98,10 +97,7 @@ const Planos = () => {
         <section id="planos" className="pt-extra">
             <div className="container mt-2">
                 <Title label="Conheça os" />
-                <Title
-                    label="Planos"
-                    className="text-primary"
-                />
+                <Title label="Planos" className="text-primary" />
                 <Subhead label="Em casa ou na academia agora é a hora de construir a sua melhor versão!" />
                 <div className="my-4">
                     <div className="row row-cols-1 row-cols-md-3 g-4">
@@ -122,10 +118,7 @@ const Planos = () => {
                                             (i, index) => (
                                                 <li
                                                     key={index}
-                                                    className={`${c.card.cardText
-                                                            .listItemClasses} fw-bolder`
-                                                        
-                                                    }
+                                                    className={`${c.card.cardText.listItemClasses} fw-bolder`}
                                                 >
                                                     {i.item}
                                                 </li>
