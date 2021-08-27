@@ -1,5 +1,5 @@
 import React from 'react'
-import LazyLoad from 'react-lazyload';
+import LazyLoad from 'react-lazyload'
 import { VideoProps } from '../../../types/types'
 import Title from '../../atoms/title'
 import FilmBox from '../../molecules/filmBox'
@@ -26,7 +26,6 @@ const DepoimentosVideo = ({ videos }: Props) => {
                         </div>
                     ))}
                 </div>
-                    
             </div>
         </section>
     )

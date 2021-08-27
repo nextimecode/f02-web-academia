@@ -1,5 +1,5 @@
 import React from 'react'
-import LazyLoad from 'react-lazyload';
+import LazyLoad from 'react-lazyload'
 import { PhotoProps } from '../../../types/types'
 import Subhead from '../../atoms/subhead'
 import Title from '../../atoms/title'
