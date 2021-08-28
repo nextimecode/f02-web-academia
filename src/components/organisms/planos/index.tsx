@@ -8,16 +8,17 @@ const Planos = () => {
         {
             card: {
                 title: 'Treino Feminino',
-                recommended: false,
+                gender: 'female',
                 price: {
                     value: '41,90'
                 },
-                image: '/assets/img/cards/plano_fem.jpg',
+                image: '/assets/img/cards/plano_female.jpg',
                 linkPage: '/treino-mulheres',
                 buttonLabel: 'Saiba mais',
                 buttonClass: 'btn-buy btn-buy-course',
                 cardText: {
-                    listClasses: 'fw-lighter card-text',
+                    boxClass: '',
+                    listClasses: 'card-text',
                     listItemClasses: 'p-2',
                     listItems: [
                         {
@@ -44,18 +45,17 @@ const Planos = () => {
                 image: '/assets/img/cards/card_08.jpg',
                 linkPage: '/consultoria',
                 buttonLabel: 'Seja Vip',
-                buttonClass: 'btn-buy btn-buy-vip',
                 cardText: {
-                    listClasses: 'fw-lighter',
+                    boxClass: 'card-consultoria-list',
+                    listClasses: '',
                     listItemClasses: 'p-2',
                     listItems: [
-                        { item: 'CONSULTORIA2021TIMEVINIDIAS' },
+                        { item: 'CONSULTORIA VINIDIAS' },
                         {
-                            item:
-                                'Consultoria online: seu treino na palma da sua mão.'
+                            item: 'Seu treino na palma da sua mão.'
                         },
                         { item: 'Atendimento personalizado com VINIDIAS' },
-                        { item: 'Acompanhamento online' }
+                        { item: 'Acompanhamento Online' }
                     ]
                 }
             }
@@ -63,16 +63,17 @@ const Planos = () => {
         {
             card: {
                 title: 'Treino Masculino',
-                recommended: false,
+                gender: 'male',
                 price: {
                     value: '41,90'
                 },
-                image: '/assets/img/cards/plano_masc.jpg',
+                image: '/assets/img/cards/plano_male.jpg',
                 linkPage: '/treino-homens',
                 buttonLabel: 'Saiba mais',
                 buttonClass: 'btn-buy btn-buy-course',
                 cardText: {
-                    listClasses: 'fw-lighter card-text',
+                    boxClass: '',
+                    listClasses: 'card-text',
                     listItemClasses: 'p-2',
                     listItems: [
                         {
@@ -96,8 +97,9 @@ const Planos = () => {
 
     return (
         <section id="planos" className="pt-extra">
-            <div className="container">
-                <Title label="Conheça nossos planos" />
+            <div className="container mt-2">
+                <Title label="Conheça os" />
+                <Title label="Planos" className="text-primary" />
                 <Subhead label="Em casa ou na academia agora é a hora de construir a sua melhor versão!" />
                 <div className="my-4">
                     <div className="row row-cols-1 row-cols-md-3 g-4">
@@ -110,23 +112,22 @@ const Planos = () => {
                                 image={c.card.image}
                                 linkPage={c.card.linkPage}
                                 buttonLabel={c.card.buttonLabel}
-                                buttonClass={c.card.buttonClass}
+                                gender={c.card.gender}
                             >
-                                <ul className={c.card.cardText.listClasses}>
-                                    {c.card.cardText.listItems.map(
-                                        (i, index) => (
-                                            <li
-                                                key={index}
-                                                className={
-                                                    c.card.cardText
-                                                        .listItemClasses
-                                                }
-                                            >
-                                                {i.item}
-                                            </li>
-                                        )
-                                    )}
-                                </ul>
+                                <div className={c.card.cardText.boxClass}>
+                                    <ul className={c.card.cardText.listClasses}>
+                                        {c.card.cardText.listItems.map(
+                                            (i, index) => (
+                                                <li
+                                                    key={index}
+                                                    className={`${c.card.cardText.listItemClasses} fw-bolder`}
+                                                >
+                                                    {i.item}
+                                                </li>
+                                            )
+                                        )}
+                                    </ul>
+                                </div>
                             </CardPlanos>
                         ))}
                     </div>

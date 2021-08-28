@@ -1,6 +1,6 @@
 import React from 'react'
 import CardPlanos from '../../molecules/cardPlanos'
-import Film from '../../atoms/film'
+import FilmBox from '../../molecules/filmBox'
 
 type Props = {
     cardPlanoTitle: string
@@ -24,7 +24,7 @@ const TreinoPreco = ({
             <div className="container">
                 <div className="row">
                     <div className="col-md-6 col-sm-12 m-auto text-center">
-                        <Film src={srcVideo} />
+                        <FilmBox src={srcVideo} />
                     </div>
                     <div className="col-md-6 order-md-0 order-last">
                         <CardPlanos
@@ -33,7 +33,6 @@ const TreinoPreco = ({
                             image={cardPlanoImage}
                             linkPage={cardPlanoLinkPage}
                             buttonLabel={cardPlanoButtonLabel}
-                            buttonClass="btn-buy btn-buy-course"
                         >
                             <ul className="fw-lighter card-text">
                                 <li className="p-2">

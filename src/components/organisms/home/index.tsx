@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row } from 'react-bootstrap'
+import { Row } from 'react-bootstrap'
 import Subtitle from '../../atoms/subtitle'
 import Title from '../../atoms/title'
 import Button from '../../atoms/button'
@@ -21,7 +21,7 @@ const Home = ({ urlWallpaper = '' }: Props) => {
                 className="vh-100"
                 style={{ backgroundColor: 'rgba(0,0,0,0.2)' }}
             >
-                <Container>
+                <div className="container">
                     <Row>
                         <div className="position-absolute bottom-0 start-50 translate-middle text-center">
                             <div
@@ -43,7 +43,7 @@ const Home = ({ urlWallpaper = '' }: Props) => {
                             </div>
                         </div>
                     </Row>
-                </Container>
+                </div>
             </div>
         </section>
     )

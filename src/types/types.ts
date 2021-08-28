@@ -36,8 +36,3 @@ export interface NavItemsProps {
     href: string
     label: string
 }
-
-export interface TextoProps {
-    texto: string
-    classes: string
-}

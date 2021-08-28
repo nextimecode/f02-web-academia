@@ -1,5 +1,5 @@
-import { Container } from 'next/app'
 import React from 'react'
+import LazyLoad from 'react-lazyload'
 import { PhotoProps } from '../../../types/types'
 import Subhead from '../../atoms/subhead'
 import Title from '../../atoms/title'
@@ -16,16 +16,18 @@ const Resultados = ({ carouselPhotos }: Props) => {
 
     return (
         <section className="py-5">
-            <Container>
+            <div className="container">
                 <Title label="Resultados reais" />
                 <Subhead label={subtitulo} />
 
-                <PhotoSlider
-                    photos={carouselPhotos}
-                    showDots={false}
-                    draggable={true}
-                />
-            </Container>
+                <LazyLoad offset={100}>
+                    <PhotoSlider
+                        photos={carouselPhotos}
+                        showDots={false}
+                        draggable={true}
+                    />
+                </LazyLoad>
+            </div>
         </section>
     )
 }
